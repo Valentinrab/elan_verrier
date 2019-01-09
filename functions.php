@@ -12,7 +12,7 @@ add_action('init', 'register_cpt_hotel');
 function register_cpt_hotel()
 	{
 	$labels = array(
-		'name' => _x('Hotels', 'hotel') ,
+		'name' => _x('Panda', 'hotel') ,
 		'singular_name' => _x('Hotels', 'hotel') ,
 		'add_new' => _x('Ajouter', 'hotel') ,
 		'add_new_item' => _x('Ajouter Hotel', 'hotel') ,
