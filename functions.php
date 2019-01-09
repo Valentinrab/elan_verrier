@@ -1,29 +1,30 @@
 <?php
-function enregistre_menus() {
-register_nav_menus(
-    array(
-    'navigation-menu' => __( 'Menu de navigation' ),
-    'footer-menu' => __( 'Menu pied de page' )
-    )
-);
-}
-add_action( 'init', 'enregistre_menus' );
-add_action('init', 'register_cpt_hotel');
-function register_cpt_hotel()
+// function enregistre_menus() {
+// register_nav_menus(
+//     array(
+//     'navigation-menu' => __( 'Menu de navigation' ),
+//     'footer-menu' => __( 'Menu pied de page' )
+//     )
+// );
+// }
+// add_action( 'init', 'enregistre_menus' );
+add_action('init', 'register_cpt_membre');
+
+function register_cpt_membre()
 	{
 	$labels = array(
-		'name' => _x('Hotels', 'hotel') ,
-		'singular_name' => _x('Hotels', 'hotel') ,
-		'add_new' => _x('Ajouter', 'hotel') ,
-		'add_new_item' => _x('Ajouter Hotel', 'hotel') ,
-		'edit_item' => _x('Editer Hotel', 'hotel') ,
-		'new_item' => _x('Nouveau Hotel', 'hotel') ,
-		'view_item' => _x('Voir Hotel', 'hotel') ,
-		'search_items' => _x('Rechercher Hotels', 'hotel') ,
-		'not_found' => _x('Aucun Hotel', 'hotel') ,
-		'not_found_in_trash' => _x('Aucun Hotel dans la Corbeille', 'hotel') ,
-		'parent_item_colon' => _x('Parent Hotel:', 'hotel') ,
-		'menu_name' => _x('Hotels', 'hotel') ,
+		'name' => _x('Membres', 'membre') ,
+		'singular_name' => _x('Membres', 'membre') ,
+		'add_new' => _x('Ajouter', 'membre') ,
+		'add_new_item' => _x('Ajouter Hotel', 'membre') ,
+		'edit_item' => _x('Editer Hotel', 'membre') ,
+		'new_item' => _x('Nouveau Hotel', 'membre') ,
+		'view_item' => _x('Voir Hotel', 'membre') ,
+		'search_items' => _x('Rechercher Membres', 'membre') ,
+		'not_found' => _x('Aucun Hotel', 'membre') ,
+		'not_found_in_trash' => _x('Aucun Hotel dans la Corbeille', 'membre') ,
+		'parent_item_colon' => _x('Parent Hotel:', 'membre') ,
+		'menu_name' => _x('Membres', 'membre') ,
 	);
 	$args = array(
 		'labels' => $labels,
@@ -46,7 +47,7 @@ function register_cpt_hotel()
 		'rewrite' => true,
 		'capability_type' => 'post'
 	);
-	register_post_type('hotel', $args);
+	register_post_type('membre', $args);
 	}
 
 ?>
