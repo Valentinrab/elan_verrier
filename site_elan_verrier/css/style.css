@@ -1,0 +1,57 @@
+/* reset css */
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/*  */
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.ft-ctn-title {
+  font-weight: bold;
+  margin: 5px 0 10px;
+}
+
+/* Left section left */
+.ft-left {
+  width: 50%;
+  height: 150px;
+  margin: 30px 0 0;
+  background-color: #F1F1F1;
+}
+
+.container-left {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.ft-ctn-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ft-ctn-mention {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Right section left */
+.ft-right {
+  width: 50%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
