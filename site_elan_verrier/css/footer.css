@@ -7,7 +7,7 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-.container {
+.content_all {
   display: flex;
   flex-direction: row;
   position: absolute;
