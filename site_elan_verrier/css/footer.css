@@ -1,6 +1,15 @@
-/*FOOTER  */
+/* reset css */
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/*  */
 * {
   font-family: 'Quicksand', sans-serif;
+}
+
+.content_all{
+  margin-top: 75px;
 }
 
 .content_all {
@@ -50,4 +59,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
 }
