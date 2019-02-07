@@ -52,3 +52,24 @@
 .desc-wrap {
   margin-top: 10px;
 }
+
+.container-form {
+  margin-top: 100px;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#form-left {
+  padding-left: 0px;
+}
+
+#form-right {
+  text-align: right;
+}
+
+#form-desc {
+  margin: 50px 0 0 0;
+}
