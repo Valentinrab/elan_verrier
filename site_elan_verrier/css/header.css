@@ -1,12 +1,16 @@
 /* HEADER */
 header{
-  justify-content: space-around;
   margin: 0;
-  padding-top: 5px;
+  /* padding-top: 5px; */
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  /* padding: 5px 150px; */
 }
 
-.row{
-  margin: 0;
+.content_menu{
+  justify-content: space-around;
+  display: flex;
 }
 
 #logo{
@@ -21,10 +25,12 @@ header{
 
 #nav_menu a{
   display: inline-block;
+  margin: 0 20px;
 }
 
-.button-menu{
+#nav_menu .button-menu{
   padding: 5px;
   background-color: #333;
   margin: 0;
+  margin-right: 0;
 }
