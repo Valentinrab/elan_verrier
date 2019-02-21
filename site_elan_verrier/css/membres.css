@@ -1,3 +1,12 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
 .container {
   padding: 0 10%;
 }
@@ -9,6 +18,14 @@
   height: 100%;
   /* padding: 5% 0; */
   padding-top: 127px;
+}
+
+.image-membre{
+  width: 326px;
+  height: 358px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .video {
@@ -35,6 +52,7 @@
 
 .main-title {
   font-size: 36px;
+  font-weight: bold;
 }
 
 .container-wrap {
@@ -44,8 +62,13 @@
   margin-top: 50px;
 }
 
+.name-bold{
+  font-weight:bold;
+  margin: 0 0 5px 0;
+
+}
+
 .wrap {
-  text-align: center;
   margin: 0px 10px 25px;
 }
 
