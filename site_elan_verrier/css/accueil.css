@@ -1,13 +1,11 @@
-.container{
-  padding: 0 10%;
+/*général*/
+.mt-150px{
+  margin-top: 150px;
 }
-
+/*section vidéo*/
 #content_video{
-  height: 80vh;
-  /* width: 968px; */
   position: relative;
   height: 100vh;
-  /* padding: 5% 0; */
 }
 
 .video{
@@ -19,6 +17,7 @@
   transform: translate(-50%, -50%);
   position: absolute;
 }
+
 .name, .bl{
   left: 50%;
   top: 50%;
@@ -26,6 +25,122 @@
   position: absolute;
   z-index: 3;
 }
+
 .bl{
   margin-top: 5%;
+}
+
+/*section qui sommes nous */
+#content_about, #content_activites, #content_actu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content_texte, .content_image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+}
+
+.content_image{
+  height: 350px;
+}
+
+.content_texte h2{
+  background-color: #888;
+  height: 30px;
+}
+
+.content_texte p{
+  background-color: #888;
+  margin: 5% 0;
+}
+
+.content_texte div{
+  background-color: #666;
+  height: 30px;
+}
+
+.image1{
+  height: 350px;
+  background-color: #888;
+  position: absolute;
+}
+
+.image2{
+  height: 200px;
+  background-color: #666;
+  position: absolute;
+  top: 40%;
+}
+
+/*section activitées */
+#actu_title{
+  text-align: center;
+  background-color: #888;
+  height: 30px;
+  margin-bottom: 45px;
+}
+
+.actu_principal{
+  background-color: #888;
+  height: 400px;
+  padding: 0;
+}
+
+.actu_secondary{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.actu:nth-child(1){
+    margin-bottom: 30px;
+}
+
+.actu{
+  height: 185px;
+  background-color: #888;
+}
+
+.actu_button{
+  margin-top: 45px;
+  background-color: #666;
+  height: 30px;
+  text-align: center;
+}
+
+/*section réalisations*/
+#content_realisation{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding : 0 40px;
+}
+
+
+.realisation_img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content_realisation > .realisation_img:nth-child(1){
+  height: 400px;
+}
+
+.content_realisation_img > .realisation_img:nth-child(1){
+  height: 250px;
+  margin-bottom: 1rem;
+}
+
+.content_realisation_img > .realisation_img:nth-child(2){
+  height: 200px;
+}
+
+#content_realisation > .realisation_img:nth-child(3){
+  height: 350px;
 }
