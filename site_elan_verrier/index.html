@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Elan Verrier - Accueil</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/accueil.css">
@@ -12,53 +13,72 @@
 
     <header>
       <div class="content_menu">
-      <img src="images/logo.svg" alt="logo élan verrier" id="logo">
-      <nav id="nav_menu">
-        <a href="#">Les ateliers</a>
-        <a href="#">Réalisations</a>
-        <a href="#">Les membres</a>
-        <a href="#">Agenda</a>
-        <a href="#">Actualités</a>
-        <a href="#" class="button-menu">Devenir membre</a>
-      </nav>
+        <img src="images/logo.svg" alt="logo élan verrier" id="logo">
+        <div class="content_menu_right">
+          <a href="#" class="btn_menu">DEVENIR MEMBRE</a>
+          <div id="menu_burger">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+          </div>
+        </div>
+
+          <!-- <nav id="nav_menu"> -->
+          <!-- <a href="#">Les ateliers</a>
+          <a href="#" >Réalisations</a>
+          <a href="#" >Les membres</a>
+          <a href="#" >Agenda</a>
+          <a href="#" >Actualités</a> -->
+          <!-- </nav> -->
+
       </div>
     </header>
 
     <section class="container">
 
       <main id="content_video">
-        <div class="video"></div>
-        <h1 class="name">Élan Verrier</h1>
-        <h2 class="bl">Phrase d'accroche assez longue parce qu'on est pas des vauriens</h2>
+        <!-- <img src="images/accueil.jpg" class="video" alt="image de présentation d'Elan Verrier"> -->
+        <div class="video set_bg" style="background-image:url('images/accueil.jpg')">
+          <div class="next_ev">
+            <p>PROCHAINEMENT</p>
+          </div>
+        </div>
+        <div class="video_title">
+          <h1 class="name">ÉLAN VERRIER</h1>
+          <h2 class="bl">Insuffler un esprit entrepreneurial</h2>
+        </div>
+
+
       </main>
 
       <section id="content_about" class="mt-150px">
         <div class="content_texte col-sm-5">
-          <h2>Qui sommes-nous ?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#"><div class="col-sm-5">Devenir membre</div></a>
+          <h2 class="content_title">Qui sommes-nous ?</h2>
+          <p class="content_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#" class="btn_menu col-sm-5">DEVENIR MEMBRE</a>
+          <!-- <a href="#"><div class="col-sm-5 btn_menu">Devenir membre</div></a> -->
 
         </div>
         <div class="content_image col-sm-6">
-          <div class="image1 col-sm-8"></div>
-          <div class="image2 col-sm-8 offset-md-4"></div>
+          <div class="image_l set_bg col-sm-8" style="background-image:url('images/crea4.jpg');"></div>
+          <div class="image_r set_bg col-sm-8 offset-md-4" style="background-image:url('images/crea5.jpg');"></div>
         </div>
       </section>
 
       <section id="content_activites" class="mt-150px">
         <div class="content_image col-sm-6">
-          <div class="image1 col-sm-12"></div>
+          <div class="image_l col-sm-12 set_bg" style="background-image:url('images/crea7.jpg');"></div>
         </div>
         <div class="content_texte col-sm-5">
-          <h2>Les activités</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#"><div class="col-sm-5">Découvrez les ateliers</div></a>
+          <h2 class="content_title">Les activités</h2>
+          <p class="content_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#" class="btn_access">DÉCOUVRIR LES ATELIERS</a>
         </div>
       </section>
 
-      <section class="mt-150px">
+      <section id="content_actu" class="mt-150px">
         <h2 id="actu_title">Les actualités</h2>
-        <section id="content_actu">
+        <section id="content_actu_article">
           <div class="actu_principal col-sm-6"></div>
           <div class="actu_secondary col-sm-6">
             <div class="actu col-sm-5 offset-md-1"></div>
@@ -67,51 +87,39 @@
             <div class="actu col-sm-5 offset-md-1"></div>
           </div>
         </section>
-        <a href="#"><div class="col-sm-2 offset-md-5 actu_button">Voir tout les articles</div></a>
+        <a href="#" class="btn_access col-sm-2">VOIR TOUT LES ARTICLES</a>
       </section>
 
-      <section class="mt-150px">
+      <section id="content_realisation" class="mt-150px">
         <h2 id="actu_title">Réalisations</h2>
-        <section id="content_realisation">
-          <div class="realisation_img col-lg-4" style="background-image:url('images/image5.jpg')"></div>
+        <section id="content_realisation_article">
+          <div class="realisation_img col-lg-4" style="background-image:url('images/crea5.jpg')"></div>
           <div class="content_realisation_img col-lg-4">
-            <div class="realisation_img col-sm-12" style="background-image:url('images/image1.jpg')"></div>
-            <div class="realisation_img col-sm-12" style="background-image:url('images/image3.jpg')"></div>
+            <div class="realisation_img col-sm-12" style="background-image:url('images/crea1.jpg')"></div>
+            <div class="realisation_img col-sm-12" style="background-image:url('images/crea3.jpg')"></div>
           </div>
-          <div class="realisation_img col-lg-4" style="background-image:url('images/image5.jpg')"></div>
+          <div class="realisation_img col-lg-4" style="background-image:url('images/crea5.jpg')"></div>
         </section>
-        <a href="#"><div class="col-sm-2 offset-md-5 actu_button">Voir tout</div></a>
+        <a href="#" class="btn_access col-sm-3">VOIR TOUTES LES REALISATIONS</a>
       </section>
     </section>
 
-   <footer class="content_all">
-      <section class="ft-left">
-        <section class="container-left">
-          <div class="ft-ctn-1">
-            <p class="ft-ctn-title">Responsable</p>
-            <p class="ft-ctn-p">Nom Prénom</p>
-            <p class="ft-ctn-p">mail@mail.com</p>
-            <p class="ft-ctn-p">00 00 00 00 00</p>
-          </div>
-          <div class="ft-ctn-2">
-            <p class="ft-ctn-title">L'atelier</p>
-            <p class="ft-ctn-p">Adresse</p>
-            <p class="ft-ctn-p">Adresse</p>
-          </div>
-          <div class="ft-ctn-3">
-            <p class="ft-ctn-p">Facebook</p>
-            <p class="ft-ctn-p">Instagram</p>
-          </div>
+    <footer class="content_all">
+      <section class="ft">
+
+        <section class="container-top">
+            <p class="ft-ctn-sn">Facebook</p>
+            <p class="ft-ctn-sn">Instagram</p>
+            <p class="ft-ctn-sn">Twitter</p>
         </section>
-        <div class="ft-container">
-          <p class="ft-ctn-mention">Mentions légales</p>
-        </div>
-      </section>
-      <section class="ft-right">
-        <section class="container-right">
-          <p>maps</p>
+
+        <section class="container-bottom">
+            <a href="" class="ft-ctn-mention">MENTIONS LÉGALES</a>
+            <a href="" class="ft-ctn-mention">NOUS CONTACTER</a>
         </section>
+
       </section>
+
     </footer>
 
   </body>

@@ -2,6 +2,16 @@
 .mt-150px{
   margin-top: 150px;
 }
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.set_bg{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*section vidéo*/
 #content_video{
   position: relative;
@@ -9,78 +19,147 @@
 }
 
 .video{
-  background-color: #888;
+  /* background-color: #888; */
+  margin-top: 2%;
   width: 100%;
-  height: 90%;
+  height: 80%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  position: absolute;
+  /* position: absolute; */
+
+  position: relative;
 }
 
 .name, .bl{
-  left: 50%;
+  width: 100%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   position: absolute;
   z-index: 3;
+  color: #fff;
+  font-weight: 900;
+  margin-left: 80px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.name{
+  font-size: 50px;
 }
 
 .bl{
   margin-top: 5%;
+  font-size: 30px
+}
+
+.next_ev{
+  height: 70px;
+  width: 300px;
+  background-color: #f09682;
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* transform: translate(-50%, -50%); */
+}
+
+.next_ev p{
+  top: 50%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /*section qui sommes nous */
-#content_about, #content_activites, #content_actu{
+#content_about, #content_activites, #content_actu_article{
   display: flex;
   justify-content: space-between;
 }
 
 .content_texte, .content_image{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   position: relative;
   padding: 0;
+}
+
+.content_texte .content_title{
+  height: 30px;
+  color: #000;
+  font-size:25px;
+  font-weight: bold;
+}
+
+.content_texte .content_para{
+  color: #000;
+  font-size: 14px;
+  margin-left: 16px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+.btn_menu{
+  background-color: #f09682;
+  color: #FFFFFF;
+  text-decoration: none;
+  height: 100%;
+  padding: 12px 15px;
+  font-size: 12px;
+  font-weight: bold;
+  right: 0;
+  margin-left: 16px;
 }
 
 .content_image{
   height: 350px;
 }
 
-.content_texte h2{
-  background-color: #888;
-  height: 30px;
-}
-
-.content_texte p{
-  background-color: #888;
-  margin: 5% 0;
-}
-
-.content_texte div{
-  background-color: #666;
-  height: 30px;
-}
-
-.image1{
+.image_l{
   height: 350px;
   background-color: #888;
   position: absolute;
 }
 
-.image2{
+.image_r{
   height: 200px;
   background-color: #666;
   position: absolute;
   top: 40%;
 }
 
+.btn_access{
+  /* background-color: #f09682; */
+  color: #f09682;
+  text-decoration: none;
+  /* height: 100%; */
+  /* padding: 12px 15px; */
+  font-size: 12px;
+  font-weight: bold;
+  right: 0;
+  padding-bottom: 10px;
+  margin-left: 16px;
+  border-bottom: 3px solid #f09682;
+}
+
 /*section activitées */
+#content_actu{
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  position: relative;
+}
+
 #actu_title{
   text-align: center;
-  background-color: #888;
-  height: 30px;
+  /* height: 30px; */
+  color: #000;
+  font-size:25px;
+  font-weight: bold;
   margin-bottom: 45px;
 }
 
@@ -105,15 +184,22 @@
   background-color: #888;
 }
 
-.actu_button{
-  margin-top: 45px;
-  background-color: #666;
-  height: 30px;
+#content_actu .btn_access, #content_realisation .btn_access{
+  right: 0;
+  padding-bottom: 10px;
+  margin-left: 16px;
+  margin-top: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
 }
 
 /*section réalisations*/
 #content_realisation{
+  margin-bottom: 180px;
+}
+#content_realisation_article{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -128,7 +214,7 @@
   background-size: cover;
 }
 
-#content_realisation > .realisation_img:nth-child(1){
+#content_realisation_article > .realisation_img:nth-child(1){
   height: 400px;
 }
 
@@ -141,6 +227,6 @@
   height: 200px;
 }
 
-#content_realisation > .realisation_img:nth-child(3){
+#content_realisation_article > .realisation_img:nth-child(3){
   height: 350px;
 }
