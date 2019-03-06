@@ -102,7 +102,6 @@ body{
   top: 50%;
   transform: translate(-50%, -50%);
   /* position: absolute; */
-
   position: relative;
 }
 
@@ -226,17 +225,13 @@ body{
   background-color: #f09682;
 }
 
-/*section activitées */
+/*section actus */
 #content_actu{
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   position: relative;
 }
 
 #actu_title{
   text-align: center;
-  /* height: 30px; */
   color: #000;
   font-size:25px;
   font-weight: bold;
@@ -244,9 +239,13 @@ body{
 }
 
 .actu_principal{
-  background-color: #888;
-  height: 400px;
+  /* background-color: #888;
+  height: 400px; */
   padding: 0;
+}
+
+.actu_pricipal_image{
+  height: 500px;
 }
 
 .actu_secondary{
