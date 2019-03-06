@@ -7,7 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/accueil.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="js/faq.js"></script> -->
+
   </head>
   <body>
 
@@ -57,7 +60,6 @@
           <h2 class="content_title">Qui sommes-nous ?</h2>
           <p class="content_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a href="#" class="btn_menu col-sm-5">DEVENIR MEMBRE</a>
-          <!-- <a href="#"><div class="col-sm-5 btn_menu">Devenir membre</div></a> -->
 
         </div>
         <img src="images/taches/accueil_2.svg" class="tache tache2" alt="tache">
@@ -85,22 +87,57 @@
         <h2 id="actu_title">Les actualités</h2>
         <section id="content_actu_article">
           <article class="actu_principal col-sm-6">
-            <div class="actu_pricipal_image set_bg col-sm-" style="background-image:url('images/crea5.jpg')"></div>
-            <div class="actu_principal_info">
-
+            <div class="actu_principal_image set_bg" style="background-image:url('images/crea5.jpg')"></div>
+            <div class="actu_principal_info col-sm-10">
+              <div class="categorie col-sm-1"><p>EXPOSITION</p></div>
+              <!-- <span class="categorie">EXPOSITION</span> -->
+              <div class="actu_content_info col-sm-9 offset-md-1">
+                <div class="actu_date col-sm-12">
+                  <p>Valentin Rabier</p>
+                  <p>02/08/2018</p>
+                </div>
+                <h1 class="col-sm-12">Titre de mon joli article Titre de mon joli article Titre de mon joli article</h1>
+                <div class="offset-md-9"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+              </div>
             </div>
-
           </article>
-          <div class="actu_secondary col-sm-6">
-            <div class="actu col-sm-5 offset-md-1"></div>
-            <div class="actu col-sm-5 offset-md-1"></div>
-            <div class="actu col-sm-5 offset-md-1"></div>
-            <div class="actu col-sm-5 offset-md-1"></div>
+
+
+          <div class="content_actu_secondary col-sm-6">
+            <article class="actu_secondary">
+              <div class="actu_secondary_image set_bg col-sm-6" style="background-image:url('images/crea5.jpg')"></div>
+              <div class="actu_secondary_info col-sm-8">
+                <div class="categorie col-sm-1"><p>EXPOSITION</p></div>
+                <div class="actu_content_info col-sm-9 offset-md-1">
+                  <div class="actu_date col-sm-12">
+                    <p>Valentin Rabier</p>
+                    <p>02/08/2018</p>
+                  </div>
+                  <h1 class="col-sm-12">Titre de mon joli article Titre de mon joli article</h1>
+                  <div class="offset-md-8"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+                </div>
+              </div>
+            </article>
+            <article class="actu_secondary">
+              <div class="actu_secondary_image set_bg col-sm-6" style="background-image:url('images/crea5.jpg')"></div>
+              <div class="actu_secondary_info col-sm-8">
+                <div class="categorie col-sm-1"><p>EXPOSITION</p></div>
+                <div class="actu_content_info col-sm-9 offset-md-1">
+                  <div class="actu_date col-sm-12">
+                    <p>Valentin Rabier</p>
+                    <p>02/08/2018</p>
+                  </div>
+                  <h1 class="col-sm-12">Titre de mon joli article</h1>
+                  <div class="offset-md-8"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+                </div>
+              </div>
+            </article>
+
           </div>
         </section>
         <img src="images/taches/accueil_4.svg" class="tache tache4" alt="tache">
         <img src="images/illustrations/feu.png" class="illustration illustration3" alt="illustration">
-        <a href="#" class="btn_access">VOIR TOUT LES ARTICLES</a>
+        <a href="#" class="btn_access btn_access_actu">VOIR TOUT LES ARTICLES</a>
       </section>
 
       <section id="content_realisation" class="mt-150px">
@@ -120,67 +157,63 @@
       </section>
 
       <section id="content_faq" class="mt-150px">
-        <div class="col-sm-6 offset-md-3">
-          <input type="checkbox" id="question1" name="q"  class="questions">
-          <div class="wrap_question">
-            <label for="question1" class="question">
-              Comment adhérer à l'association ?
-            </label>
-            <div id="plus">
-              <div class="horizontal"></div>
-              <div class="vertical"></div>
+        <div class="accordion col-sm-6 offset-md-3" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0 card-flex">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Collapsible Group Item #2
+                </button>
+                <div class="plus">
+                  <div class="horizontal"></div>
+                  <div class="vertical"></div>
+                </div>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+              </div>
             </div>
           </div>
-          <p class="answers">
-            What if the answer is really long and wraps the whole page and you never want to finish it but you have to because its the answer!
-          </p>
-        </div>
-        <div class="col-sm-6 offset-md-3">
-          <input type="checkbox" id="question2" name="q"  class="questions">
-          <div class="wrap_question">
-            <label for="question2" class="question">
-              Comment adhérer à l'association ?
-            </label>
-            <div id="plus">
-              <div class="horizontal"></div>
-              <div class="vertical"></div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0 card-flex">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Collapsible Group Item #2
+                </button>
+                <div class="plus">
+                  <div class="horizontal"></div>
+                  <div class="vertical"></div>
+                </div>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+              </div>
             </div>
           </div>
-          <p class="answers">
-            What if the answer is really long and wraps the whole page and you never want to finish it but you have to because its the answer!
-          </p>
-        </div>
-        <div class="col-sm-6 offset-md-3">
-          <input type="checkbox" id="question3" name="q"  class="questions">
-          <div class="wrap_question">
-            <label for="question3" class="question">
-              Comment adhérer à l'association ?
-            </label>
-            <div id="plus">
-              <div class="horizontal"></div>
-              <div class="vertical"></div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0 card-flex">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+                </button>
+                <div class="plus">
+                  <div class="horizontal"></div>
+                  <div class="vertical"></div>
+                </div>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+              </div>
             </div>
           </div>
-          <p class="answers">
-            What if the answer is really long and wraps the whole page and you never want to finish it but you have to because its the answer!
-          </p>
         </div>
-        <div class="col-sm-6 offset-md-3">
-          <input type="checkbox" id="question4" name="q"  class="questions">
-          <div class="wrap_question">
-            <label for="question4" class="question">
-              Comment adhérer à l'association ?
-            </label>
-            <div id="plus">
-              <div class="horizontal"></div>
-              <div class="vertical"></div>
-            </div>
-          </div>
-          <p class="answers">
-            What if the answer is really long and wraps the whole page and you never want to finish it but you have to because its the answer!
-          </p>
-        </div>
-        <img src="images/taches/accueil_6.svg" class="tache tache6" alt="tache">
+        <img src="images/taches/taches_6_cut.png" class="tache tache6" alt="tache">
       </section>
 
     </section>
@@ -204,6 +237,25 @@
       </section>
 
     </footer>
+    <script type="text/javascript">
+    $(".btn-link").click(function(ev){
+      console.log("cc");
+      const btn = ev.target ;
+      const plus = $(btn).next();
 
+      const old = $(".plus.active") ;
+      console.log(old)
+
+      old.each(function( i, plus ){
+        console.log("coucou");
+        $(plus).removeClass('active');
+      })
+
+
+      plus.addClass("active");
+
+    });
+
+    </script>
   </body>
 </html>
