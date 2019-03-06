@@ -10,8 +10,17 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+body{
+
+}
+
+.global{
+  overflow-X: hidden;
+}
+
 .container {
-  padding: 0 10%;
+
+  overflow-X: hidden;
 }
 
 .container-main {
