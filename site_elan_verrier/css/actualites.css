@@ -1,3 +1,36 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.btn_access {
+  color: #f09682;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 16px;
+  position: absolute;
+  -webkit-appearance: none;
+  border: none;
+}
+
+.btn_access:before {
+  position: absolute;
+  margin-top: 25px;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #f09682;
+}
+
 .container {
   padding: 0 10%;
 }
@@ -34,7 +67,8 @@
 }
 
 .main-title {
-  font-size: 36px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .date-title {
@@ -63,7 +97,7 @@
 }
 
 .when-container {
-  margin-right: 50px;
+  margin-right: 110px;
   /* justify-content: center; */
   align-items: center;
   display: flex;
@@ -71,7 +105,7 @@
 }
 
 .what-container {
-  margin-right: 50px;
+  margin-right: 73px;
   /* justify-content: center; */
   align-items: center;
   display: flex;
@@ -108,7 +142,6 @@
   width: 100%;
   justify-content: center;
   position: absolute;
-  bottom: 30%;
 }
 
 .event-date {
@@ -155,6 +188,11 @@
 .form-title {
   font-size: 24px;
   font-weight: bold;
+}
+
+.imgarticle{
+  width: 100%;
+
 }
 
 #form-left {
