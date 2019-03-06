@@ -10,8 +10,20 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+<<<<<<< HEAD
+=======
+body{
+
+}
+
+.global{
+  overflow-X: hidden;
+}
+
+>>>>>>> 3d7cfc4eb7d734f16e66af92a1b1418a0c5b6707
 .container {
-  padding: 0 10%;
+
+  overflow-X: hidden;
 }
 
 .container-main {
