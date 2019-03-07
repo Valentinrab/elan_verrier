@@ -9,7 +9,7 @@ header{
   position: fixed;
   width: 100%;
   z-index: 4;
-  background-color: #FFF;
+  /* background-color: #FFF; */
 }
 
 .content_menu{
@@ -22,6 +22,7 @@ header{
   height: 80px;
   width: auto;
   display: inline-block;
+  margin-right: 60%;
 }
 
 .content_menu_right{
