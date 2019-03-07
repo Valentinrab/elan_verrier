@@ -149,7 +149,7 @@ body{
 
 /*section qui sommes nous */
 #content_about, #content_activites, #content_actu_article{
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   position: relative;
 }
@@ -300,7 +300,7 @@ body{
   padding: 0;
 }
 
-.actu_principal_info h1{
+.actu_principal_info h1, .actu_secondary_info h1{
   margin: 20px 0;
   font-weight: bold;
   padding: 0;
@@ -410,9 +410,10 @@ body{
 .card{
   border: none;
   position: static;
+  background: none;
 }
 .card-header{
-  background-color: transparent;
+  background: none;
   position: relative;
   border: 0;
   z-index: 1;
