@@ -10,7 +10,16 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-body {}
+.title-atelier{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 0 45px 0;
+}
+
+.p-atelier{
+  font-size: 14px;
+  line-height: 20px;
+}
 
 .global {
   overflow-X: hidden;
@@ -78,6 +87,9 @@ body {}
 
 }
 
+
+
+
 #col-left{
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -94,6 +106,8 @@ body {}
   background-color: #F8F8F8;
   padding-left: 0px !important;
   padding-right: 0px !important;
+  display: flex;
+  align-items: center;
 }
 
 .row{

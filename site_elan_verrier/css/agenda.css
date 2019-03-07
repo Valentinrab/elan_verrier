@@ -14,14 +14,7 @@ body{
 
 }
 
-.global{
-  overflow-X: hidden;
-}
 
-.container {
-
-  overflow-X: hidden;
-}
 
 .container-main {
   height: 80vh;
