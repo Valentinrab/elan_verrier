@@ -55,7 +55,7 @@ body{
   top: -25vh;
   left: 60vw;
   width: 40%;
-  z-index: 2;
+  z-index: -1;
 }
 
 /*illustrations*/
@@ -436,6 +436,7 @@ body{
 .btn-link{
   color: #21253f;
   font-size: 16px;
+  display: flex;
 }
 
 .card-body{
@@ -471,12 +472,18 @@ body{
   width: 14px;
   margin-top: 5px;
   transition: .3s ease;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  transition: .3s ease;
+  margin-left: 150%;
 }
 
-.active {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+.card-flex .collapsed .plus{
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
   transition: .3s ease;
 }

@@ -59,7 +59,7 @@
         <div class="content_texte col-sm-5">
           <h2 class="content_title">Qui sommes-nous ?</h2>
           <p class="content_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#" class="btn_menu col-sm-5">DEVENIR MEMBRE</a>
+          <a href="#" class="btn_access">MIEUX NOUS CONNAITRE</a>
 
         </div>
         <img src="images/taches/accueil_2.svg" class="tache tache2" alt="tache">
@@ -163,11 +163,12 @@
               <h5 class="mb-0 card-flex">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   Collapsible Group Item #2
+                  <div class="plus">
+                    <div class="horizontal"></div>
+                    <div class="vertical"></div>
+                  </div>
                 </button>
-                <div class="plus">
-                  <div class="horizontal"></div>
-                  <div class="vertical"></div>
-                </div>
+
               </h5>
             </div>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -181,11 +182,12 @@
               <h5 class="mb-0 card-flex">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Collapsible Group Item #2
+                  <div class="plus">
+                    <div class="horizontal"></div>
+                    <div class="vertical"></div>
+                  </div>
                 </button>
-                <div class="plus">
-                  <div class="horizontal"></div>
-                  <div class="vertical"></div>
-                </div>
+
               </h5>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -199,11 +201,12 @@
               <h5 class="mb-0 card-flex">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Collapsible Group Item #3
+                  <div class="plus">
+                    <div class="horizontal"></div>
+                    <div class="vertical"></div>
+                  </div>
                 </button>
-                <div class="plus">
-                  <div class="horizontal"></div>
-                  <div class="vertical"></div>
-                </div>
+
               </h5>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -237,25 +240,6 @@
       </section>
 
     </footer>
-    <script type="text/javascript">
-    $(".btn-link").click(function(ev){
-      console.log("cc");
-      const btn = ev.target ;
-      const plus = $(btn).next();
 
-      const old = $(".plus.active") ;
-      console.log(old)
-
-      old.each(function( i, plus ){
-        console.log("coucou");
-        $(plus).removeClass('active');
-      })
-
-
-      plus.addClass("active");
-
-    });
-
-    </script>
   </body>
 </html>
