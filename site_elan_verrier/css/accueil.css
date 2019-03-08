@@ -8,6 +8,10 @@ body{
   overflow-X:hidden;
 }
 
+p{
+  line-height: 20px;
+}
+
 .set_bg{
   background-position: center;
   background-repeat: no-repeat;
@@ -161,7 +165,7 @@ body{
 
 .content_texte .content_title{
   height: 30px;
-  color: #000;
+  color: #21253f;
   font-size:25px;
   font-weight: bold;
 }
@@ -173,9 +177,6 @@ body{
   margin-top: 45px;
 }
 
-#content_about .content_para{
-  margin-bottom: 30px;
-}
 
 .btn_menu{
   background-color: #f09682;
@@ -478,7 +479,7 @@ body{
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
   transition: .3s ease;
-  margin-left: 150%;
+  margin-left: 500px;
 }
 
 .card-flex .collapsed .plus{
@@ -487,4 +488,54 @@ body{
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
   transition: .3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .plus{
+    margin-left: 380px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .content_image{
+    margin-top: 100px;
+  }
+
+  .content_image .image_r{
+    display: none;
+  }
+
+  #content_activites{
+    flex-direction: column-reverse;
+  }
+
+  .content_actu_secondary{
+    display: none;
+  }
+
+  .content_realisation_img{
+    display: none;
+  }
+
+  .realisation_img{
+    margin: 10px 0;
+  }
+
+  .plus{
+    margin-left: 220px;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .plus{
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .plus{
+    display: none;
+  }
 }
