@@ -1,3 +1,7 @@
+body{
+  overflow-X:hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
   color: #21253F;
@@ -10,12 +14,6 @@ a {
 p {
   font-family: 'Montserrat', sans-serif;
 }
-
-body{
-
-}
-
-
 
 .container-main {
   height: 80vh;
@@ -68,42 +66,26 @@ body{
 
 .title-container {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
 }
 
 .filter-container {
   display: flex;
-  flex-direction: row;
-  position: absolute;
+  /* flex-direction: row;
+  position: absolute; */
   right: 0;
 }
 
-.when-container {
-  margin-right: 110px;
-  /* justify-content: center; */
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+.when-container, .what-container{
+  margin: 0 70px;
 }
 
-.what-container {
-  margin-right: 73px;
-  /* justify-content: center; */
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.filter {
-  width: 100px;
-  height: 40px;
-  border-radius: 50px;
-  background-color: grey;
-  margin-top: 10px;
+.when-container button, .what-container button{
+  background-color: transparent;
 }
 
 .wrap-line {
-  margin: 0 0 100px;
+  margin: 0;
 }
 
 .container-wrap {
@@ -199,7 +181,7 @@ body{
   text-decoration: none;
   font-size: 12px;
   font-weight: bold;
-  margin-left: 16px;
+  /* margin-left: 16px; */
   position: absolute;
   -webkit-appearance: none;
   border: none;
@@ -224,4 +206,108 @@ body{
 
 #form-desc {
   margin: 50px 0 0 0;
+}
+
+/*taches*/
+.tache{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+.tache3{
+  top: 0vh;
+  left: -45vw;
+}
+
+.tache6{
+  top: 110vh;
+  left: 60vw;
+  width: 40%;
+  z-index: -1;
+}
+
+@media screen and (max-width : 1200px){
+  .tache6{
+    top: 170vh;
+  }
+}
+
+@media screen and (max-width : 992px){
+  .tache3{
+    width: 130%;
+  }
+
+  .tache6{
+    top: 180vh;
+    width: 50%;
+    left: 50vw;
+  }
+}
+
+@media screen and (max-width : 768px){
+  .tache3{
+    width: 150%;
+    left: -35vw;
+    top: 10vh;
+  }
+
+  .tache6{
+    top: 270vh;
+    left: 55vw;
+  }
+}
+
+@media screen and (max-width : 576px){
+  .btn_access{
+    margin-left: 16px;
+  }
+  
+  .tache3{
+    width: 170%;
+    left: -60vw;
+    top: 30vh;
+  }
+
+  .tache6{
+    top: 280vh;
+  }
+
+  .main-title{
+    margin-bottom: 20px;
+  }
+
+  .title-container{
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .filter-container{
+    margin-left: -20px;
+  }
+
+  .when-container{
+    margin: 0 0px;
+  }
+
+  .what-container{
+    margin: 0 110px;
+  }
+}
+
+@media screen and (max-width : 450px){
+  .tache6{
+    top: 290vh;
+  }
+}
+
+@media screen and (max-width : 370px){
+  .tache3{
+    display: none;
+  }
+  .tache6{
+    display: none;
+  }
+
 }

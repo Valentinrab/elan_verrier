@@ -27,6 +27,7 @@ p {
 
 .container {
   overflow-X: hidden;
+  
 }
 
 .container-main {
@@ -79,16 +80,12 @@ p {
 
 .imgatelier{
   height: 100%;
-
 }
 
 #row-glob{
   width: auto;
 
 }
-
-
-
 
 #col-left{
   padding-left: 0px !important;

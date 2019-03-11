@@ -62,3 +62,18 @@ header{
   margin: 4px 0;
   transition: 0.4s;
 }
+
+@media screen and (max-width:992px){
+  #logo{
+    margin-right: 50%;
+  }
+}
+
+@media screen and (max-width:576px){
+  header{
+    background-color: #ffffff;
+  }
+  #logo{
+    margin-right: 10%;
+  }
+}

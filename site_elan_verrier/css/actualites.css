@@ -1,3 +1,7 @@
+body{
+  overflow-X:hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
   color: #21253F;
@@ -42,7 +46,7 @@ p {
 }
 
 .container {
-  padding: 0 10%;
+  padding: 0;
 }
 
 .container-main {
@@ -184,8 +188,61 @@ p {
   left: auto;
 }
 
-@media screen and (max-width : 576px){
+/*taches*/
+.tache{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
 
+.tache3{
+  top: 0vh;
+  left: -40vw;
+}
+
+.tache6{
+  top: 100vh;
+  left: 60vw;
+  width: 40%;
+  z-index: -1;
+}
+
+@media screen and (max-width : 992px){
+  .tache3{
+    width: 130%;
+  }
+
+  .tache6{
+    top: 170vh;
+    width: 50%;
+    left: 50vw;
+  }
+}
+
+@media screen and (max-width : 768px){
+  .tache3{
+    width: 150%;
+    left: -50vw;
+  }
+
+  .tache6{
+    top: 270vh;
+    left: 55vw;
+  }
+}
+
+@media screen and (max-width : 576px){
+  .tache3{
+    width: 170%;
+    left: -60vw;
+    top: -10vh;
+  }
+
+  .actu_principal{
+    padding : 40px;
+  }
+  
   .mt-150px{
     margin-top: 75px;
   }
@@ -210,4 +267,20 @@ p {
   .what-container{
     margin: 0 110px;
   }
+}
+
+@media screen and (max-width : 450px){
+  .tache6{
+    top: 280vh;
+  }
+}
+
+@media screen and (max-width : 370px){
+  .tache3{
+    display: none;
+  }
+  .tache6{
+    display: none;
+  }
+
 }
