@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Elan Verrier - Actualités</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="bs-css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/actualites.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="content_menu">
+      <img src="images/logo.svg" alt="logo élan verrier" id="logo">
+      <div class="content_menu_right">
+        <a href="#" class="btn_menu">DEVENIR MEMBRE</a>
+        <div id="menu_burger">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+
+        <!-- <nav id="nav_menu"> -->
+        <!-- <a href="#">Les ateliers</a>
+        <a href="#" >Réalisations</a>
+        <a href="#" >Les membres</a>
+        <a href="#" >Agenda</a>
+        <a href="#" >Actualités</a> -->
+        <!-- </nav> -->
+
+    </div>
+  </header>
+
+  <section class="container">
+    <main class="container-main">
+      <div class="title-container">
+        <h1 class="main-title">Actualités</h1>
+        <div class="filter-container">
+          <div class="when-container">
+            <button href="#" class="btn_access">CATÉGORIE</button>
+          </div>
+          <div class="what-container">
+            <button href="#" class="btn_access">DATE</button>
+          </div>
+        </div>
+      </div>
+      <section id="content_actu" class="mt-150px">
+        <h2 id="actu_title">Les actualités</h2>
+        <section id="content_actu_article" class="row">
+          <article class="actu_principal col-12 col-md-6 col-lg-4">
+            <div class="actu_principal_image set_bg" style="background-image:url('images/crea5.jpg')"></div>
+            <div class="actu_principal_info col-11">
+              <div class="categorie rencontre col-1"><p>RENCONTRE</p></div>
+              <!-- <span class="categorie">EXPOSITION</span> -->
+              <div class="actu_content_info col-9 offset-1">
+                <div class="actu_date col-12">
+                  <p>Valentin Rabier</p>
+                  <p>02/08/19</p>
+                </div>
+                <h1 class="col-12">Ceci est le titre de mon article</h1>
+                <p class="actu_content_info_para">Ceci est le début de mon article que je coupe pour pas qu'on voit tout le contenu directement !</p>
+                <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+              </div>
+            </div>
+          </article>
+          <article class="actu_principal col-12 col-md-6 col-lg-4">
+            <div class="actu_principal_image set_bg" style="background-image:url('images/crea5.jpg')"></div>
+            <div class="actu_principal_info col-11">
+              <div class="categorie expo col-1"><p>EXPOSITION</p></div>
+              <!-- <span class="categorie">EXPOSITION</span> -->
+              <div class="actu_content_info col-9 offset-1">
+                <div class="actu_date col-12">
+                  <p>Valentin Rabier</p>
+                  <p>02/08/19</p>
+                </div>
+                <h1 class="col-12">Ceci est le titre de mon article</h1>
+                <p class="actu_content_info_para">Ceci est le début de mon article que je coupe pour pas qu'on voit tout le contenu directement !</p>
+                <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+              </div>
+            </div>
+          </article>
+          <article class="actu_principal col-12 col-md-6 col-lg-4">
+            <div class="actu_principal_image set_bg" style="background-image:url('images/crea5.jpg')"></div>
+            <div class="actu_principal_info col-11">
+              <div class="categorie expo col-1"><p>EXPOSITION</p></div>
+              <!-- <span class="categorie">EXPOSITION</span> -->
+              <div class="actu_content_info col-9 offset-1">
+                <div class="actu_date col-12">
+                  <p>Valentin Rabier</p>
+                  <p>02/08/19</p>
+                </div>
+                <h1 class="col-12">Ceci est le titre de mon article</h1>
+                <p class="actu_content_info_para">Ceci est le début de mon article que je coupe pour pas qu'on voit tout le contenu directement !</p>
+                <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+              </div>
+            </div>
+          </article>
+          <article class="actu_principal col-12 col-md-6 col-lg-4">
+            <div class="actu_principal_image set_bg" style="background-image:url('images/crea5.jpg')"></div>
+            <div class="actu_principal_info col-11">
+              <div class="categorie rencontre col-1"><p>RENCONTRE</p></div>
+              <!-- <span class="categorie">EXPOSITION</span> -->
+              <div class="actu_content_info col-9 offset-1">
+                <div class="actu_date col-12">
+                  <p>Valentin Rabier</p>
+                  <p>02/08/19</p>
+                </div>
+                <h1 class="col-12">Ceci est le titre de mon article</h1>
+                <p class="actu_content_info_para">Ceci est le début de mon article que je coupe pour pas qu'on voit tout le contenu directement !</p>
+                <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+              </div>
+            </div>
+          </article>
+          <article class="actu_principal col-12 col-md-6 col-lg-4">
+            <div class="actu_principal_image set_bg" style="background-image:url('images/crea5.jpg')"></div>
+            <div class="actu_principal_info col-11">
+              <div class="categorie atelier col-1"><p>ATELIER</p></div>
+              <!-- <span class="categorie">EXPOSITION</span> -->
+              <div class="actu_content_info col-9 offset-1">
+                <div class="actu_date col-12">
+                  <p>Valentin Rabier</p>
+                  <p>02/08/19</p>
+                </div>
+                <h1 class="col-12">Ceci est le titre de mon article</h1>
+                <p class="actu_content_info_para">Ceci est le début de mon article que je coupe pour pas qu'on voit tout le contenu directement !</p>
+                <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+              </div>
+            </div>
+          </article>
+
+        </section>
+        <img src="images/taches/accueil_3.svg" class="tache tache3" alt="tache">
+        <img src="images/taches/taches_6_cut.png" class="tache tache6" alt="tache">
+
+      </section>
+
+    </main>
+  </section>
+
+  <footer class="content_all">
+    <section class="ft">
+
+      <section class="container-top">
+          <p class="ft-ctn-sn">Facebook</p>
+          <p class="ft-ctn-sn">Instagram</p>
+          <p class="ft-ctn-sn">Twitter</p>
+      </section>
+
+      <section class="container-bottom">
+          <a href="" class="ft-ctn-mention">MENTIONS LÉGALES</a>
+          <a href="" class="ft-ctn-mention">NOUS CONTACTER</a>
+      </section>
+
+    </section>
+  </footer>
+
+</body>
+
+</html>

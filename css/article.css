@@ -1,0 +1,179 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  line-height: 50px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: bold;
+  padding: 0 0 0 15px;
+}
+
+.title-article {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 0 45px 0;
+}
+
+.p-article {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.p-block {
+  margin: 65px 0 0 0;
+}
+
+.citation {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-citation {
+  color: #F09682;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 25px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.p-citation-writer {
+  color: #F09682;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: end;
+}
+
+.info-article {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 45px 0;
+}
+
+.date-article {
+  font-size: 12px;
+}
+
+.writer-article {
+  font-size: 12px;
+}
+
+.container-main {
+  height: 80vh;
+  /* width: 968px; */
+  position: relative;
+  height: 100%;
+  /* padding: 5% 0; */
+  padding-top: 127px;
+}
+
+.name, .bl {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 3;
+}
+
+.bl {
+  margin-top: 5%;
+}
+
+.main-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 45px 0;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 50px 0;
+}
+
+#tache1-agenda {
+  position: absolute;
+  top: 0vh;
+  left: -14vw;
+}
+
+#tache2-agenda {
+  position: absolute;
+  top: 40vh;
+  left: 35vw;
+}
+
+.img-event {
+  width: 120%;
+}
+
+.imgatelier {
+  height: 100%;
+}
+
+#row-glob {
+  width: auto;
+}
+
+#col-left {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  text-align: center;
+  float: left;
+  height: 403px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#col-right {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  display: flex;
+  align-items: center;
+  height: 403px;
+}
+
+#col-left2 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  text-align: center;
+  float: left;
+  height: 300px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#col-right2 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  align-items: center;
+  height: 225px;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
