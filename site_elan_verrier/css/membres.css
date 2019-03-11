@@ -96,7 +96,7 @@ p{
   position: relative;
 }
 
-.wrap:hover .tache6{
+.wrap:hover .tache{
   opacity: 1;
   transform: scale(1);
   transition: transform 0.5s cubic-bezier(0.42, 0, 0.27, 1.43), opacity 0.8s cubic-bezier(0.42, 0, 0.55, 1.6);
@@ -138,15 +138,30 @@ p{
 }
 
 /*taches hover*/
-.tache6{
+.tache{
   z-index: -1;
   position: absolute;
-  width: 210%;
-  top: -10%;
-  left: -90%;
+  width: 110%;
+  top: -9vh;
+  left: -2vw;
   transform: scale(0.2);
   opacity: 0;
   transition: transform 0.5s cubic-bezier(0.42, 0, 0.27, 1.43), opacity 0.8s cubic-bezier(0.42, 0, 0.55, 1.6);
+}
+
+.tache1{
+  width: 115%;
+  top: -3vh;
+}
+
+.tache2{
+  left: -1vw;
+  top: -7vh;
+}
+
+.tache3{
+  width: 150%;
+  left: -5vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -160,12 +175,14 @@ p{
   }
 
   .container-form {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 
-  .tache6{
-    transform: scale(1);
-    opacity: 1;
+  .tache{
+    /* transform: scale(1);
+    opacity: 1; */
+    display: none;
+
   }
 
   .desc-wrap {
