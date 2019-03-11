@@ -5,82 +5,64 @@
   <meta charset="utf-8">
   <title>Elan Verrier - Membres</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/membres.css">
-  <link rel="stylesheet" href="bs-css/bootstrap-grid.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/membres.css">
+  <link rel="stylesheet" href="bs-<?php bloginfo('template_directory'); ?>/css/bootstrap-grid.css">
 </head>
 
 <body>
-  <header>
-    <div class="content_menu">
-      <img src="images/logo.svg" alt="logo élan verrier" id="logo">
-      <div class="content_menu_right">
-        <a href="#" class="btn_menu">DEVENIR MEMBRE</a>
-        <div id="menu_burger">
-          <div class="bar bar1"></div>
-          <div class="bar bar2"></div>
-          <div class="bar bar3"></div>
-        </div>
-      </div>
 
-        <!-- <nav id="nav_menu"> -->
-        <!-- <a href="#">Les ateliers</a>
-        <a href="#" >Réalisations</a>
-        <a href="#" >Les membres</a>
-        <a href="#" >Agenda</a>
-        <a href="#" >Actualités</a> -->
-        <!-- </nav> -->
-
-    </div>
-  </header>
+  <?php
+    get_header();
+  ?>
 
   <section class="container">
     <main class="container-main">
       <h1 class="main-title">Les membres</h1>
       <div class="container-wrap">
         <div class="wrap 1">
-          <img src="images/taches/membres_1.svg" class="tache tache1" alt="tache">
-          <div class="image-membre" style="background-image:url('images/head1.jpg');"></div>
+          <img src="<?php bloginfo('template_directory'); ?>/images/taches/membres_1.svg" class="tache tache1" alt="tache">
+          <div class="image-membre" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/head1.jpg');"></div>
           <div class="desc-wrap">
             <h3 class="name-bold">Jêrome Bloux</h3>
             <p>Président</p>
           </div>
         </div>
         <div class="wrap 2">
-          <img src="images/taches/membres_2.svg" class="tache tache2" alt="tache">
-          <div class="image-membre" style="background-image:url('images/head2.jpg');"></div>
+          <img src="<?php bloginfo('template_directory'); ?>/images/taches/membres_2.svg" class="tache tache2" alt="tache">
+          <div class="image-membre" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/head2.jpg');"></div>
           <div class="desc-wrap">
             <h3 class="name-bold">Amélie Brun</h3>
             <p>Vice présidente</p>
           </div>
         </div>
         <div class="wrap 3">
-          <img src="images/taches/membres_3.svg" class="tache tache3" alt="tache">
-          <div class="image-membre" style="background-image:url('images/head3.jpg');"></div>
+          <img src="<?php bloginfo('template_directory'); ?>/images/taches/membres_3.svg" class="tache tache3" alt="tache">
+          <div class="image-membre" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/head3.jpg');"></div>
           <div class="desc-wrap">
             <h3 class="name-bold">Louise Semendjan</h3>
             <p>Trésorière</p>
           </div>
         </div>
         <div class="wrap 4">
-          <img src="images/taches/membres_1.svg" class="tache tache1" alt="tache">
-          <div class="image-membre" style="background-image:url('images/head4.jpg');"></div>
+          <img src="<?php bloginfo('template_directory'); ?>/images/taches/membres_1.svg" class="tache tache1" alt="tache">
+          <div class="image-membre" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/head4.jpg');"></div>
           <div class="desc-wrap">
             <h3 class="name-bold">Julie Bagre</h3>
             <p>Présidente-adjointe</p>
           </div>
         </div>
         <div class="wrap 5">
-          <img src="images/taches/membres_2.svg" class="tache tache2" alt="tache">
-          <div class="image-membre" style="background-image:url('images/head5.jpg');"></div>
+          <img src="<?php bloginfo('template_directory'); ?>/images/taches/membres_2.svg" class="tache tache2" alt="tache">
+          <div class="image-membre" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/head5.jpg');"></div>
           <div class="desc-wrap">
             <h3 class="name-bold">Maxime Bonnet</h3>
             <p>Vice président adjoint</p>
           </div>
         </div>
         <div class="wrap 6">
-          <img src="images/taches/membres_3.svg" class="tache tache3" alt="tache">
-          <div class="image-membre" style="background-image:url('images/head6.jpg');"></div>
+          <img src="<?php bloginfo('template_directory'); ?>/images/taches/membres_3.svg" class="tache tache3" alt="tache">
+          <div class="image-membre" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/head6.jpg');"></div>
           <div class="desc-wrap">
             <h3 class="name-bold">Valentin Rabier</h3>
             <p>Trésorier Adjoint</p>
@@ -102,22 +84,9 @@
     </main>
   </section>
 
-  <footer class="content_all">
-    <section class="ft">
-
-      <section class="container-top">
-          <p class="ft-ctn-sn">Facebook</p>
-          <p class="ft-ctn-sn">Instagram</p>
-          <p class="ft-ctn-sn">Twitter</p>
-      </section>
-
-      <section class="container-bottom">
-          <a href="" class="ft-ctn-mention">MENTIONS LÉGALES</a>
-          <a href="" class="ft-ctn-mention">NOUS CONTACTER</a>
-      </section>
-
-    </section>
-  </footer>
+  <?php
+    get_footer();
+  ?>
 
 </body>
 

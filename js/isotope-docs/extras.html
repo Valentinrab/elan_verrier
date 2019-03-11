@@ -8,7 +8,7 @@
   <title>Isotope &#xB7; Extras</title>
 
     <!-- Isotope does not require any CSS files -->
-    <link rel="stylesheet" href="css/isotope-docs.css?6" media="screen">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/isotope-docs.css?6" media="screen">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@metafizzyco">
@@ -242,7 +242,7 @@ requirejs( [ <span class="string">&apos;require&apos;</span>, <span class="strin
 
 <h2 id="bootstrap">Bootstrap</h2>
 
-<p>You can use Isotope layouts with <a href="http://getbootstrap.com/css/#grid">Bootstrap grid system</a>. This example will display a fluid grid of 3 columns, using <code>col-xs-4</code> as <a href="layout-modes/masonry.html#columnwidth"><code>columnWidth</code></a>.</p>
+<p>You can use Isotope layouts with <a href="http://getbootstrap.com/<?php bloginfo('template_directory'); ?>/css/#grid">Bootstrap grid system</a>. This example will display a fluid grid of 3 columns, using <code>col-xs-4</code> as <a href="layout-modes/masonry.html#columnwidth"><code>columnWidth</code></a>.</p>
 
 <div class="example">
   <div class="example__code">
@@ -867,9 +867,9 @@ Typekit.load({
 <!-- Looking for isotope.js? Use isotope.pkgd.min.js -->
 <!-- Isotope does NOT require jQuery. But it does make things easier -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"><\/script>')</script>
 
-  <script src="js/isotope-docs.min.js?6"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/isotope-docs.min.js?6"></script>
 
 
 </body>

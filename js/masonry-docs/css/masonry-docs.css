@@ -1504,7 +1504,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /*
   Just use WOFF2 and WOFF for webfonts
-  https://css-tricks.com/snippets/css/using-font-face/ */
+  https://css-tricks.com/snippets/<?php bloginfo('template_directory'); ?>/css/using-font-face/ */
 
 /* Texta Heavy */
 @font-face {

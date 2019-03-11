@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Footer</title>
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/footer.css">
 </head>
 
 <body>

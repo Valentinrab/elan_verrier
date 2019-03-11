@@ -5,35 +5,17 @@
   <meta charset="utf-8">
   <title>Elan Verrier - Actualités</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="bs-css/bootstrap-grid.css">
-  <link rel="stylesheet" href="css/actualites.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
+  <link rel="stylesheet" href="bs-<?php bloginfo('template_directory'); ?>/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/actualites.css">
 
 </head>
 
 <body>
-  <header>
-    <div class="content_menu">
-      <img src="images/logo.svg" alt="logo élan verrier" id="logo">
-      <div class="content_menu_right">
-        <a href="#" class="btn_menu">DEVENIR MEMBRE</a>
-        <div id="menu_burger">
-          <div class="bar bar1"></div>
-          <div class="bar bar2"></div>
-          <div class="bar bar3"></div>
-        </div>
-      </div>
 
-        <!-- <nav id="nav_menu"> -->
-        <!-- <a href="#">Les ateliers</a>
-        <a href="#" >Réalisations</a>
-        <a href="#" >Les membres</a>
-        <a href="#" >Agenda</a>
-        <a href="#" >Actualités</a> -->
-        <!-- </nav> -->
-
-    </div>
-  </header>
+  <?php
+    get_header();
+  ?>
 
   <section class="container">
     <main class="container-main">
@@ -52,7 +34,7 @@
         <h2 id="actu_title">Les actualités</h2>
         <section id="content_actu_article" class="row">
           <article class="actu_principal col-12 col-md-6 col-lg-4">
-            <div class="actu_principal_image set_bg" style="background-image:url('images/crea5.jpg')"></div>
+            <div class="actu_principal_image set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
             <div class="actu_principal_info col-11">
               <div class="categorie rencontre col-1"><p>RENCONTRE</p></div>
               <!-- <span class="categorie">EXPOSITION</span> -->
@@ -68,7 +50,7 @@
             </div>
           </article>
           <article class="actu_principal col-12 col-md-6 col-lg-4">
-            <div class="actu_principal_image set_bg" style="background-image:url('images/crea5.jpg')"></div>
+            <div class="actu_principal_image set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
             <div class="actu_principal_info col-11">
               <div class="categorie expo col-1"><p>EXPOSITION</p></div>
               <!-- <span class="categorie">EXPOSITION</span> -->
@@ -84,7 +66,7 @@
             </div>
           </article>
           <article class="actu_principal col-12 col-md-6 col-lg-4">
-            <div class="actu_principal_image set_bg" style="background-image:url('images/crea5.jpg')"></div>
+            <div class="actu_principal_image set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
             <div class="actu_principal_info col-11">
               <div class="categorie expo col-1"><p>EXPOSITION</p></div>
               <!-- <span class="categorie">EXPOSITION</span> -->
@@ -100,7 +82,7 @@
             </div>
           </article>
           <article class="actu_principal col-12 col-md-6 col-lg-4">
-            <div class="actu_principal_image set_bg" style="background-image:url('images/crea5.jpg')"></div>
+            <div class="actu_principal_image set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
             <div class="actu_principal_info col-11">
               <div class="categorie rencontre col-1"><p>RENCONTRE</p></div>
               <!-- <span class="categorie">EXPOSITION</span> -->
@@ -116,7 +98,7 @@
             </div>
           </article>
           <article class="actu_principal col-12 col-md-6 col-lg-4">
-            <div class="actu_principal_image set_bg" style="background-image:url('images/crea5.jpg')"></div>
+            <div class="actu_principal_image set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
             <div class="actu_principal_info col-11">
               <div class="categorie atelier col-1"><p>ATELIER</p></div>
               <!-- <span class="categorie">EXPOSITION</span> -->
@@ -133,30 +115,19 @@
           </article>
 
         </section>
-        <img src="images/taches/accueil_3.svg" class="tache tache3" alt="tache">
-        <img src="images/taches/taches_6_cut.png" class="tache tache6" alt="tache">
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_3.svg" class="tache tache3" alt="tache">
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/taches_6_cut.png" class="tache tache6" alt="tache">
 
       </section>
 
     </main>
   </section>
 
-  <footer class="content_all">
-    <section class="ft">
 
-      <section class="container-top">
-          <p class="ft-ctn-sn">Facebook</p>
-          <p class="ft-ctn-sn">Instagram</p>
-          <p class="ft-ctn-sn">Twitter</p>
-      </section>
+  <?php 
+    get_footer();
+  ?>
 
-      <section class="container-bottom">
-          <a href="" class="ft-ctn-mention">MENTIONS LÉGALES</a>
-          <a href="" class="ft-ctn-mention">NOUS CONTACTER</a>
-      </section>
-
-    </section>
-  </footer>
 
 </body>
 

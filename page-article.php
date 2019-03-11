@@ -5,35 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Elan Verrier - Article</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/article.css">
-  <link rel="stylesheet" href="bs-css/bootstrap-grid.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/article.css">
+  <link rel="stylesheet" href="bs-<?php bloginfo('template_directory'); ?>/css/bootstrap-grid.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <div class="content_menu">
-      <img src="images/logo.svg" alt="logo élan verrier" id="logo">
-      <div class="content_menu_right">
-        <a href="#" class="btn_menu">DEVENIR MEMBRE</a>
-        <div id="menu_burger">
-          <div class="bar bar1"></div>
-          <div class="bar bar2"></div>
-          <div class="bar bar3"></div>
-        </div>
-      </div>
+  <?php
+    get_header();
+  ?>
 
-      <!-- <nav id="nav_menu"> -->
-      <!-- <a href="#">Les ateliers</a>
-        <a href="#" >Réalisations</a>
-        <a href="#" >Les membres</a>
-        <a href="#" >Agenda</a>
-        <a href="#" >Actualités</a> -->
-      <!-- </nav> -->
 
-    </div>
-  </header>
   <section class="global">
     <section class="container">
       <main class="container-main">
@@ -42,7 +25,7 @@
 
           </div>
           <div class="row" id="row-glob">
-            <div class="col-12 col-lg-4" id="col-left" style="background-image: url(images/article1.jpg);">
+            <div class="col-12 col-lg-4" id="col-left" style="background-image: url(<?php bloginfo('template_directory'); ?>/images/article1.jpg);">
 
             </div>
             <div class="col-12 col-lg-8" id="col-right">
@@ -95,7 +78,7 @@
             </div>
             <div class="col-12 col-lg-1">
             </div>
-            <div class="col-12 col-lg-3" id="col-left2" style="background-image: url(images/article2.jpg);">
+            <div class="col-12 col-lg-3" id="col-left2" style="background-image: url(<?php bloginfo('template_directory'); ?>/images/article2.jpg);">
 
             </div>
           </div>
@@ -103,22 +86,10 @@
       </main>
     </section>
   </section>
-  <footer class="content_all">
-    <section class="ft">
 
-      <section class="container-top">
-        <p class="ft-ctn-sn">Facebook</p>
-        <p class="ft-ctn-sn">Instagram</p>
-        <p class="ft-ctn-sn">Twitter</p>
-      </section>
-
-      <section class="container-bottom">
-        <a href="" class="ft-ctn-mention">MENTIONS LÉGALES</a>
-        <a href="" class="ft-ctn-mention">NOUS CONTACTER</a>
-      </section>
-
-    </section>
-  </footer>
+  <?php
+    get_footer();
+  ?>
 
 </body>
 

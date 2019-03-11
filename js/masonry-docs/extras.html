@@ -8,7 +8,7 @@
 
   <title>Masonry &#xB7; Extras</title>
 
-    <link rel="stylesheet" href="css/masonry-docs.css?3" media="screen">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/masonry-docs.css?3" media="screen">
 
 </head>
 <body class="page--" data-page="">
@@ -256,7 +256,7 @@ requirejs( [
 
 <h2 id="bootstrap">Bootstrap</h2>
 
-<p>You can use Masonry layouts with <a href="https://getbootstrap.com/docs/3.4/css/#grid">Bootstrap grid system</a>. This example will display a fluid grid of 3 columns, using <code>col-xs-4</code> as <code>columnWidth</code>.</p>
+<p>You can use Masonry layouts with <a href="https://getbootstrap.com/docs/3.4/<?php bloginfo('template_directory'); ?>/css/#grid">Bootstrap grid system</a>. This example will display a fluid grid of 3 columns, using <code>col-xs-4</code> as <code>columnWidth</code>.</p>
 
 <div class="example">
   <div class="example__code">
@@ -866,7 +866,7 @@ Typekit.load({
     </div>
   </div>
 
-  <script src="js/masonry-docs.min.js?2"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/masonry-docs.min.js?2"></script>
 
 
 </body>
