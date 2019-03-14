@@ -39,7 +39,7 @@
         <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
           <h2 class="content_title">Qui sommes-nous ?</h2>
           <p class="content_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#" class="btn_access">MIEUX NOUS CONNAITRE</a>
+          <a href="<?php echo get_permalink(109); ?>" class="btn_access">MIEUX NOUS CONNAITRE</a>
 
         </div>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_2.svg" class="tache tache2" alt="tache">
@@ -59,7 +59,7 @@
         <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
           <h2 class="content_title">Les activités</h2>
           <p class="content_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#" class="btn_access">DÉCOUVRIR LES ATELIERS</a>
+          <a href="<?php echo get_permalink(105); ?>" class="btn_access">DÉCOUVRIR LES ATELIERS</a>
         </div>
       </section>
 
@@ -67,63 +67,65 @@
         <h2 id="actu_title">Les actualités</h2>
         <section id="content_actu_article" class="row">
           <?php
-						$count = 0;
+          $count = 0;
+  				// The Query
+  				$args = array ('post_type' => 'Post',
+                        'posts_per_page' => '3',
+		                     'order' => 'DESC');
 
-						$posts = get_field('article');
+  				$the_query = new WP_Query( $args );
 
-						if( $posts ): ?>
-
-						    <?php foreach( $posts as $post): ?>
-						        <?php setup_postdata($post);
-										$count ++;
-										if ($count == 1) { ?>
-                      <article class="actu_principal col-8 offset-2 col-lg-6 offset-lg-0">
-                        <div class="actu_principal_image set_bg" style="background-image:url(<?php the_field('article_image')?>)"></div>
-                        <div class="actu_principal_info col-12 col-md-10 col-lg-10 col-xl-10">
-                          <div class="categorie rencontre col-1"><p>RENCONTRE</p></div>
-                          <!-- <span class="categorie">EXPOSITION</span> -->
-                          <div class="actu_content_info col-9 offset-1">
-                            <div class="actu_date col-12">
-                              <p><?php the_field('article_auteur'); ?></p>
-                              <p><?php the_time('d/m/Y') ?></p>
-                            </div>
-                            <h1 class="col-12"><?php the_title(); ?></h1>
-                            <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
-                          </div>
-                        </div>
-                      </article>
-
-                      <div class="content_actu_secondary col-12 col-lg-6">
-
-										<?php
-									}else{ ?>
-                    <article class="actu_secondary">
-                      <div class="actu_secondary_image set_bg col-sm-6" style="background-image:url(<?php the_field('article_image')?>)"></div>
-                      <div class="actu_secondary_info col-sm-8">
-                        <div class="categorie atelier col-sm-1"><p>ATELIER</p></div>
-                        <div class="actu_content_info col-sm-9 offset-md-1">
-                          <div class="actu_date col-sm-12">
-                            <p><?php the_field('article_auteur'); ?></p>
-                            <p><?php the_time('d/m/Y') ?></p>
-                          </div>
-                          <h1 class="col-sm-12"><?php the_title(); ?></h1>
-                          <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
-                        </div>
+  					// The Loop
+  					if ( $the_query->have_posts() ) {
+  				while ( $the_query->have_posts() ) {
+  							$the_query -> the_post();
+                $count ++;
+                if ($count == 1) {?>
+                <article class="actu_principal col-8 offset-2 col-lg-6 offset-lg-0">
+                  <div class="actu_principal_image set_bg" style="background-image:url(<?php the_field('article_image'); ?>)"></div>
+                  <div class="actu_principal_info col-12 col-md-10 col-lg-10 col-xl-10">
+                    <div class="categorie rencontre col-1"><p>RENCONTRE</p></div>
+                    <!-- <span class="categorie">EXPOSITION</span> -->
+                    <div class="actu_content_info col-9 offset-1">
+                      <div class="actu_date col-12">
+                        <p><?php the_field('article_auteur'); ?></p>
+                        <p><?php the_time('d/m/Y') ?></p>
                       </div>
-                    </article>
-									<?php }
+                      <h1 class="col-12"><?php the_title(); ?></h1>
+                      <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+                    </div>
+                  </div>
+                </article>
 
-									?>
-						    <?php endforeach; ?>
+                <div class="content_actu_secondary col-12 col-lg-6">
+                <?php
+              }else{ ?>
+                <article class="actu_secondary">
+                  <div class="actu_secondary_image set_bg col-sm-6" style="background-image:url(<?php the_field('article_image'); ?>)"></div>
+                  <div class="actu_secondary_info col-sm-8">
+                    <div class="categorie atelier col-sm-1"><p>ATELIER</p></div>
+                    <div class="actu_content_info col-sm-9 offset-md-1">
+                      <div class="actu_date col-sm-12">
+                        <p><?php the_field('article_auteur'); ?></p>
+                        <p><?php the_time('d/m/Y') ?></p>
+                      </div>
+                      <h1 class="col-sm-12"><?php the_title(); ?></h1>
+                      <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+                    </div>
+                  </div>
+                </article>
+  							<?php
+  						}
+  						wp_reset_postdata();
+  					}
+          }
+  				?>
 
-						    <?php wp_reset_postdata(); ?>
-						<?php endif; ?>
-          </div>
+              </div>
         </section>
-
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_4.svg" class="tache tache4" alt="tache">
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/feu.png" class="illustration illustration3" alt="illustration">
-        <a href="#" class="btn_access btn_access_actu">VOIR TOUT LES ARTICLES</a>
+        <a href="<?php echo get_permalink(47); ?>" class="btn_access btn_access_actu">VOIR TOUT LES ARTICLES</a>
       </section>
 
       <section id="content_realisation" class="mt-150px">
@@ -131,14 +133,37 @@
 
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/vase.png" class="illustration illustration4" alt="illustration">
         <section id="content_realisation_article">
-          <div class="realisation_img col-8 offset-2 col-lg-4 offset-lg-0" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
-          <div class="content_realisation_img col-lg-4">
-            <div class="realisation_img col-sm-12" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea1.jpg')"></div>
-            <div class="realisation_img col-sm-12" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea3.jpg')"></div>
-          </div>
-          <div class="realisation_img col-8 offset-2 col-lg-4 offset-lg-0" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
+          <?php
+            $count = 0;
+						$posts = get_field('realisations_featured');
+
+						if( $posts ): ?>
+
+						    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+						        <?php setup_postdata($post);
+                    $count ++;
+										if ($count == 1) {?>
+                      <div class="realisation_img col-8 offset-2 col-lg-4 offset-lg-0" style="background-image:url(<?php the_field('realisation_image')?>)"></div>
+                      <div class="content_realisation_img col-lg-4">
+
+                    <?php }else if($count == 2){ ?>
+                      <div class="realisation_img col-sm-12" style="background-image:url(<?php the_field('realisation_image')?>)"></div>
+
+                    <?php }else if($count == 3){ ?>
+                      <div class="realisation_img col-sm-12" style="background-image:url(<?php the_field('realisation_image')?>)"></div>
+                    </div>
+
+                    <?php }else if($count == 4){ ?>
+                    <div class="realisation_img col-8 offset-2 col-lg-4 offset-lg-0" style="background-image:url(<?php the_field('realisation_image')?>)"></div>
+
+                  <?php } ?>
+						    <?php endforeach; ?>
+
+						    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+						<?php endif; ?>
+
         </section>
-        <a href="#" class="btn_access">VOIR TOUTES LES REALISATIONS</a>
+        <a href="<?php echo get_permalink(42); ?>" class="btn_access">VOIR TOUTES LES REALISATIONS</a>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_5.svg" class="tache tache5" alt="tache">
       </section>
 

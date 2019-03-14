@@ -1,6 +1,7 @@
     <header>
       <div class="content_menu">
-        <img src="<?php bloginfo('template_directory'); ?>/images/logo.svg" alt="logo élan verrier" id="logo">
+        <a href="<?php echo get_permalink(38); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo.svg" alt="logo élan verrier" id="logo"></a>
+        
         <div class="content_menu_right">
           <a href="#" class="btn_menu">DEVENIR MEMBRE</a>
           <div id="menu_burger">
