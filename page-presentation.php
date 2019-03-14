@@ -21,37 +21,62 @@
     get_header();
   ?>
 
-  <section class="container">
-    <section id="content_about" class="mt-150px row">
-      <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
-        <h1 class="content_title">Qui sommes-nous ?</h1>
-        <p class="content_para">En partenariat avec l'École Nationale du Verre et dans un esprit collaboratif, notre association à but non lucratif se propose de fournir un espace et cadre de travail pour mener à bien un projet verrier.
-          Cette association a pour but de créer un lien entre les différents dispositifs au sein du lycée Jean Monnet c’est à dire accompagner les élèves et étudiants dans leur volonté d’évoluer dans leur formation professionnelle du BMA à la
-          pépinière d’entreprise. Afin de se responsabiliser et prendre conscience de ce que signifie avoir un atelier et mener à bien un projet. Les collaborateurs sont appelés à prôner les valeurs de l'artisanat français: le savoir-faire et
-          l'échange.
-        </p>
-      </div>
-      <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_2.svg" class="tache tache2" alt="tache">
-      <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/mains.png" class="illustration illustration1" alt="illustration">
-      <div class="content_image col-12 col-lg-6 offset-lg-0">
-        <div class="image_l set_bg col-8 offset-2 col-lg-8 offset-lg-0" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea4.jpg');"></div>
-        <div class="image_r set_bg col-8 offset-lg-4" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg');"></div>
-      </div>
-    </section>
+  <section class="container mt-150px">
+    <h1 class="main-title">Qui sommes-nous ?</h1>
 
-    <section id="content_activites" class="mt-150px row">
-      <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_3.svg" class="tache tache3" alt="tache">
-      <div class="content_image col-12 col-lg-6">
-        <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea7.jpg');"></div>
-      </div>
-      <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
-        <p class="content_para2 content_para">En ce sens, enseignants et étudiants se partagent les fonctions au sein du bureau de cette association. Partager son expérience, surtout lorsque l'on vient d'horizons divers, est une richesse que l'on veut promouvoir.
-          Toutes personnes désireuse d’accompagner ces jeunes en formation dans leur volonté de développer leur projet professionnel sont les bienvenu et peuvent adhérer. Cette association fonctionne en partenariat avec le lycée Jean Monnet sur la
-          base d’échange de service l’un et l’autre sont donc fortement liés.
-        </p>
-        <a href="#" class="btn_menu">DEVENIR MEMBRE</a>
-      </div>
-    </section>
+        <?php
+
+        if( have_rows('contenu') ):
+
+             // loop through the rows of data
+            while ( have_rows('contenu') ) : the_row();
+
+                if( get_row_layout() == 'texte_image' ): ?>
+
+                  <section class="texte_image row">
+                    <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
+                      <p class="content_para"><?php the_sub_field('texte'); ?></p>
+                    </div>
+                    <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_2.svg" class="tache tache2" alt="tache">
+                    <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/mains.png" class="illustration illustration1" alt="illustration">
+                    <div class="content_image col-12 col-lg-6 offset-lg-0">
+                      <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0" style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
+                    </div>
+                  </section>
+
+                <?php
+                elseif( get_row_layout() == 'image_texte' ): ?>
+
+                <section class="image_texte row">
+                  <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_3.svg" class="tache tache3" alt="tache">
+                  <div class="content_image col-12 col-lg-6">
+                    <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0" style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
+                  </div>
+                  <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
+                    <p class="content_para"><?php the_sub_field('texte'); ?></p>
+                  </div>
+                </section>
+
+                <?php
+                elseif( get_row_layout() == 'texte_centre' ): ?>
+
+                <section class="texte_centre row">
+                  <div class="content_texte col-8 offset-2">
+                    <p class="content_para"><?php the_sub_field('texte'); ?></p>
+                  </div>
+                </section>
+
+
+              <?php endif;
+
+            endwhile;
+
+        endif;
+
+        ?>
+
+        <a href="#" class="btn_membre offset-5">DEVENIR MEMBRE</a>
+
   </section>
 
 

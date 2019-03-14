@@ -44,7 +44,7 @@
               </div>
               <div class="desc-wrap">
                 <h3 class="event-title">Évenement</h3>
-                <p>Bienvenue à trop bien trop bien trop bien trop bien bidule pour faire plein de trucs trop bien.</p>
+                <p>Bienvenue à trop bien trop bien trop bien trop bien bidule pour faire plein de trucs trop bien. Bienvenue à trop bien trop bien trop bien trop bien bidule pour faire plein de trucs trop bien. Bienvenue à trop bien trop bien trop bien trop bien bidule pour faire plein de trucs trop bien. Bienvenue à trop bien trop bien trop bien trop bien bidule pour faire plein de trucs trop bien.</p>
               </div>
             </div>
             <div class="wrap 2">
