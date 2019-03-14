@@ -23,47 +23,53 @@
   font-weight: bold;
 }
 
-.title-container {
-  display: flex;
-  justify-content: space-around;
+.intro-realisation{
+  margin: 50px 0;
 }
+
+.createur{
+  color: #FFFFFF;
+  margin: 10px 0;
+}
+
+.title-container {}
 
 .filter-container {
   display: flex;
   right: 0;
 }
 
-.when-container, .what-container{
+.when-container, .what-container {
   margin: 0 70px;
 }
 
-.when-container button, .what-container button{
+.when-container button, .what-container button {
   background-color: transparent;
 }
 
-.grid{
+.grid {
   margin-top: 50px;
 }
 
-.container-fluid{
+.container-fluid {
   padding-top: 150px;
 }
 
-.grid-item{
+.grid-item {
   overflow: hidden;
 }
 
-.grid-item img{
+.grid-item img {
   max-width: 100%;
   display: block;
   margin: 10px 0;
 }
 
-.grid-item > div{
+.grid-item>div {
   position: relative;
 }
 
-.caption{
+.caption {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +78,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-	position: absolute;
+  position: absolute;
   background-color: #21253f;
   transition: all 1s;
   opacity: 0;
@@ -80,17 +86,17 @@
 }
 
 .caption h2 {
-	margin: 0;
-	color: #fff;
-	font-size: 1.5em;
+  margin: 0;
+  color: #fff;
+  font-size: 1.5em;
   letter-spacing: 1px;
 }
 
-.caption_social{
+.caption_social {
   display: flex;
 }
 
-.caption_social img{
+.caption_social img {
   width: 20px;
   height: 20px;
   margin: 0 5px;
@@ -100,32 +106,32 @@
 }
 
 .grid-item:hover .caption {
-	opacity: 0.6;
- }
+  opacity: 0.6;
+}
 
- @media screen and (max-width : 576px){
-   .btn_access{
-     margin-left: 16px;
-   }
-   
-   .main-title{
-     margin-bottom: 20px;
-   }
+@media screen and (max-width : 576px) {
+  .btn_access {
+    margin-left: 16px;
+  }
 
-   .title-container{
-     justify-content: center;
-     flex-direction: column;
-   }
+  .main-title {
+    margin-bottom: 20px;
+  }
 
-   .filter-container{
-     margin-left: -20px;
-   }
+  .title-container {
+    justify-content: center;
+    flex-direction: column;
+  }
 
-   .when-container{
-     margin: 0 0px;
-   }
+  .filter-container {
+    margin-left: -20px;
+  }
 
-   .what-container{
-     margin: 0 110px;
-   }
- }
+  .when-container {
+    margin: 0 0px;
+  }
+
+  .what-container {
+    margin: 0 110px;
+  }
+}

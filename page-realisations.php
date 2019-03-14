@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/realisations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js">
 
   </head>
   <body>
@@ -24,11 +26,10 @@
     <div class="container-fluid">
       <div class="title-container">
         <h1 class="main-title">Réalisations</h1>
-        <div class="filter-container">
-          <div class="when-container">
-            <button href="#" class="btn_access">DATE</button>
-          </div>
-        </div>
+      </div>
+
+      <div class="intro-realisation col-12">
+        <p><?php the_field('introduction_realisation'); ?></p>
       </div>
 
       <div class="grid">
@@ -45,11 +46,14 @@
           $the_query -> the_post(); ?>
 
           <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
+
             <div>
-              <img src="<?php the_field('realisation_image'); ?>" />
+              <a href="<?php the_field('realisation_image'); ?>" data-toggle="lightbox">
+                <img src="<?php the_field('realisation_image'); ?>" class="img-fluid"/>
+              </a>
               <div class="caption">
                 <h2><?php the_title(); ?></h2>
-                <p><?php the_field('realisation_createur'); ?></p>
+                <p class="createur"><?php the_field('realisation_createur'); ?></p>
                 <div class="caption_social">
                   <a href="<?php the_field('realisation_lien_instagram'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
                   <a href="<?php the_field('realisations_lien_linkedin'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
@@ -64,198 +68,6 @@
           }
           ?>
 
-        <!-- <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea5.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea8.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea1.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea2.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea7.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea5.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea3.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea1.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea7.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea8.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea7.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea6.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea2.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea5.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea4.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div>
-        <div class="grid-item col-11 col-md-6 col-lg-4 col-xl-4">
-          <div>
-            <img src="<?php bloginfo('template_directory'); ?>/images/crea2.jpg" />
-            <div class="caption">
-  						<h2>Nom de l'élève</h2>
-  						<div class="caption_social">
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
-              </div>
-            </div>
-					</div>
-        </div> -->
       </div>
     </div>
 
@@ -267,4 +79,12 @@
 
    </footer>
   </body>
+  <script>
+
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+
+  </script>
 </html>
