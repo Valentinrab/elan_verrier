@@ -66,55 +66,61 @@
       <section id="content_actu" class="mt-150px">
         <h2 id="actu_title">Les actualités</h2>
         <section id="content_actu_article" class="row">
-          <article class="actu_principal col-8 offset-2 col-lg-6 offset-lg-0">
-            <div class="actu_principal_image set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
-            <div class="actu_principal_info col-12 col-md-10 col-lg-10 col-xl-10">
-              <div class="categorie rencontre col-1"><p>RENCONTRE</p></div>
-              <!-- <span class="categorie">EXPOSITION</span> -->
-              <div class="actu_content_info col-9 offset-1">
-                <div class="actu_date col-12">
-                  <p>Valentin Rabier</p>
-                  <p>02/08/2018</p>
-                </div>
-                <h1 class="col-12">Titre de mon joli article Titre de mon joli article Titre de mon joli article</h1>
-                <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
-              </div>
-            </div>
-          </article>
+          <?php
+						$count = 0;
 
+						$posts = get_field('article');
 
-          <div class="content_actu_secondary col-12 col-lg-6">
-            <article class="actu_secondary">
-              <div class="actu_secondary_image set_bg col-sm-6" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
-              <div class="actu_secondary_info col-sm-8">
-                <div class="categorie atelier col-sm-1"><p>ATELIER</p></div>
-                <div class="actu_content_info col-sm-9 offset-md-1">
-                  <div class="actu_date col-sm-12">
-                    <p>Valentin Rabier</p>
-                    <p>02/08/2018</p>
-                  </div>
-                  <h1 class="col-sm-12">Titre de mon joli article Titre de mon joli article</h1>
-                  <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
-                </div>
-              </div>
-            </article>
-            <article class="actu_secondary">
-              <div class="actu_secondary_image set_bg col-sm-6" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
-              <div class="actu_secondary_info col-sm-8">
-                <div class="categorie expo col-sm-1"><p>EXPOSITION</p></div>
-                <div class="actu_content_info col-sm-9 offset-md-1">
-                  <div class="actu_date col-sm-12">
-                    <p>Valentin Rabier</p>
-                    <p>02/08/2018</p>
-                  </div>
-                  <h1 class="col-sm-12">Titre de mon joli article</h1>
-                  <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
-                </div>
-              </div>
-            </article>
+						if( $posts ): ?>
 
+						    <?php foreach( $posts as $post): ?>
+						        <?php setup_postdata($post);
+										$count ++;
+										if ($count == 1) { ?>
+                      <article class="actu_principal col-8 offset-2 col-lg-6 offset-lg-0">
+                        <div class="actu_principal_image set_bg" style="background-image:url(<?php the_field('article_image')?>)"></div>
+                        <div class="actu_principal_info col-12 col-md-10 col-lg-10 col-xl-10">
+                          <div class="categorie rencontre col-1"><p>RENCONTRE</p></div>
+                          <!-- <span class="categorie">EXPOSITION</span> -->
+                          <div class="actu_content_info col-9 offset-1">
+                            <div class="actu_date col-12">
+                              <p><?php the_field('article_auteur'); ?></p>
+                              <p><?php the_time('d/m/Y') ?></p>
+                            </div>
+                            <h1 class="col-12"><?php the_title(); ?></h1>
+                            <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+                          </div>
+                        </div>
+                      </article>
+
+                      <div class="content_actu_secondary col-12 col-lg-6">
+
+										<?php
+									}else{ ?>
+                    <article class="actu_secondary">
+                      <div class="actu_secondary_image set_bg col-sm-6" style="background-image:url(<?php the_field('article_image')?>)"></div>
+                      <div class="actu_secondary_info col-sm-8">
+                        <div class="categorie atelier col-sm-1"><p>ATELIER</p></div>
+                        <div class="actu_content_info col-sm-9 offset-md-1">
+                          <div class="actu_date col-sm-12">
+                            <p><?php the_field('article_auteur'); ?></p>
+                            <p><?php the_time('d/m/Y') ?></p>
+                          </div>
+                          <h1 class="col-sm-12"><?php the_title(); ?></h1>
+                          <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+                        </div>
+                      </div>
+                    </article>
+									<?php }
+
+									?>
+						    <?php endforeach; ?>
+
+						    <?php wp_reset_postdata(); ?>
+						<?php endif; ?>
           </div>
         </section>
+
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_4.svg" class="tache tache4" alt="tache">
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/feu.png" class="illustration illustration3" alt="illustration">
         <a href="#" class="btn_access btn_access_actu">VOIR TOUT LES ARTICLES</a>
