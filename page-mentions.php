@@ -22,9 +22,22 @@
       <main class="container-main">
         <section class="col-12">
           <h1 class="main-title">Mentions légales</h1>
-          <div class="bloc-ml">
-            <h2 class="title-article">Éditeur, responsable de la publication :</h2>
-            <p class="p-courant">A remplir...</p>
+          <?php
+								if( have_rows('mentions_legales') ):
+
+								while ( have_rows('mentions_legales') ) : the_row(); ?>
+                <div class="bloc-ml">
+                  <h2 class="title-article"><?php the_sub_field('mentions_legales_titre'); ?></h2>
+                  <p class="p-courant"><?php the_sub_field('mentions_legales_texte'); ?></p>
+                </div>
+
+								<?php
+									endwhile;
+									endif;
+								?>
+          <!-- <div class="bloc-ml">
+            <h2 class="title-article"><?php the_sub_field('mentions_legales_titre'); ?></h2>
+            <p class="p-courant"><?php the_sub_field('mentions_legales_texte'); ?></p>
           </div>
           <div class="bloc-ml">
             <h2 class="title-article">Directeur de publication :</h2>
@@ -67,7 +80,7 @@
           <div class="bloc-ml">
             <h2 class="title-article">Contenu du site</h2>
             <p class="p-courant">A remplir...</p>
-          </div>
+          </div> -->
         </section>
       </main>
     </section>

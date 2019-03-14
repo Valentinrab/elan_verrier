@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/agenda.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/agenda.js"></script>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
           <h2 class="date-title">JANVIER</h2>
           <div class="wrap-group 1">
             <div class="wrap 1">
-              <img src="images/agenda-img.jpg" class="img-event" alt="img-event">
+              <img src="<?php bloginfo('template_directory'); ?>/images/agenda-img.jpg" class="img-event" alt="img-event">
               <div class="event-group">
                 <p class="event-date">17</p>
                 <p class="event-hour">14h45</p>
@@ -48,7 +48,7 @@
               </div>
             </div>
             <div class="wrap 2">
-              <img src="images/agenda-img.jpg" class="img-event" alt="img-event">
+              <img src="<?php bloginfo('template_directory'); ?>/images/agenda-img.jpg" class="img-event" alt="img-event">
               <div class="event-group">
                 <p class="event-date">17</p>
                 <p class="event-hour">14h45</p>
@@ -59,7 +59,7 @@
               </div>
             </div>
             <div class="wrap 3">
-              <img src="images/agenda-img.jpg" class="img-event" alt="img-event">
+              <img src="<?php bloginfo('template_directory'); ?>/images/agenda-img.jpg" class="img-event" alt="img-event">
               <div class="event-group">
                 <p class="event-date">17</p>
                 <p class="event-hour">14h45</p>
@@ -76,7 +76,7 @@
           <h2 class="date-title">FÉVRIER</h2>
           <div class="wrap-group 2">
             <div class="wrap 4">
-              <img src="images/agenda-img.jpg" class="img-event" alt="img-event">
+              <img src="<?php bloginfo('template_directory'); ?>/images/agenda-img.jpg" class="img-event" alt="img-event">
               <div class="event-group">
                 <p class="event-date">17</p>
                 <p class="event-hour">14h45</p>
@@ -88,7 +88,7 @@
 
             </div>
             <div class="wrap 5">
-              <img src="images/agenda-img.jpg" class="img-event" alt="img-event">
+              <img src="<?php bloginfo('template_directory'); ?>/images/agenda-img.jpg" class="img-event" alt="img-event">
               <div class="event-group">
                 <p class="event-date">17</p>
                 <p class="event-hour">14h45</p>
@@ -99,7 +99,7 @@
               </div>
             </div>
             <div class="wrap 6">
-              <img src="images/agenda-img.jpg" class="img-event" alt="img-event">
+              <img src="<?php bloginfo('template_directory'); ?>/images/agenda-img.jpg" class="img-event" alt="img-event">
               <div class="event-group">
                 <p class="event-date">17</p>
                 <p class="event-hour">14h45</p>
@@ -112,8 +112,8 @@
           </div>
         </div>
       </div>
-      <img src="images/taches/accueil_3.svg" class="tache tache3" alt="tache">
-      <img src="images/taches/taches_6_cut.png" class="tache tache6" alt="tache">
+      <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_3.svg" class="tache tache3" alt="tache">
+      <img src="<?php bloginfo('template_directory'); ?>/images/taches/taches_6_cut.png" class="tache tache6" alt="tache">
     </main>
   </section>
   </section>

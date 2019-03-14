@@ -33,86 +33,40 @@
       <section id="content_actu" class="mt-150px">
         <h2 id="actu_title">Les actualités</h2>
         <section id="content_actu_article" class="row">
-          <article class="actu_principal col-12 col-md-6 col-lg-4">
-            <div class="actu_principal_image set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
-            <div class="actu_principal_info col-11">
-              <div class="categorie rencontre col-1"><p>RENCONTRE</p></div>
-              <!-- <span class="categorie">EXPOSITION</span> -->
-              <div class="actu_content_info col-9 offset-1">
-                <div class="actu_date col-12">
-                  <p>Valentin Rabier</p>
-                  <p>02/08/19</p>
-                </div>
-                <h1 class="col-12">Ceci est le titre de mon article</h1>
-                <p class="actu_content_info_para">Ceci est le début de mon article que je coupe pour pas qu'on voit tout le contenu directement !</p>
-                <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
-              </div>
-            </div>
-          </article>
-          <article class="actu_principal col-12 col-md-6 col-lg-4">
-            <div class="actu_principal_image set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
-            <div class="actu_principal_info col-11">
-              <div class="categorie expo col-1"><p>EXPOSITION</p></div>
-              <!-- <span class="categorie">EXPOSITION</span> -->
-              <div class="actu_content_info col-9 offset-1">
-                <div class="actu_date col-12">
-                  <p>Valentin Rabier</p>
-                  <p>02/08/19</p>
-                </div>
-                <h1 class="col-12">Ceci est le titre de mon article</h1>
-                <p class="actu_content_info_para">Ceci est le début de mon article que je coupe pour pas qu'on voit tout le contenu directement !</p>
-                <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
-              </div>
-            </div>
-          </article>
-          <article class="actu_principal col-12 col-md-6 col-lg-4">
-            <div class="actu_principal_image set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
-            <div class="actu_principal_info col-11">
-              <div class="categorie expo col-1"><p>EXPOSITION</p></div>
-              <!-- <span class="categorie">EXPOSITION</span> -->
-              <div class="actu_content_info col-9 offset-1">
-                <div class="actu_date col-12">
-                  <p>Valentin Rabier</p>
-                  <p>02/08/19</p>
-                </div>
-                <h1 class="col-12">Ceci est le titre de mon article</h1>
-                <p class="actu_content_info_para">Ceci est le début de mon article que je coupe pour pas qu'on voit tout le contenu directement !</p>
-                <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
-              </div>
-            </div>
-          </article>
-          <article class="actu_principal col-12 col-md-6 col-lg-4">
-            <div class="actu_principal_image set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
-            <div class="actu_principal_info col-11">
-              <div class="categorie rencontre col-1"><p>RENCONTRE</p></div>
-              <!-- <span class="categorie">EXPOSITION</span> -->
-              <div class="actu_content_info col-9 offset-1">
-                <div class="actu_date col-12">
-                  <p>Valentin Rabier</p>
-                  <p>02/08/19</p>
-                </div>
-                <h1 class="col-12">Ceci est le titre de mon article</h1>
-                <p class="actu_content_info_para">Ceci est le début de mon article que je coupe pour pas qu'on voit tout le contenu directement !</p>
-                <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
-              </div>
-            </div>
-          </article>
-          <article class="actu_principal col-12 col-md-6 col-lg-4">
-            <div class="actu_principal_image set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg')"></div>
-            <div class="actu_principal_info col-11">
-              <div class="categorie atelier col-1"><p>ATELIER</p></div>
-              <!-- <span class="categorie">EXPOSITION</span> -->
-              <div class="actu_content_info col-9 offset-1">
-                <div class="actu_date col-12">
-                  <p>Valentin Rabier</p>
-                  <p>02/08/19</p>
-                </div>
-                <h1 class="col-12">Ceci est le titre de mon article</h1>
-                <p class="actu_content_info_para">Ceci est le début de mon article que je coupe pour pas qu'on voit tout le contenu directement !</p>
-                <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
-              </div>
-            </div>
-          </article>
+          <?php
+
+  				// The Query
+  				$args = array ('post_type' => 'Post');
+
+  				$the_query = new WP_Query( $args );
+
+  					// The Loop
+  					if ( $the_query->have_posts() ) {
+  				while ( $the_query->have_posts() ) {
+  							$the_query -> the_post(); ?>
+                <article class="actu_principal col-12 col-md-6 col-lg-4">
+                  <div class="actu_principal_image set_bg" style="background-image:url(<?php the_field('article_image'); ?>)"></div>
+                  <div class="actu_principal_info col-11">
+                    <div class="categorie rencontre col-1"><p>RENCONTRE</p></div>
+                    <!-- <span class="categorie">EXPOSITION</span> -->
+                    <div class="actu_content_info col-9 offset-1">
+                      <div class="actu_date col-12">
+                        <p><?php the_field('article_auteur'); ?></p>
+                        <p><?php the_time('d/m/Y') ?></p>
+                      </div>
+                      <h1 class="col-12"><?php the_title(); ?></h1>
+                      <p class="actu_content_info_para"><?php the_field('article_chapeau'); ?></p>
+                      <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+                    </div>
+                  </div>
+                </article>
+
+  							<?php
+  						}
+  						wp_reset_postdata();
+  					}
+  				?>
+
 
         </section>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_3.svg" class="tache tache3" alt="tache">

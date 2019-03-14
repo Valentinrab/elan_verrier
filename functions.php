@@ -138,49 +138,6 @@ function register_cpt_membre()
     	register_post_type('evenement', $args);
     	}
 
-      //MATERIEL
-      add_action('init', 'register_cpt_materiel');
-
-      function register_cpt_materiel()
-      	{
-      	$labels = array(
-      		'name' => _x('Materiel', 'materiel') ,
-      		'singular_name' => _x('Materiel', 'materiel') ,
-      		'add_new' => _x('Ajouter', 'materiel') ,
-      		'add_new_item' => _x('Ajouter Materiel', 'materiel') ,
-      		'edit_item' => _x('Editer Materiel', 'materiel') ,
-      		'new_item' => _x('Nouveau Materiel', 'materiel') ,
-      		'view_item' => _x('Voir Materiel', 'materiel') ,
-      		'search_items' => _x('Rechercher Materiel', 'materiel') ,
-      		'not_found' => _x('Aucun Materiel', 'materiel') ,
-      		'not_found_in_trash' => _x('Aucun Materiel dans la Corbeille', 'materiel') ,
-      		'parent_item_colon' => _x('Parent Materiel:', 'materiel') ,
-      		'menu_name' => _x('Materiel', 'materiel') ,
-      	);
-      	$args = array(
-      		'labels' => $labels,
-      		'hierarchical' => false,
-      		'supports' => array(
-      			'title',
-      			'editor'
-      		) ,
-      		'public' => true,
-      		'show_ui' => true,
-      		'show_in_menu' => true,
-      		'menu_position' => 5,
-      		'menu_icon' => 'dashicons-format-quote',
-      		'show_in_nav_menus' => true,
-      		'publicly_queryable' => true,
-      		'exclude_from_search' => false,
-      		'has_archive' => true,
-      		'query_var' => true,
-      		'can_export' => true,
-      		'rewrite' => true,
-      		'capability_type' => 'post'
-      	);
-      	register_post_type('materiel', $args);
-      	}
-
         //Réalisations
         add_action('init', 'register_cpt_realisation');
 

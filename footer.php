@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Footer</title>
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/footer.css">
-</head>
-
-<body>
   <footer class="content_all">
     <section class="ft">
 
@@ -26,6 +16,3 @@
     </section>
 
   </footer>
-</body>
-
-</html>

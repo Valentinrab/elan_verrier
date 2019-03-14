@@ -15,28 +15,7 @@
   </head>
   <body>
 
-    <header>
-      <div class="content_menu">
-        <img src="<?php bloginfo('template_directory'); ?>/images/logo.svg" alt="logo élan verrier" id="logo">
-        <div class="content_menu_right">
-          <a href="#" class="btn_menu">DEVENIR MEMBRE</a>
-          <div id="menu_burger">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-          </div>
-        </div>
-
-          <!-- <nav id="nav_menu"> -->
-          <!-- <a href="#">Les ateliers</a>
-          <a href="#" >Réalisations</a>
-          <a href="#" >Les membres</a>
-          <a href="#" >Agenda</a>
-          <a href="#" >Actualités</a> -->
-          <!-- </nav> -->
-
-      </div>
-    </header>
+    <?php get_header(); ?>
 
     <section class="container">
 
@@ -224,23 +203,7 @@
 
 
 
-    <footer class="content_all mt-150px">
-      <section class="ft">
-
-        <section class="container-top">
-            <p class="ft-ctn-sn">Facebook</p>
-            <p class="ft-ctn-sn">Instagram</p>
-            <p class="ft-ctn-sn">Twitter</p>
-        </section>
-
-        <section class="container-bottom">
-            <a href="" class="ft-ctn-mention">MENTIONS LÉGALES</a>
-            <a href="" class="ft-ctn-mention">NOUS CONTACTER</a>
-        </section>
-
-      </section>
-
-    </footer>
+    <?php get_footer(); ?>
 
   </body>
 </html>

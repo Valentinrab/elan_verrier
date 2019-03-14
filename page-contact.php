@@ -30,10 +30,11 @@
         <div class="row" id="row-glob">
           <div class="col-12 col-lg-6" id="col-right">
             <div class="offset-1 col-10 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
-              <h2 class="title-agenda">Jérome Bloux</h2>
-              <p class="p-atelier">Enseignant et Président de l’association jeromebloux@adresse.com</p>
-              <h2 class="title-agenda title-agenda-2">Adresse de l’établissement</h2>
-              <p class="p-atelier">Enseignant et Président de l’association jeromebloux@adresse.com</p>
+              <h2 class="title-agenda"><?php the_field('nom_responsable'); ?></h2>
+              <p class="p-atelier"><?php the_field('contact_fonction'); ?></p>
+              <p class="p-atelier"><?php the_field('contact_mail'); ?></p>
+              <h2 class="title-agenda title-agenda-2"><?php the_field('contact_titre_adresse'); ?></h2>
+              <p class="p-atelier"><?php the_field('contact_adresse'); ?></p>
             </div>
           </div>
           <div class="col-12 col-lg-6" id="col-left">
