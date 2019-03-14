@@ -22,14 +22,18 @@
       <main id="content_video">
         <!-- <img src="<?php bloginfo('template_directory'); ?>/images/accueil.jpg" class="video" alt="image de présentation d'Elan Verrier"> -->
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_1.svg" class="tache tache1" alt="tache">
+
+        <!-- <video class="video" autoplay="autoplay" loop="loop">
+            <source src="<?php the_field('video_presentation'); ?>" type="video/">
+        </video> -->
         <div class="video set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/accueil.jpg')">
           <div class="next_ev">
             <p>PROCHAINEMENT</p>
           </div>
         </div>
         <div class="video_title">
-          <h1 class="name">ÉLAN VERRIER</h1>
-          <h2 class="bl">Insuffler un esprit entrepreneurial</h2>
+          <h1 class="name"><?php the_field('video_titre'); ?></h1>
+          <h2 class="bl"><?php the_field('video_sous-titre'); ?></h2>
         </div>
 
 
@@ -38,15 +42,15 @@
       <section id="content_about" class="mt-150px row">
         <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
           <h2 class="content_title">Qui sommes-nous ?</h2>
-          <p class="content_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="content_para"><?php the_field('qui_sommes_nous_paragraphe'); ?></p>
           <a href="<?php echo get_permalink(109); ?>" class="btn_access">MIEUX NOUS CONNAITRE</a>
 
         </div>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_2.svg" class="tache tache2" alt="tache">
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/mains.png" class="illustration illustration1" alt="illustration">
         <div class="content_image col-12 col-lg-6 offset-lg-0">
-          <div class="image_l set_bg col-8 offset-2 col-lg-8 offset-lg-0" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea4.jpg');"></div>
-          <div class="image_r set_bg col-8 offset-lg-4" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea5.jpg');"></div>
+          <div class="image_l set_bg col-8 offset-2 col-lg-8 offset-lg-0" style="background-image:url(<?php the_field('qui_sommes_nous_images_1'); ?>);"></div>
+          <div class="image_r set_bg col-8 offset-lg-4" style="background-image:url(<?php the_field('qui_sommes_nous_images_2'); ?>);"></div>
         </div>
       </section>
 
@@ -54,11 +58,11 @@
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_3.svg" class="tache tache3" alt="tache">
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/soufflage.png" class="illustration illustration2" alt="illustration">
         <div class="content_image col-12 col-lg-6">
-          <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/crea7.jpg');"></div>
+          <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0" style="background-image:url(<?php the_field('activites_images'); ?>);"></div>
         </div>
         <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
           <h2 class="content_title">Les activités</h2>
-          <p class="content_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="content_para"><?php the_field('activites_paragraphe'); ?></p>
           <a href="<?php echo get_permalink(105); ?>" class="btn_access">DÉCOUVRIR LES ATELIERS</a>
         </div>
       </section>
@@ -169,7 +173,35 @@
 
       <section id="content_faq" class="mt-150px">
         <div class="accordion col-8 offset-2" id="accordionExample">
-          <div class="card">
+          <?php
+
+            if( have_rows('foire_aux_questions') ):
+
+                while ( have_rows('foire_aux_questions') ) : the_row(); ?>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0 card-flex">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <?php the_sub_field('faq_questions'); ?>
+                        <div class="plus">
+                          <div class="horizontal"></div>
+                          <div class="vertical"></div>
+                        </div>
+                      </button>
+
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <?php the_sub_field('faq_reponse'); ?>
+                    </div>
+                  </div>
+                </div>
+          <?php
+              endwhile;
+              endif;
+          ?>
+          <!-- <div class="card">
             <div class="card-header" id="headingOne">
               <h5 class="mb-0 card-flex">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -226,7 +258,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/taches_6_cut.png" class="tache tache6" alt="tache">
       </section>
 
