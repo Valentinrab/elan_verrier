@@ -41,9 +41,9 @@
 
       <section id="content_about" class="mt-150px row">
         <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
-          <h2 class="content_title">Qui sommes-nous ?</h2>
+          <h2 class="content_title"><?php the_field('qui_sommes_nous_titre'); ?></h2>
           <p class="content_para"><?php the_field('qui_sommes_nous_paragraphe'); ?></p>
-          <a href="<?php echo get_permalink(109); ?>" class="btn_access">MIEUX NOUS CONNAITRE</a>
+          <a href="<?php echo get_permalink(109); ?>" class="btn_access"><?php the_field('qui_sommes_nous_bouton'); ?></a>
 
         </div>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_2.svg" class="tache tache2" alt="tache">
@@ -61,9 +61,9 @@
           <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0" style="background-image:url(<?php the_field('activites_images'); ?>);"></div>
         </div>
         <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
-          <h2 class="content_title">Les activités</h2>
+          <h2 class="content_title"><?php the_field('activites_titre'); ?></h2>
           <p class="content_para"><?php the_field('activites_paragraphe'); ?></p>
-          <a href="<?php echo get_permalink(105); ?>" class="btn_access">DÉCOUVRIR LES ATELIERS</a>
+          <a href="<?php echo get_permalink(105); ?>" class="btn_access"><?php the_field('activites_bouton'); ?></a>
         </div>
       </section>
 
