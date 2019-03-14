@@ -31,7 +31,7 @@
         </div>
       </div>
       <section id="content_actu" class="mt-150px">
-        <h2 id="actu_title">Les actualités</h2>
+
         <section id="content_actu_article" class="row">
           <?php
 
@@ -56,7 +56,7 @@
                       </div>
                       <h1 class="col-12"><?php the_title(); ?></h1>
                       <p class="actu_content_info_para"><?php the_field('article_chapeau'); ?></p>
-                      <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+                      <div class="float-right"><a href="<?php the_permalink(); ?>" class="btn_access">LIRE LA SUITE</a></div>
                     </div>
                   </div>
                 </article>
