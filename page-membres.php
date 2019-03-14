@@ -16,19 +16,40 @@
     get_header();
   ?>
 
+
+
+
+
   <section class="container">
     <main class="container-main">
       <h1 class="main-title">Les membres</h1>
       <div class="container-wrap">
-        <div class="wrap 1">
-          <img src="<?php bloginfo('template_directory'); ?>/images/taches/membres_1.svg" class="tache tache1" alt="tache">
-          <div class="image-membre" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/head1.jpg');"></div>
-          <div class="desc-wrap">
-            <h3 class="name-bold">Jêrome Bloux</h3>
-            <p>Président</p>
-          </div>
-        </div>
-        <div class="wrap 2">
+
+        <?php
+
+          // check if the repeater field has rows of data
+          if( have_rows('membres') ):
+
+           	// loop through the rows of data
+              while ( have_rows('membres') ) : the_row(); ?>
+              <div class="wrap 1">
+                <img src="<?php bloginfo('template_directory'); ?>/images/taches/membres_1.svg" class="tache tache1" alt="tache">
+                <div class="image-membre" style="background-image:url('<?php the_sub_field('membre_image'); ?>');"></div>
+                <div class="desc-wrap">
+                  <h3 class="name-bold"><?php the_sub_field('membre_nom'); ?></h3>
+                  <p><?php the_sub_field('membre_fonction'); ?></p>
+                </div>
+              </div>
+
+                  <!-- // code html avec pour les zones administrables -->
+
+        <?php
+            endwhile;
+            endif;
+
+        ?>
+
+        <!-- <div class="wrap 2">
           <img src="<?php bloginfo('template_directory'); ?>/images/taches/membres_2.svg" class="tache tache2" alt="tache">
           <div class="image-membre" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/head2.jpg');"></div>
           <div class="desc-wrap">
@@ -67,7 +88,7 @@
             <h3 class="name-bold">Valentin Rabier</h3>
             <p>Trésorier Adjoint</p>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="container-form col-12">
         <h2 class="form-title">Nous rejoindre</h2>
