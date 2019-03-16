@@ -23,10 +23,9 @@
         <!-- <img src="<?php bloginfo('template_directory'); ?>/images/accueil.jpg" class="video" alt="image de présentation d'Elan Verrier"> -->
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_1.svg" class="tache tache1" alt="tache">
 
-        <!-- <video class="video" autoplay="autoplay" loop="loop">
-            <source src="<?php the_field('video_presentation'); ?>" type="video/">
-        </video> -->
-        <div class="video set_bg" style="background-image:url('<?php bloginfo('template_directory'); ?>/images/accueil.jpg')">
+        <div class="video set_bg">
+          <iframe class="vimeo" src="https://player.vimeo.com/video/76979871?background=1&autoplay=1&loop=1&byline=0&title=0"
+          frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           <div class="next_ev">
             <p>PROCHAINEMENT</p>
           </div>
