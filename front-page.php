@@ -96,7 +96,7 @@
                         <p><?php the_time('d/m/Y') ?></p>
                       </div>
                       <h1 class="col-12"><?php the_title(); ?></h1>
-                      <div class="float-right"><a href="#" class="btn_access">LIRE LA SUITE</a></div>
+                      <div class="float-right"><a href="<?php the_permalink(); ?>" class="btn_access">LIRE LA SUITE</a></div>
                     </div>
                   </div>
                 </article>

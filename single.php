@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Elan Verrier - Article</title>
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/article.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -18,14 +19,14 @@
 
 
   <section class="global">
-    <section class="container">
+    <section class="container mt-200px">
       <main class="container-main">
-        <a href="<?php echo get_permalink(47); ?>">RETOUR</a>
+        <a class="btn_access" href="<?php echo get_permalink(47); ?>">RETOUR</a>
         <article class="article-verrier">
 
           <div class="row" id="row-glob">
-            <div class="col-12 col-lg-4" id="col-left" style="background-image: url(<?php the_field('article_image'); ?>);"></div>
-            <div class="col-12 col-lg-8" id="col-right">
+            <div class="col-12 col-lg-4 set_bg" id="col-left" style="background-image: url(<?php the_field('article_image'); ?>);"></div>
+            <div class="col-12 col-lg-8 mt-xl-0 mt-lg-0 mt-5" id="col-right">
               <div class="offset-md-1 col-md-10">
                 <div class="info-article">
                   <p class="writer-article"><?php the_field('article_auteur'); ?></p>
@@ -47,36 +48,35 @@
                   if( get_row_layout() == 'texte_image' ): ?>
                   <div class="texte_image row p-block">
 
-                    <div class="col-12 col-lg-6 offset-1" id="col-right2">
+                    <div class="col-10 offset-1 offset-lg-0 offset-xl-0 col-lg-6" id="col-right2">
                       <h2 class="title-article"><?php the_sub_field('sous_titre'); ?></h2>
                       <p class="p-article"><?php the_sub_field('texte'); ?></p>
                     </div>
-                    <div class="col-12 col-lg-4 offset-1" id="col-left2" style="background-image: url(<?php the_sub_field('image'); ?>);"></div>
+                    <div class="col-10 col-lg-4 offset-1 offset-lg-2 offset-xl-2 mt-xl-0 mt-lg-0 mt-5 set_bg" id="col-left2" style="background-image: url(<?php the_sub_field('image'); ?>);"></div>
 
                   </div>
 
                   <?php
                   elseif( get_row_layout() == 'image_texte' ): ?>
                   <div class="image_texte row p-block">
-                    <div class="col-12 col-lg-4 offset-1" id="col-left2" style="background-image: url(<?php the_sub_field('image', 199); ?>);"></div>
-                    <div class="col-12 col-lg-6 offset-1" id="col-right2">
-                      <h2 class="title-article"><?php the_sub_field('sous_titre', 199); ?></h2>
-                      <p class="p-article"><?php the_sub_field('texte', 199); ?></p>
+
+
+                    <div class="col-10 col-lg-4 offset-1 offset-lg-0 offset-xl-0 mt-xl-0 mt-lg-0 mt-5 set_bg" id="col-left2" style="background-image: url(<?php the_sub_field('image'); ?>);"></div>
+                    <div class="col-10 col-lg-6 offset-1 offset-lg-2 offset-xl-2" id="col-right2">
+                      <h2 class="title-article"><?php the_sub_field('sous_titre'); ?></h2>
+                      <p class="p-article"><?php the_sub_field('texte'); ?></p>
                     </div>
+
                   </div>
 
                   <?php
                   elseif( get_row_layout() == 'texte_centre' ): ?>
 
                   <div class="texte_centre row p-block">
-                    <div class="offset-md-2 col-md-8">
-                      <h2 class="title-article"><?php the_sub_field('sous_titre', 199); ?></h2>
-                      <p class="p-article"><?php the_sub_field('texte', 199); ?></p>
+                    <div class="col-10 offset-1">
+                      <h2 class="title-article"><?php the_sub_field('sous_titre'); ?></h2>
+                      <p class="p-article"><?php the_sub_field('texte'); ?></p>
                     </div>
-                    <!-- <div class="offset-md-2 col-md-8 citation">
-                      <blockquote class="p-citation">«  Cette association va aider les jeunes de notre école à prendre leurs envols ! »</blockquote>
-                      <cite class="p-citation-writer">- Hugo HOFFMANN</cite>
-                    </div> -->
                   </div>
 
 

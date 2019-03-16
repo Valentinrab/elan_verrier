@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/actualites.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/setCategoryClass.js"></script>
+
 </head>
 
 <body>
@@ -43,12 +46,42 @@
   					// The Loop
   					if ( $the_query->have_posts() ) {
   				while ( $the_query->have_posts() ) {
-  							$the_query -> the_post(); ?>
+  							$the_query -> the_post();
+                //
+                // $term = get_sub_field('categorie');
+                // if( $term ) {
+                //   foreach($term as $t) {
+                //     $t = get_category($t);
+                //     echo $t->name;
+                //   }
+                // }
+                // $categorieId = the_field('categorie');
+                // $categorieName = '';
+                // $categorieName = "Autre";
+                // switch ($categorieId) {
+                //   case 2:
+                //       $categorieName = "rencontre";
+                //       break;
+                //   case 3:
+                //       $categorieName = "exposition";
+                //       break;
+                //   case 4:
+                //       $categorieName = "vente";
+                //       break;
+                //   case 5:
+                //       $categorieName = "conférence";
+                //       break;
+                // }
+                // echo $categorieName;
+                // $categorie =  the_category();
+                // echo $categorie.children();
+
+                ?>
                 <article class="actu_principal col-12 col-md-6 col-lg-4">
                   <div class="actu_principal_image set_bg" style="background-image:url(<?php the_field('article_image'); ?>)"></div>
                   <div class="actu_principal_info col-11">
-                    <div class="categorie rencontre col-1"><p>RENCONTRE</p></div>
-                    <!-- <span class="categorie">EXPOSITION</span> -->
+                    <div class="categorie col-1 <?php the_field('categorie'); ?>"><p><?php the_field('categorie'); ?></p></div>
+
                     <div class="actu_content_info col-9 offset-1">
                       <div class="actu_date col-12">
                         <p><?php the_field('article_auteur'); ?></p>
