@@ -1,0 +1,303 @@
+/*  
+	Eokojs slider
+	Authors: Fred Rand & Clement Vlnc ( Lp Webdesign 2018-2019 / Team Eoko ! )
+    Version: 0.0.1
+*/
+
+/*============== Reset =============== */
+
+.ekjs_slides_container, .ekjs_infos{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.ekjs_arrow{
+	-webkit-appearance: none;
+	-webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;;
+}
+
+/*============== End Reset =============== */
+
+.eokojs{
+	position: relative;
+	height: 70vh;
+    width: 45%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+.ekjs_slider{
+    height: 100%;
+}
+.ekjs_slides_container{
+	position: relative;
+	height: 100%;
+}
+
+/*====================== SLIDE ANIMATION =====================  */
+
+.ekjs_slide{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: 1;
+    background-color: #000;
+
+    transition: width .7s cubic-bezier(0.85,-0.01, 0.93, 0.75);
+}
+.ekjs_slide.is_right{
+	right: 0;
+	left: auto;
+}
+.ekjs_slide.is_current{
+	width: 100%;
+}
+.ekjs_image_container{
+	
+	height: 100%;
+	object-fit: cover;
+	background-size: cover;
+}
+
+/*====================== END OF SLIDE ANIMATION =====================  */
+
+.ekjs_image{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.ekjs_info_container{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*====================== TEXT ANIMATION =====================  */
+
+.ekjs_info{
+	position: absolute;
+	display: none;
+    right: -90%;
+    top: 30%;
+    z-index: 4;
+    width: 100%;
+    overflow: hidden;
+}
+.ekjs_info.is_current{
+	display: block;
+}
+.ekjs_info_title_container{
+	overflow: hidden;
+	margin: 0 0 50px 0;
+}
+.ekjs_info_title{
+	display: block;
+	font-family: 'Cormorant', serif;
+	font-size: 3em;
+	font-weight: lighter;
+}
+.ekjs_info_title.is_current{
+	text-shadow: 3px 2px 16px rgba(0, 0, 0, .25);
+	animation: infoTitleTranslateTop .7s ease-in-out forwards;
+}
+@keyframes infoTitleTranslateTop{
+
+	from{
+		transform: translateY( 68px );
+		opacity: 0;
+	}
+	to{
+		transform: translateY( 0px );
+		opacity: 1;
+	}
+
+}
+.ekjs_info_text{
+	max-width: 80%;
+    margin-left: 25%;
+    line-height: 1.8em;
+    transform: translateY( 68px );
+}
+.ekjs_info_text.is_current{
+	animation: infoTextTranslateTop .7s ease-in-out forwards;
+}
+@keyframes infoTextTranslateTop{
+
+	from{
+		transform: translateY( 100px );
+		opacity: 0;
+	}
+	to{
+		transform: translateY( 0px );
+		opacity: 1;
+	}
+
+}
+
+/*====================== END OF TEXT ANIMATION =====================  */
+
+.ekjs_arrows{
+	position: absolute;
+	top: 100%;
+	left: 65%;
+	width: 175px;
+	z-index: 3;
+   	transform: translateY( -50% );
+}
+.ekjs_arrow{
+	position: relative;
+	display: inline-block;
+   	font-size: 25px;
+   	color: #fff;
+}
+.ekjs_arrow:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 84px;
+    height: 84px;
+	transform: translate( -50%, -50% );
+    border-radius: 50%;
+    border: 1px solid #fff;
+    opacity: .5;
+    transition: all 0.2s ease;
+}
+.ekjs_arrow:last-child{
+	margin-left: 100px;
+}
+.ekjs_arrow:hover:before{
+	opacity: 1;
+	transform: translate( -50%, -50% ) scale( 1.093 ) ;
+}
+.ekjs_pagination{
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	font-size: 1.5em;
+	font-family: 'Cormorant', serif;
+	z-index: 3;
+}
+.ekjs_current_num_container{
+	position: relative;
+	top: -10px;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+}
+.ekjs_nb_slide{
+	position: relative;
+	top: 10px;
+}
+.ekjs_current_num, .ekjs_nb_slide, .separator{
+	display: inline-block;
+	text-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+}
+
+/*============= MEDIA QUERIES ==============*/
+
+@media screen and ( max-width: 1366px ) {
+
+
+	.ekjs_arrows {
+
+	    left: 55%;
+
+	}
+
+
+}
+@media screen and ( max-width: 992px ) {
+
+
+	.ekjs_arrows {
+
+	    left: 40%;
+	    
+	}
+
+
+}
+@media screen and ( max-width: 768px ) {
+	
+	.ekjs_arrow:before {
+		
+		width: 70px;
+	    height: 70px;
+	}
+	.ekjs_arrow:last-child {
+    	margin-left: 75px;
+	}
+	
+}
+
+@media screen and ( max-width: 640px ) {
+
+	.eokojs{
+		width: 100%;
+		height: 100vh;
+		background-color: inherit;
+	}
+	.ekjs_slider {
+		height: 50%;
+		position: relative;
+	}
+	.ekjs_infos{
+		max-height: 50%;
+		overflow-y: scroll;
+
+	}
+	.ekjs_info {
+		position: relative;
+		right: 0%;
+		top: 0%;
+		width: auto;
+		overflow: hidden;
+	}
+	.ekjs_arrows{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 90%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.ekjs_info_container{
+		position: relative;
+	}
+	.ekjs_info_text{
+		font-size: 1rem;
+		margin: auto;
+	}
+
+	.ekjs_info_title{
+		font-size: 2rem;
+	}
+	.ekjs_arrow:before{
+		content: initial;
+	}
+	.ekjs_info_title_container {
+		overflow: hidden;
+		margin: 20px auto 20px auto;
+		max-width: 80%;
+	}
+}
+
+/*============= END OF MEDIA QUERIES ==============*/

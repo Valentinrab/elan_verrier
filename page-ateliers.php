@@ -5,10 +5,52 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Elan Verrier - Ateliers</title>
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/lib/eoko/eokojs.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/ateliers.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <?php
+  class Slide
+  {
+      public $image_content;
+      public $title_content;
+      public $text_content;
+
+  }
+  $tab_of_slides = [];
+
+  if( have_rows('ateliers') ):
+      $counter=0;
+      while( have_rows('ateliers') ): the_row();
+          $txt = '';
+          $txt = get_sub_field('ateliers_description');
+
+          $title = '';
+          $title = get_sub_field('ateliers_titre_atelier');
+
+          $img = '';
+          $img = get_sub_field('ateliers_image');
+
+          $slide = new Slide();
+          $slide->image_content = $img;
+          $slide->title_content = $title;
+          $slide->text_content = $txt;
+
+
+          array_push($tab_of_slides, $slide);
+
+      endwhile;
+
+  endif;
+
+  // Convert options to javascript array of object
+  echo "<script> const options = " . json_encode($tab_of_slides) . '; </script>';
+
+  ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/lib/eoko/eoko.js"></script>
 </head>
 
 <body>
@@ -22,47 +64,23 @@
       <img id="tache1-agenda" src="<?php bloginfo('template_directory'); ?>/images/tache_5.svg" alt="tache5">
       <img id="tache2-agenda" src="<?php bloginfo('template_directory'); ?>/images/tache_6.svg" alt="tache6">
     </div>
-    <section class="container">
-      <main class="container-main">
+
+
         <div class="title-container">
           <h1 class="main-title">Les ateliers</h1>
         </div>
-        <?php
-
-        // check if the repeater field has rows of data
-        if( have_rows('ateliers') ):
-
-         	// loop through the rows of data
-            while ( have_rows('ateliers') ) : the_row(); ?>
-            <div class="row" id="row-glob">
-              <div class="col-12 col-lg-6" id="col-left" style="background-image: url(<?php the_sub_field('ateliers_image'); ?>);">
-
-              </div>
-              <div class="col-12 col-lg-6" id="col-right">
-                <div class="offset-1 col-10 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
-                  <h2 class="title-atelier"><?php the_sub_field('ateliers_titre_atelier'); ?></h2>
-                  <p class="p-atelier"><?php the_sub_field('ateliers_description'); ?></p>
-                </div>
-              </div>
-            </div>
-
-                <!-- // code html avec pour les zones administrables -->
-
-<?php
-    endwhile;
-    endif;
-
-?>
+        <div id="slider_container"></div>
 
 
-      </main>
-    </section>
+
   </section>
 
   <?php
     get_footer();
   ?>
-
+<script>
+  const my_slider = new Eoko("slider_container", options );
+</script>
 </body>
 
 </html>
