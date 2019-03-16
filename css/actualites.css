@@ -94,18 +94,25 @@ p {
 
 
 /*categorie color*/
-.expo{
-  background-color: #a15d9a;
-}
-
-.atelier{
+.exposition{
   background-color: #f8c477;
 }
 
-.rencontre{
+.vente{
   background-color: #da6e91;
 }
 
+.rencontre{
+  background-color: #21253f;
+}
+
+.conference{
+  background-color: #f09682;
+}
+
+.autre{
+  background-color: #a15d9a;
+}
 
 /*fin des couleurs*/
 #content_actu{
@@ -158,6 +165,7 @@ p {
   transform: translate(-50%,-50%) rotate(-90deg);
   color: #fff;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .actu_date{

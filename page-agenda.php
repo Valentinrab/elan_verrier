@@ -33,7 +33,57 @@
         </div>
       </div>
       <div class="container-wrap">
-        <div class="wrap-line 1">
+        <?php
+
+        // get posts
+        // $posts = get_posts($args);
+        // The Query
+        $today = date('Ymd');
+        $args = array ('post_type' => 'evenement',
+                      'meta_query' => array(
+                          array(
+                                'key'		=> 'date_fin',
+                                'compare'	=> '>',
+                                'value'		=> $today,
+                            )
+                      ),
+        );
+
+        $the_query = new WP_Query( $args );
+
+        // The Loop
+        if ( $the_query->have_posts() ) {
+        while ( $the_query->have_posts() ) {
+        $the_query -> the_post();
+
+        $date = get_field('date_debut', false, false);
+        $date = new DateTime($date);
+
+        ?>
+
+
+        <p>Event start month: <?php echo $date->format('m'); ?></p>
+
+        <div class="wrap 1">
+          <img src="<?php the_field('image'); ?>" class="img-event" alt="img-event">
+          <div class="event-group">
+            <p class="event-date"><?php the_field('date_debut'); ?></p>
+            <p class="event-hour"><?php the_field('date_fin'); ?></p>
+          </div>
+          <div class="desc-wrap">
+            <h3 class="event-title"><?php the_field('categorie'); ?></h3>
+            <p><?php the_field('description'); ?></p>
+          </div>
+        </div>
+
+
+        <?php
+        	}
+        wp_reset_postdata();
+        }
+        ?>
+
+        <!-- <div class="wrap-line 1">
           <h2 class="date-title">JANVIER</h2>
           <div class="wrap-group 1">
             <div class="wrap 1">
@@ -110,7 +160,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_3.svg" class="tache tache3" alt="tache">
       <img src="<?php bloginfo('template_directory'); ?>/images/taches/taches_6_cut.png" class="tache tache6" alt="tache">
