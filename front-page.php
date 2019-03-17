@@ -11,6 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- <script src="<?php bloginfo('template_directory'); ?>/js/faq.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 
   </head>
   <body>
@@ -40,8 +42,8 @@
 
       <section id="content_about" class="mt-150px row">
         <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
-          <h2 class="content_title"><?php the_field('qui_sommes_nous_titre'); ?></h2>
-          <p class="content_para"><?php the_field('qui_sommes_nous_paragraphe'); ?></p>
+          <h2 data-sr="move 250px" class="content_title"><?php the_field('qui_sommes_nous_titre'); ?></h2>
+          <p data-sr="move 250px" class="content_para"><?php the_field('qui_sommes_nous_paragraphe'); ?></p>
           <a href="<?php echo get_permalink(109); ?>" class="btn_access"><?php the_field('qui_sommes_nous_bouton'); ?></a>
 
         </div>

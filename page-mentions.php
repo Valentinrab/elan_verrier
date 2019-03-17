@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/mentionslegales.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 </head>
 
 <body>
