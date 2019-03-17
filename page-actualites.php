@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/actualites.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="<?php bloginfo('template_directory'); ?>/js/setCategoryClass.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+  <!-- <script src="<?php bloginfo('template_directory'); ?>/js/setCategoryClass.js"></script> -->
 
 </head>
 
@@ -24,15 +26,25 @@
     <main class="container-main">
       <div class="title-container">
         <h1 class="main-title">Actualités</h1>
-        <div class="filter-container">
+        <!-- <div class="filter-container">
           <div class="when-container">
             <button href="#" class="btn_access">CATÉGORIE</button>
           </div>
           <div class="what-container">
             <button href="#" class="btn_access">DATE</button>
           </div>
+        </div> -->
+        <div class="tri-categorie">
+          <button data-filter="*">Tous</button>
+          <button data-filter=".rencontre">Rencontre</button>
+          <button data-filter=".vente">Vente</button>
+          <button data-filter=".exposition">Exposition</button>
+          <button data-filter=".conference">Conférence</button>
+          <button data-filter=".autre">Autre</button>
         </div>
       </div>
+
+
       <section id="content_actu" class="mt-150px">
 
         <section id="content_actu_article" class="row">
@@ -77,7 +89,7 @@
                 // echo $categorie.children();
 
                 ?>
-                <article class="actu_principal col-12 col-md-6 col-lg-4">
+                <article class="actu_principal <?php the_field('categorie'); ?> col-12 col-md-6 col-lg-4">
                   <div class="actu_principal_image set_bg" style="background-image:url(<?php the_field('article_image'); ?>)"></div>
                   <div class="actu_principal_info col-11">
                     <div class="categorie col-1 <?php the_field('categorie'); ?>"><p><?php the_field('categorie'); ?></p></div>
@@ -117,5 +129,16 @@
 
 
 </body>
+<script>
+  //script du tri
 
+  // init Isotope
+  var $grid = $('#content_actu_article').isotope({});
+  // filter items on button click
+  $('.tri-categorie').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+  });
+
+</script>
 </html>

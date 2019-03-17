@@ -92,25 +92,46 @@ p {
   margin: 0 0 150px;
 }
 
+.tri-categorie{
+  display: flex;
+}
+
+.tri-categorie button{
+  -webkit-appearance : none;
+  background :transparent;
+  border : none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #f09682;
+  cursor: pointer;
+}
+
+.tri-categorie button:hover{
+  text-decoration: underline;
+}
+
+.tri-categorie button{
+  outline: none;
+}
 
 /*categorie color*/
-.exposition{
+.categorie.exposition{
   background-color: #f8c477;
 }
 
-.vente{
+.categorie.vente{
   background-color: #da6e91;
 }
 
-.rencontre{
+.categorie.rencontre{
   background-color: #21253f;
 }
 
-.conference{
+.categorie.conference{
   background-color: #f09682;
 }
 
-.autre{
+.categorie.autre{
   background-color: #a15d9a;
 }
 
