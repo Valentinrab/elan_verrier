@@ -28,6 +28,9 @@ $( document ).ready(function() {
   ScrollReveal().reveal('.grid-item', {
     delay: 200
   });
+  ScrollReveal().reveal('.event-reveal', {
+    delay: 200
+  });
   ///////////////////scroll reveal///////////////////
 
 

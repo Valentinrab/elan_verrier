@@ -74,7 +74,7 @@
 
               <p>Event start month: <?php echo $date->format('m'); ?></p>
 
-              <div class="wrap" data-toggle="modal" data-target="#myModal_<?php echo $count ?>">
+              <div class="wrap event-reveal" data-toggle="modal" data-target="#myModal_<?php echo $count ?>">
                 <div class="img-event set-bg" style="background-image:url(<?php the_field('image') ?>)">
                   <div class="event-info">
                     <p class="event-date"><?php the_field('date_debut') ?></p>
