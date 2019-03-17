@@ -13,6 +13,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="<?php bloginfo('template_directory'); ?>/js/agenda.js"></script> -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
+
+
 </head>
 
 <body>
@@ -68,7 +74,7 @@
 
               <p>Event start month: <?php echo $date->format('m'); ?></p>
 
-              <div class="wrap" data-toggle="modal" data-target="#myModal_<?php echo $count ?>">
+              <div class="wrap event-reveal" data-toggle="modal" data-target="#myModal_<?php echo $count ?>">
                 <div class="img-event set-bg" style="background-image:url(<?php the_field('image') ?>)">
                   <div class="event-info">
                     <p class="event-date"><?php the_field('date_debut') ?></p>

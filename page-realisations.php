@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/realisations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 
   </head>
   <body>
