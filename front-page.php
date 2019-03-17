@@ -173,14 +173,17 @@
       <section id="content_faq" class="mt-150px">
         <div class="accordion col-8 offset-2" id="accordionExample">
           <?php
-
+            $count = 0;
             if( have_rows('foire_aux_questions') ):
 
-                while ( have_rows('foire_aux_questions') ) : the_row(); ?>
+                while ( have_rows('foire_aux_questions') ) : the_row();
+                $count ++;
+                ?>
+
                 <div class="card">
                   <div class="card-header" id="headingOne">
                     <h5 class="mb-0 card-flex">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_<?php echo $count ?>" aria-expanded="false" aria-controls="collapseOne">
                         <?php the_sub_field('faq_questions'); ?>
                         <div class="plus">
                           <div class="horizontal"></div>
@@ -190,7 +193,7 @@
 
                     </h5>
                   </div>
-                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div id="collapse_<?php echo $count ?>" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
                       <?php the_sub_field('faq_reponse'); ?>
                     </div>
