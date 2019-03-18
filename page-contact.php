@@ -12,7 +12,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
-  
+
 
 </head>
 
@@ -42,8 +42,8 @@
               <p class="p-atelier"><?php the_field('contact_adresse'); ?></p>
             </div>
           </div>
-          <div class="col-12 col-lg-6" id="col-left">
-            <iframe src="https://snazzymaps.com/embed/139372" width="100%" height="100%" style="border:none;"></iframe>
+          <div class="col-12 col-lg-6" id="col-left" style="background-image:url(<?php bloginfo('template_directory'); ?>/images/maps.jpg)">
+
           </div>
 
         </div>
