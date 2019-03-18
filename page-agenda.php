@@ -7,9 +7,9 @@
   <title>Elan Verrier - L'agenda</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/agenda.css"
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/agenda.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
->
+
   <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

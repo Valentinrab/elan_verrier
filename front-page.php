@@ -151,7 +151,15 @@
         </section>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_4.svg" class="tache tache4" alt="tache">
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/feu.png" class="illustration illustration3" alt="illustration">
-        <a href="<?php echo get_permalink(47); ?>" class="btn_access btn_access_actu">VOIR TOUT LES ARTICLES</a>
+        <div class="btn_access hey">
+          <a href="<?php echo get_permalink(47); ?>" class="btn_access">
+            <span class="text">VOIR TOUT LES ARTICLES</span>
+            <span class="line -right"></span>
+            <span class="line -top"></span>
+            <span class="line -left"></span>
+            <span class="line -bottom"></span>
+          </a>
+        </div>
       </section>
 
       <section id="content_realisation" class="mt-150px">
@@ -189,7 +197,15 @@
 						<?php endif; ?>
 
         </section>
-        <a href="<?php echo get_permalink(42); ?>" class="btn_access">VOIR TOUTES LES REALISATIONS</a>
+        <div class="btn_access">
+          <a href="<?php echo get_permalink(42); ?>" class="btn_access btn_access_actu">
+            <span class="text">VOIR TOUT LES REALISATIONS</span>
+            <span class="line -right"></span>
+            <span class="line -top"></span>
+            <span class="line -left"></span>
+            <span class="line -bottom"></span>
+          </a>
+        </div>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_5.svg" class="tache tache5" alt="tache">
       </section>
 
@@ -226,64 +242,7 @@
               endwhile;
               endif;
           ?>
-          <!-- <div class="card">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0 card-flex">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Collapsible Group Item #2
-                  <div class="plus">
-                    <div class="horizontal"></div>
-                    <div class="vertical"></div>
-                  </div>
-                </button>
 
-              </h5>
-            </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0 card-flex">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Collapsible Group Item #2
-                  <div class="plus">
-                    <div class="horizontal"></div>
-                    <div class="vertical"></div>
-                  </div>
-                </button>
-
-              </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h5 class="mb-0 card-flex">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Collapsible Group Item #3
-                  <div class="plus">
-                    <div class="horizontal"></div>
-                    <div class="vertical"></div>
-                  </div>
-                </button>
-
-              </h5>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-              </div>
-            </div>
-          </div>
-        </div> -->
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/taches_6_cut.png" class="tache tache6" alt="tache">
       </section>
 
