@@ -371,10 +371,14 @@ p {
   left: auto;
 }
 
-#content_actu .btn_access_actu, #content_realisation .btn_access {
+#content_actu .btn_access, #content_realisation .btn_access, .hey {
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* .btn_access_actu{
+  text-align: center;
+} */
 
 /*section réalisations*/
 #content_realisation {
