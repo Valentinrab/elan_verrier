@@ -52,6 +52,7 @@
               // The Query
               $today = date('Ymd');
               $args = array ('post_type' => 'evenement',
+                            'order' => 'ASC',
                             'meta_query' => array(
                                 array(
                                       'key'		=> 'date_fin',
@@ -63,6 +64,7 @@
 
               $the_query = new WP_Query( $args );
               $count = 0;
+              $countMois = '02';
               // The Loop
               if ( $the_query->have_posts() ) {
               while ( $the_query->have_posts() ) {
@@ -73,9 +75,19 @@
 
               $count ++;
 
+
+              $moisEv = $date->format('m');
+
+              // echo($moisEv);
+
+              if ($countMois < $moisEv) {
+                echo "NOM DU MOIS <br>";
+                $countMois = $moisEv;
+              }
+
               ?>
 
-              <p>Event start month: <?php echo $date->format('m'); ?></p>
+              <!-- <p>Event start month: <?php echo $moisEv; ?></p> -->
 
               <div class="wrap event-reveal" data-toggle="modal" data-target="#myModal_<?php echo $count ?>">
                 <div class="img-event set-bg" style="background-image:url(<?php the_field('image') ?>)">
