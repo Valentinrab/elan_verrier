@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/agenda.css"
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
->
+
   <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -45,14 +45,13 @@
       </div>
       <div class="container-wrap">
         <div class="wrap-line 1">
-          <h2 class="date-title">JANVIER</h2>
-          <div class="wrap-group 1">
+
+
             <?php
 
               // The Query
               $today = date('Ymd');
               $args = array ('post_type' => 'evenement',
-                            'order' => 'ASC',
                             'meta_query' => array(
                                 array(
                                       'key'		=> 'date_fin',
@@ -60,6 +59,9 @@
                                       'value'		=> $today,
                                   )
                             ),
+                            'order' => 'ASC',
+                            'meta_key'			=> 'date_debut',
+	                          'orderby'			=> 'meta_value',
               );
 
               $the_query = new WP_Query( $args );
@@ -70,24 +72,38 @@
               while ( $the_query->have_posts() ) {
               $the_query -> the_post();
 
-              $date = get_field('date_debut', false, false);
-              $date = new DateTime($date);
+
+              //infos de la date de début de l'évenement
+              $dateDebut = get_field('date_debut', false, false);
+              $dateDebut = new DateTime($dateDebut);
+              $debut_jour = $dateDebut->format('d');
+              $debut_mois = $dateDebut->format('m');
+
+              //infos de la date de fin de l'évenement
+              $dateFin = get_field('date_fin', false, false);
+              $dateFin = new DateTime($dateFin);
+              $fin_jour = $dateFin->format('d');
+              $fin_mois = $dateFin->format('m');
+
+              //convertion des mois en français
+              $tabMois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+              $debut_mois_fr = $tabMois[$debut_mois - 1];
+              $fin_mois_fr = $tabMois[$fin_mois - 1];
 
               $count ++;
 
-
-              $moisEv = $date->format('m');
-
-              // echo($moisEv);
-
-              if ($countMois < $moisEv) {
-                echo "NOM DU MOIS <br>";
-                $countMois = $moisEv;
-              }
+              if ($countMois < $debut_mois) {
+                $countMois = $debut_mois;
+                if ($count != 1) {
+                  echo "</div>";
+                }
 
               ?>
-
-              <!-- <p>Event start month: <?php echo $moisEv; ?></p> -->
+                <h2 class="date-title"><?php echo $debut_mois_fr ?></h2>
+                <div class="wrap-group 1">
+              <?php
+              }
+              ?>
 
               <div class="wrap event-reveal" data-toggle="modal" data-target="#myModal_<?php echo $count ?>">
                 <div class="img-event set-bg" style="background-image:url(<?php the_field('image') ?>)">
@@ -120,10 +136,9 @@
 
                         <div class="pratical-event-modal col-4">
                           <div class="date-event-modal">
-                            <p class="date-day">17 - 21</p>
-                            <p class="date-month">JANVIER</p>
+                            <p class="date-day"><?php echo $debut_jour. ' ' .$debut_mois_fr. ' - ' .$fin_jour. ' ' .$fin_mois_fr ?></p>
                           </div>
-                          <p class="hours-event-modal">Lundi : 14h00 - 18h00<br>Mardi : 14h00 - 18h00</p>
+                          <p class="hours-event-modal"><?php the_field('horaires') ?></p>
                         </div>
                         <p class="desc-event-modal col-7 offset-1"><?php the_field('description') ?></p>
                       </div>
@@ -141,9 +156,9 @@
               }
             ?>
 
-
-          </div>
-        </div>
+<!--
+          </div> -->
+        <!-- </div> -->
 
       </div>
       <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_3.svg" class="tache tache3" alt="tache">
