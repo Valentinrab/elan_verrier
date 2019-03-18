@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #03579c;
 }
 
-p{
+p {
   line-height: 1.5em;
 }
 
@@ -59,6 +59,7 @@ p{
   font-size: 36px;
   font-weight: bold;
 }
+
 .btn_access {
   color: #f09682;
   text-decoration: none;
@@ -69,15 +70,7 @@ p{
   -webkit-appearance: none;
   border: none;
   background-color: transparent;
-}
-
-.btn_access:before {
-  position: absolute;
-  margin-top: 25px;
-  content: "";
-  height: 5px;
-  width: 100%;
-  background-color: #f09682;
+  text-align: end;
 }
 
 .container-wrap {
@@ -97,21 +90,19 @@ p{
   position: relative;
 }
 
-.wrap:hover .tache{
+.wrap:hover .tache {
   opacity: 1;
   transform: scale(1);
   transition: transform 0.5s cubic-bezier(0.42, 0, 0.27, 1.43), opacity 0.8s cubic-bezier(0.42, 0, 0.55, 1.6);
-
 }
 
-.wrap:hover  .image-membre{
+.wrap:hover .image-membre {
   transform: scale(.94);
 }
 
-.wrap:hover .desc-wrap{
+.wrap:hover .desc-wrap {
   opacity: 1;
   transition: all 0.5s cubic-bezier(0.42, 0, 0.27, 1.43);
-
 }
 
 .desc-wrap {
@@ -143,7 +134,7 @@ p{
 }
 
 /*taches hover*/
-.tache{
+.tache {
   z-index: -1;
   position: absolute;
   width: 110%;
@@ -154,17 +145,17 @@ p{
   transition: transform 0.5s cubic-bezier(0.42, 0, 0.27, 1.43), opacity 0.8s cubic-bezier(0.42, 0, 0.55, 1.6);
 }
 
-.tache1{
+.tache1 {
   width: 115%;
   top: -3vh;
 }
 
-.tache2{
+.tache2 {
   left: -1vw;
   top: -7vh;
 }
 
-.tache3{
+.tache3 {
   width: 150%;
   left: -5vw;
 }
@@ -175,7 +166,7 @@ p{
     margin: 20px;
   }
 
-  #form-left, .form-title{
+  #form-left, .form-title {
     margin-bottom: 30px;
   }
 
@@ -183,11 +174,10 @@ p{
     margin-top: 20px;
   }
 
-  .tache{
+  .tache {
     /* transform: scale(1);
     opacity: 1; */
     display: none;
-
   }
 
   .desc-wrap {

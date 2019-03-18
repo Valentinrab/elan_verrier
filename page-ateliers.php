@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/lib/eoko/eokojs.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/ateliers.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://unpkg.com/scrollreveal"></script>
 
   <?php
   class Slide
@@ -83,6 +85,13 @@
 <script>
   const my_slider = new Eoko("slider_container", options );
 </script>
-</body>
 
+
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
+
+<script  src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
 </html>
