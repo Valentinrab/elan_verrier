@@ -64,35 +64,6 @@
   					if ( $the_query->have_posts() ) {
   				while ( $the_query->have_posts() ) {
   							$the_query -> the_post();
-                //
-                // $term = get_sub_field('categorie');
-                // if( $term ) {
-                //   foreach($term as $t) {
-                //     $t = get_category($t);
-                //     echo $t->name;
-                //   }
-                // }
-                // $categorieId = the_field('categorie');
-                // $categorieName = '';
-                // $categorieName = "Autre";
-                // switch ($categorieId) {
-                //   case 2:
-                //       $categorieName = "rencontre";
-                //       break;
-                //   case 3:
-                //       $categorieName = "exposition";
-                //       break;
-                //   case 4:
-                //       $categorieName = "vente";
-                //       break;
-                //   case 5:
-                //       $categorieName = "conférence";
-                //       break;
-                // }
-                // echo $categorieName;
-                // $categorie =  the_category();
-                // echo $categorie.children();
-
                 ?>
                 <article class="actu_principal <?php the_field('categorie'); ?> col-12 col-md-6 col-lg-4">
                   <div class="actu_principal_image set_bg" style="background-image:url(<?php the_field('article_image'); ?>)"></div>

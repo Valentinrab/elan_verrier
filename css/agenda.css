@@ -30,7 +30,7 @@ p {
 .date-title {
   font-size: 36px;
   text-align: center;
-  margin: 0px 0px 50px;
+  margin: 50px 0;
   text-transform: uppercase;
 }
 
@@ -48,6 +48,49 @@ p {
 .filter-container {
   display: flex;
   right: 0;
+}
+
+.tri-categorie{
+  display: flex;
+}
+
+.tri-categorie button{
+  -webkit-appearance : none;
+  background :transparent;
+  border : none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #f09682;
+  cursor: pointer;
+}
+
+.tri-categorie button:hover{
+  text-decoration: underline;
+}
+
+.tri-categorie button{
+  outline: none;
+}
+
+/*categorie color*/
+.categorie.exposition{
+  background-color: #f8c477;
+}
+
+.categorie.vente{
+  background-color: #da6e91;
+}
+
+.categorie.rencontre{
+  background-color: #03579c;
+}
+
+.categorie.conference{
+  background-color: #f09682;
+}
+
+.categorie.autre{
+  background-color: #a15d9a;
 }
 
 .when-container, .what-container{
@@ -81,12 +124,16 @@ p {
 }
 
 .event-date {
-  margin-left: 5%;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
-  margin-bottom: 10px;
   color: #FFF;
   text-shadow: 0px 0px 4px #404040;
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 .event-title {
@@ -116,7 +163,6 @@ p {
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: darksalmon;
   padding: 10px;
 }
 
@@ -137,7 +183,7 @@ p {
 }
 
 .modal-header{
-  background-color: #03579c;
+  /* background-color: #03579c; */
   border-radius: 0;
   border: none;
 }

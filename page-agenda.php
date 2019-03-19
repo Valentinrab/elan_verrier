@@ -34,14 +34,14 @@
     <main class="container-main">
       <div class="title-container">
         <h1 class="main-title">L'agenda</h1>
-        <div class="filter-container">
-          <div class="when-container">
-            <button href="#" class="btn_access">CATÉGORIE</button>
-          </div>
-          <div class="what-container">
-            <button href="#" class="btn_access">CE MOIS-CI</button>
-          </div>
-        </div>
+        <!-- <div class="tri-categorie">
+          <button data-filter="*">Tous</button>
+          <button data-filter=".rencontre">Rencontre</button>
+          <button data-filter=".vente">Vente</button>
+          <button data-filter=".exposition">Exposition</button>
+          <button data-filter=".conference">Conférence</button>
+          <button data-filter=".autre">Autre</button>
+        </div> -->
       </div>
       <div class="container-wrap">
         <div class="wrap-line 1">
@@ -105,11 +105,12 @@
               }
               ?>
 
-              <div class="wrap event-reveal" data-toggle="modal" data-target="#myModal_<?php echo $count ?>">
+              <div class="wrap event-reveal <?php the_field('categorie'); ?>" data-toggle="modal" data-target="#myModal_<?php echo $count ?>">
                 <div class="img-event set-bg" style="background-image:url(<?php the_field('image') ?>)">
+                  <p class="event-date"><?php echo $debut_jour ?></p>
                   <div class="event-info">
-                    <p class="event-date"><?php the_field('date_debut') ?></p>
-                    <div class="desc-wrap">
+
+                    <div class="desc-wrap categorie <?php the_field('categorie'); ?>">
                       <p class="event-categorie"><?php the_field('categorie') ?></p>
                       <h3 class="event-title"><?php the_title() ?></h3>
                     </div>
@@ -124,7 +125,7 @@
 
                   <!-- Modal content-->
                   <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header <?php the_field('categorie') ?>">
                       <h3><?php the_field('categorie') ?></h3>
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
@@ -172,6 +173,18 @@
   ?>
 
 </body>
+<script>
+  //script du tri
+
+  // init Isotope
+  var $grid = $('.wrap-group').isotope({});
+  // filter items on button click
+  $('.tri-categorie').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+  });
+
+</script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>
