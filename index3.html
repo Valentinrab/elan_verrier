@@ -1,5 +1,24 @@
-    <header>
-      <a href="<?php echo get_permalink(38); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo.svg" alt="logo élan verrier" id="logo"></a>
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SVG Shape Overlays | Demo 3 | Codrops</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400|Arapey" rel="stylesheet">
+		<link rel="stylesheet" href="css/boutons.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu.css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body class="demo-3">
+
+		<header class="main main--demo-3">
+			<a href="<?php echo get_permalink(38); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo.svg" alt="logo élan verrier" id="logo"></a>
 
 			<div class="btn_member">
 				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
@@ -66,4 +85,14 @@
 					<path class="shape-overlays__path"></path>
 				</svg>
 			</div>
-    </header>
+		</header>
+
+		<script src="js/menu.js"></script>
+		<script src="js/easings.js"></script>
+		<script src="js/menu3.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
+	</body>
+</html>

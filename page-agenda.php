@@ -125,8 +125,8 @@
 
                   <!-- Modal content-->
                   <div class="modal-content">
-                    <div class="modal-header <?php the_field('categorie') ?>">
-                      <h3><?php the_field('categorie') ?></h3>
+                    <div class="modal-header hello categorie <?php the_field('categorie') ?>">
+                      <h3 class="modal-categorie"><?php the_field('categorie') ?></h3>
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
