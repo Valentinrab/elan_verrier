@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Elan Verrier - Accueil</title>
+
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/accueil.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- <script src="<?php bloginfo('template_directory'); ?>/js/faq.js"></script> -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
+    <script>document.documentElement.className = 'js';</script>
 
 
   </head>
@@ -255,6 +259,9 @@
 
 
   </body>
+  <script src="<?php bloginfo('template_directory'); ?>/js/menu.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/easings.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/menu3.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>

@@ -53,14 +53,14 @@ body {
 	--path-fill-2: #a15d9a;
 	--path-fill-3: #da6e91;
 	--color-title: #000;
-	--font-family-title: 'Ubuntu', sans-serif;
-	--font-size-title: 5vmax;
-	--font-weight-title: 400;
+	/* --font-family-title: 'Ubuntu', sans-serif; */
+	/* --font-size-title: 5vmax; */
+	/* --font-weight-title: 400; */
 	--color-menu: #fff;
 	/* --color-menu-hover: #fff; */
-	--font-family-menu: 'Ubuntu', sans-serif;
-	--font-size-menu: 3vmax;
-	--font-weight-menu: 200;
+	/* --font-family-menu: 'Ubuntu', sans-serif; */
+	/* --font-size-menu: 3vmax; */
+	/* --font-weight-menu: 200; */
 	--button-bg: #fff;
 	/* --button-circle: #ada4a4; */
 	--button-line: #222;
@@ -70,14 +70,14 @@ body {
 a {
 	text-decoration: none;
 	color: #5d93d8;
-	color: var(--color-link);
+	/* color: var(--color-link); */
 	outline: none;
 }
 
 a:hover,
 a:focus {
 	color: #423c2b;
-	color: var(--color-link-hover);
+	/* color: var(--color-link-hover); */
 	outline: none;
 }
 
@@ -160,10 +160,10 @@ main {
 }
 
 .global-menu__item {
-	color: var(--color-menu);
-	font-family: var(--font-family-menu);
-	font-size: var(--font-size-menu);
-	font-weight: var(--font-weight-menu);
+	color: #fff;
+	/* font-family: var(--font-family-menu); */
+	font-size: 40px;
+	font-weight: 300;
 	opacity: 0;
 	transform: translateY(-100%);
 	pointer-events: none;
