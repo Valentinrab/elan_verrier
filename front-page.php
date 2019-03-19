@@ -36,6 +36,17 @@
           frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           <div class="next_ev">
             <p>PROCHAINEMENT</p>
+            <div class="wrap 1">
+              <img src="<?php bloginfo('template_directory'); ?>/images/agenda-img.jpg" class="img-event" alt="img-event">
+              <div class="event-group">
+                <p class="event-date">17</p>
+                <p class="event-hour">14h45</p>
+              </div>
+              <div class="desc-wrap">
+                <h3 class="event-title">Évenement</h3>
+                <p>Bienvenue à trop bien trop bien trop bien trop bien bidule pour faire plein de trucs trop bien.</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="video_title">

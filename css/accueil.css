@@ -153,16 +153,20 @@ p {
   /* transform: translate(-50%, -50%); */
   background-color: #f09682;
   z-index: 3;
-  width: 30%;
+  width: 350px;
   position: absolute;
-  top: 600px;
-  padding: 10px 0 10px 10px;
+  top: 585px;
+  padding: 13px 0 10px;
   transition: 1s;
   right: 0;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.video:hover .next_ev{
-  top: 300px;
+.video:hover .next_ev {
+  top: 307px;
 }
 
 .next_ev p {
@@ -237,26 +241,25 @@ p {
   margin-top: 10px;
 }
 
-
 /*section actus */
 /*categorie color*/
-.exposition{
+.exposition {
   background-color: #f8c477;
 }
 
-.vente{
+.vente {
   background-color: #da6e91;
 }
 
-.rencontre{
+.rencontre {
   background-color: #03579c;
 }
 
-.conference{
+.conference {
   background-color: #f09682;
 }
 
-.autre{
+.autre {
   background-color: #a15d9a;
 }
 
@@ -396,7 +399,6 @@ p {
 /* .btn_access_actu{
   text-align: center;
 } */
-
 /*section réalisations*/
 #content_realisation {
   margin-bottom: 180px;
@@ -767,4 +769,64 @@ p {
   .tache3 {
     left: -35vw;
   }
+}
+
+/* prochainement */
+.desc-wrap>p {
+  color: #FFF;
+}
+
+.event-title {
+  margin-bottom: 20px;
+  color: #FFF;
+}
+
+.event-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  bottom: 30%;
+  align-items: center;
+}
+
+.event-date {
+  left: 5%;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  color: #FFF;
+  text-shadow: 0px 0px 4px #404040;
+}
+
+.event-hour {
+  right: 5%;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  color: #FFF;
+  text-shadow: 0px 0px 4px #404040;
+}
+
+.img-event {
+  width: 120%;
+}
+
+.wrap {
+  margin: 20px 0px 10px;
+  background-color: bisque;
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.desc-wrap {
+  width: 100%;
+  position: absolute;
+  top: 214px;
+  background-color: #fff;
+  padding: 10px 0 10px 10px;
+  transition: 1s;
 }
