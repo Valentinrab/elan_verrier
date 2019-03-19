@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/accueil.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/normalize.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/normalize.css" /> -->
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -166,7 +166,7 @@
         </div>
       </section>
 
-      <section id="content_realisation" class="mt-150px">
+      <section id="content_realisation" class="mt-200px">
         <h2 id="actu_title">Réalisations</h2>
 
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/vase.png" class="illustration illustration4" alt="illustration">

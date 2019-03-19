@@ -26,6 +26,7 @@ header{
   z-index: 4;
 	display: flex;
   align-items: center;
+	justify-content: center;
 }
 
 #logo{
@@ -37,7 +38,7 @@ header{
 }
 
 .btn_member{
-  margin-left: 65%;
+  margin-left: 70%;
 	z-index: 0;
 }
 
@@ -115,7 +116,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	/* min-height: 100vh; */
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	pointer-events: none;
 }
 

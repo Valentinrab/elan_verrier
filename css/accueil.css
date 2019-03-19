@@ -3,6 +3,10 @@
   margin-top: 150px;
 }
 
+.mt-200px {
+  margin-top: 200px;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   overflow-X: hidden;
@@ -232,7 +236,7 @@ p {
 }
 
 .rencontre{
-  background-color: #21253f;
+  background-color: #03579c;
 }
 
 .conference{
