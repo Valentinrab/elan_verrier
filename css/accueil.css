@@ -105,6 +105,7 @@ p {
   transform: translate(-50%, -50%);
   /* position: absolute; */
   position: relative;
+  overflow: hidden;
 }
 
 .vimeo {
@@ -134,7 +135,7 @@ p {
 }
 
 .next_ev {
-  height: 70px;
+  /* height: 70px;
   width: 300px;
   background-color: #f09682;
   z-index: 3;
@@ -146,6 +147,18 @@ p {
   justify-content: center;
   align-items: center;
   /* transform: translate(-50%, -50%); */
+  background-color: #f09682;
+  z-index: 3;
+  width: 30%;
+  position: absolute;
+  top: 600px;
+  padding: 10px 0 10px 10px;
+  transition: 1s;
+  right: 0;
+}
+
+.video:hover .next_ev{
+  top: 300px;
 }
 
 .next_ev p {
