@@ -144,7 +144,7 @@ p {
   width: 380px;
   height: 300px;
   top: 50vh;
-  right: -28%;
+  right: -340px;
   position: fixed;
   padding: 10px 0 10px 10px;
   transition: 1s;
@@ -451,6 +451,7 @@ p {
   border: none;
   position: static;
   background: none;
+  margin: 15px 0;
 }
 
 .card-header {
@@ -511,9 +512,10 @@ p {
 }
 
 .plus {
-  position: relative;
+  position: absolute;
   height: 14px;
   width: 14px;
+  right: 15px;
   margin-top: 5px;
   transition: .3s ease;
   -webkit-transform: rotate(135deg);
@@ -778,39 +780,3 @@ p {
 }
 
 /* prochainement */
-.desc-wrap>p {
-  color: #FFF;
-}
-
-.event-title {
-  margin-bottom: 20px;
-  color: #FFF;
-}
-
-.event-group {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  position: absolute;
-  bottom: 30%;
-  align-items: center;
-}
-
-.event-date {
-  left: 5%;
-  font-size: 40px;
-  font-weight: bold;
-  position: absolute;
-  color: #FFF;
-  text-shadow: 0px 0px 4px #404040;
-}
-
-.event-hour {
-  right: 5%;
-  font-size: 20px;
-  font-weight: bold;
-  position: absolute;
-  color: #FFF;
-  text-shadow: 0px 0px 4px #404040;
-}
