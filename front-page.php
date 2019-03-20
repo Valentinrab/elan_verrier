@@ -34,7 +34,7 @@
         <div class="video set_bg">
           <iframe class="vimeo" src="https://player.vimeo.com/video/76979871?background=1&autoplay=1&loop=1&byline=0&title=0"
           frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          
+
         </div>
         <div class="video_title">
           <h1 class="name"><?php the_field('video_titre'); ?></h1>
@@ -46,7 +46,74 @@
       <div class="next_ev">
         <p class="next_ev_title">PROCHAINEMENT</p>
         <div class="next_ev_container">
+          <!-- prochainement debut  -->
+          <?php
 
+          // The Query
+          $query = new WP_Query( $args );
+            // The Query
+            $today = date('Ymd');
+            $args = array ('post_type' => 'evenement',
+                          'meta_query' => array(
+                              array(
+                                    'key'		=> 'date_fin',
+                                    'compare'	=> '>',
+                                    'value'		=> $today,
+                                )
+                          ),
+                          'order' => 'ASC',
+                          'meta_key'			=> 'date_debut',
+                          'orderby'			=> 'meta_value',
+                          'posts_per_page'         => '1',
+            );
+
+            $the_query = new WP_Query( $args );
+
+            // The Loop
+            if ( $the_query->have_posts() ) {
+            while ( $the_query->have_posts() ) {
+            $the_query -> the_post();
+
+
+            //infos de la date de début de l'évenement
+            $dateDebut = get_field('date_debut', false, false);
+            $dateDebut = new DateTime($dateDebut);
+            $debut_jour = $dateDebut->format('d');
+            $debut_mois = $dateDebut->format('m');
+
+            //infos de la date de fin de l'évenement
+            $dateFin = get_field('date_fin', false, false);
+            $dateFin = new DateTime($dateFin);
+            $fin_jour = $dateFin->format('d');
+            $fin_mois = $dateFin->format('m');
+
+            //convertion des mois en français
+            $tabMois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+            $debut_mois_fr = $tabMois[$debut_mois - 1];
+            $fin_mois_fr = $tabMois[$fin_mois - 1];
+
+            ?>
+
+            <div class="wrap <?php the_field('categorie'); ?>">
+              <div class="img-event set_bg" style="background-image:url(<?php the_field('image') ?>)">
+                <p class="event-date"><?php echo $debut_jour.'-'.$fin_jour ?></p>
+                <div class="event-info">
+
+                  <div class="desc-wrap categorie <?php the_field('categorie'); ?>">
+                    <p class="event-categorie"><?php the_field('categorie') ?></p>
+                    <h3 class="event-title"><?php the_title() ?></h3>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <?php
+              }
+            wp_reset_postdata();
+            }
+          ?>
+<!-- prochainement fin -->
         </div>
       </div>
 

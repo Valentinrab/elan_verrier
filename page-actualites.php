@@ -68,7 +68,9 @@
                 <article class="actu_principal <?php the_field('categorie'); ?> col-12 col-md-6 col-lg-4">
                   <div class="actu_principal_image set_bg" style="background-image:url(<?php the_field('article_image'); ?>)"></div>
                   <div class="actu_principal_info col-11">
-                    <div class="categorie col-1 <?php the_field('categorie'); ?>"><p><?php the_field('categorie'); ?></p></div>
+                    <div class="categorie col-1 <?php the_field('categorie'); ?>">
+                      <p class="categorie_title"><?php the_field('categorie'); ?></p>
+                    </div>
 
                     <div class="actu_content_info col-9 offset-1">
                       <div class="actu_date col-12">
