@@ -34,20 +34,7 @@
         <div class="video set_bg">
           <iframe class="vimeo" src="https://player.vimeo.com/video/76979871?background=1&autoplay=1&loop=1&byline=0&title=0"
           frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          <div class="next_ev">
-            <p>PROCHAINEMENT</p>
-            <div class="wrap 1">
-              <img src="<?php bloginfo('template_directory'); ?>/images/agenda-img.jpg" class="img-event" alt="img-event">
-              <div class="event-group">
-                <p class="event-date">17</p>
-                <p class="event-hour">14h45</p>
-              </div>
-              <div class="desc-wrap">
-                <h3 class="event-title">Évenement</h3>
-                <p>Bienvenue à trop bien trop bien trop bien trop bien bidule pour faire plein de trucs trop bien.</p>
-              </div>
-            </div>
-          </div>
+          
         </div>
         <div class="video_title">
           <h1 class="name"><?php the_field('video_titre'); ?></h1>
@@ -56,6 +43,12 @@
 
 
       </main>
+      <div class="next_ev">
+        <p class="next_ev_title">PROCHAINEMENT</p>
+        <div class="next_ev_container">
+
+        </div>
+      </div>
 
       <section id="content_about" class="mt-150px row">
         <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
