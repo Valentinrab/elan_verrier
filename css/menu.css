@@ -38,7 +38,7 @@ header{
 }
 
 .btn_member{
-  margin-left: 70%;
+  margin-left: 75%;
 	z-index: 0;
 }
 
@@ -51,7 +51,7 @@ body {
 	--color-info: #000;
 	--color-main-bg: #fff;
 	--path-fill-1: #21253f;
-	--path-fill-2: #a15d9a;
+	--path-fill-2: #f09682;
 	--path-fill-3: #da6e91;
 	--color-title: #000;
 	/* --font-family-title: 'Ubuntu', sans-serif; */
@@ -116,7 +116,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	/* min-height: 100vh; */
-	/* margin: 0 auto; */
+	margin: 0 15px;
 	pointer-events: none;
 }
 
