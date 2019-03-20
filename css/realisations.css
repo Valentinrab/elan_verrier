@@ -1,3 +1,9 @@
+.set_bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .btn_access {
   color: #f09682;
   text-decoration: none;
@@ -69,44 +75,38 @@
   position: relative;
 }
 
-.caption {
-  display: none;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #21253f;
-  transition: all 1s;
-  opacity: 0; */
-}
-
-.caption h2 {
-  margin: 0;
-  color: #fff;
-  font-size: 1.5em;
+/*lightbox*/
+.modal-title{
+  color: #000;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 
-.caption_social {
+.modal-body{
+  text-align: center;
+}
+
+.modal-body img{
+  max-width: 450px;
+  max-height: 500px;
+  /* height: auto; */
+}
+
+.modal-footer{
   display: flex;
+  justify-content: flex-end;
 }
 
-.caption_social img {
+.modal-content .modal-footer .modal-creator{
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-right: 15px;
+}
+
+.modal-footer img{
   width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  width: 40px;
-  height: 40px;
-  margin: 15px;
-}
-
-.grid-item:hover .caption {
-  opacity: 0.6;
+  height: auto;
 }
 
 @media screen and (max-width : 576px) {

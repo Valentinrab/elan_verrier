@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/ateliers.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script>document.documentElement.className = 'js';</script>
 
   <?php
   class Slide
@@ -88,6 +90,9 @@
 
 
 </body>
+<script src="<?php bloginfo('template_directory'); ?>/js/menu.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/easings.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/menu3.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>

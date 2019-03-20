@@ -5,9 +5,9 @@
     <title>Elan Verrier - Accueil</title>
     <meta name="viewport" content="width=device-width">
 
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/realisations.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/realisations.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
 
@@ -17,10 +17,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js.map"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js.map"></script> -->
 
     <script src = "<?php bloginfo('template_directory'); ?>/js/masonry-docs/masonry.pkgd.js"></script>
     <script src = "<?php bloginfo('template_directory'); ?>/js/masonry.js"></script>
@@ -54,26 +54,38 @@
           $args = array ('post_type' => 'realisation');
 
           $the_query = new WP_Query( $args );
-
+          $count = 0;
           // The Loop
           if ( $the_query->have_posts() ) {
           while ( $the_query->have_posts() ) {
-          $the_query -> the_post(); ?>
+          $the_query -> the_post();
+          $count ++;
+          ?>
+          <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4" data-toggle="modal" data-target="#myModal_<?php echo $count ?>">
 
-          <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4">
+              <img src="<?php the_field('realisation_image'); ?>" class="img-fluid"/>
 
-            <div>
-              <a href="<?php the_field('realisation_image'); ?>" data-toggle="lightbox">
-                <img src="<?php the_field('realisation_image'); ?>" class="img-fluid"/>
-              </a>
-              <div class="caption">
-                <h2><?php the_title(); ?></h2>
-                <p class="createur"><?php the_field('realisation_createur'); ?></p>
-                <div class="caption_social">
-                  <a href="<?php the_field('realisation_lien_instagram'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="Instagram"></a>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal_<?php echo $count ?>" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title"><?php the_title() ?></h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body set_bg">
+                  <img src="<?php the_field('realisation_image'); ?>" alt="">
+                </div>
+                <div class="modal-footer">
+                  <p class="modal-creator"><?php the_field('realisation_createur'); ?></p>
+                  <a href="<?php the_field('realisation_lien_instagram'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="instagram"></a>
                   <a href="<?php the_field('realisations_lien_linkedin'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
                 </div>
               </div>
+
             </div>
           </div>
 
