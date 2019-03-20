@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/contact.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
+
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
-
+  <script>document.documentElement.className = 'js';</script>
 
 </head>
 
@@ -56,6 +58,9 @@
   ?>
 
 </body>
+<script src="<?php bloginfo('template_directory'); ?>/js/menu.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/easings.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/menu3.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>
