@@ -34,14 +34,7 @@
     <main class="container-main">
       <div class="title-container">
         <h1 class="main-title">L'agenda</h1>
-        <!-- <div class="tri-categorie">
-          <button data-filter="*">Tous</button>
-          <button data-filter=".rencontre">Rencontre</button>
-          <button data-filter=".vente">Vente</button>
-          <button data-filter=".exposition">Exposition</button>
-          <button data-filter=".conference">Conférence</button>
-          <button data-filter=".autre">Autre</button>
-        </div> -->
+      
       </div>
       <div class="container-wrap">
         <div class="wrap-line 1">
