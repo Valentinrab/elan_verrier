@@ -1,3 +1,8 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #21253F;
+}
+
 .set_bg {
   background-position: center;
   background-repeat: no-repeat;
@@ -32,26 +37,6 @@
 .intro-realisation{
   margin: 50px 0;
 }
-
-/* .createur{
-  color: #FFFFFF;
-  margin: 10px 0;
-}
-
-.title-container {} */
-
-/* .filter-container {
-  display: flex;
-  right: 0;
-}
-
-.when-container, .what-container {
-  margin: 0 70px;
-}
-
-.when-container button, .what-container button {
-  background-color: transparent;
-} */
 
 .grid {
   margin-top: 50px;
@@ -130,15 +115,4 @@
     flex-direction: column;
   }
 
-  /* .filter-container {
-    margin-left: -20px;
-  }
-
-  .when-container {
-    margin: 0 0px;
-  }
-
-  .what-container {
-    margin: 0 110px;
-  } */
 }

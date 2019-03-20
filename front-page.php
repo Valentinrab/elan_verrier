@@ -185,7 +185,9 @@
                 <article class="actu_principal col-8 offset-2 col-lg-6 offset-lg-0">
                   <div class="actu_principal_image set_bg" style="background-image:url(<?php the_field('article_image'); ?>)"></div>
                   <div class="actu_principal_info col-12 col-md-10 col-lg-10 col-xl-10">
-                    <div class="categorie col-1 <?php the_field('categorie'); ?>"><p><?php the_field('categorie'); ?></p></div>
+                    <div class="categorie col-1 <?php the_field('categorie'); ?>">
+                      <p class="categorie_title"><?php the_field('categorie'); ?></p>
+                    </div>
                     <!-- <span class="categorie">EXPOSITION</span> -->
                     <div class="actu_content_info col-9 offset-1">
                       <div class="actu_date col-12">
@@ -204,7 +206,7 @@
                 <article class="actu_secondary">
                   <div class="actu_secondary_image set_bg col-sm-6" style="background-image:url(<?php the_field('article_image'); ?>)"></div>
                   <div class="actu_secondary_info col-sm-8">
-                    <div class="categorie col-sm-1 <?php the_field('categorie'); ?>"><p><?php the_field('categorie'); ?></p></div>
+                    <div class="categorie col-sm-1 <?php the_field('categorie'); ?>"><p class="categorie_title"><?php the_field('categorie'); ?></p></div>
                     <div class="actu_content_info col-sm-9 offset-md-1">
                       <div class="actu_date col-sm-12">
                         <p><?php the_field('article_auteur'); ?></p>
