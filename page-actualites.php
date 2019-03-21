@@ -32,14 +32,7 @@
     <main class="container-main">
       <div class="title-container">
         <h1 class="main-title">Actualités</h1>
-        <!-- <div class="filter-container">
-          <div class="when-container">
-            <button href="#" class="btn_access">CATÉGORIE</button>
-          </div>
-          <div class="what-container">
-            <button href="#" class="btn_access">DATE</button>
-          </div>
-        </div> -->
+
         <div class="tri-categorie">
           <button data-filter="*">Tous</button>
           <button data-filter=".rencontre">Rencontre</button>
@@ -66,7 +59,7 @@
   				while ( $the_query->have_posts() ) {
   							$the_query -> the_post();
                 ?>
-                <article class="actu_principal <?php the_field('categorie'); ?> col-12 col-md-6 col-lg-4">
+                <article class="actu_reveal <?php the_field('categorie'); ?> col-12 col-md-6 col-lg-4">
                   <div class="actu_principal_image set_bg" style="background-image:url(<?php the_field('article_image'); ?>)"></div>
                   <div class="actu_principal_info col-11">
                     <div class="categorie col-1 <?php the_field('categorie'); ?>">
@@ -127,6 +120,16 @@
   var filterValue = $(this).attr('data-filter');
   $grid.isotope({ filter: filterValue });
   });
+  //add class active
+  $('.tri-categorie button').click(function(){
+    console.log("heeeeeyyyyy");
+      //removes class from all items to "clear" the class from your menu
+      $('.tri-categorie button').removeClass("active");
+
+      //adds the class to whichever item you clicked
+      $(this).addClass("active");
+
+});
 
 </script>
 
