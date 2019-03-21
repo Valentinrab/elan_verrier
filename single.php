@@ -5,14 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Elan Verrier - Article</title>
+
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/article.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/article.css">
 
-
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-
+  <script>document.documentElement.className = 'js';</script>
 </head>
 
 <body>
@@ -103,7 +105,9 @@
   ?>
 
 </body>
-
+<script src="<?php bloginfo('template_directory'); ?>/js/menu.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/easings.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/menu3.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>

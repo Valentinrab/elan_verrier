@@ -51,50 +51,7 @@ function register_cpt_membre()
 	);
 	register_post_type('membre', $args);
 	}
-
-  //FAQ
-  add_action('init', 'register_cpt_question');
-
-  function register_cpt_question()
-  	{
-  	$labels = array(
-  		'name' => _x('Questions', 'question') ,
-  		'singular_name' => _x('Questions', 'question') ,
-  		'add_new' => _x('Ajouter', 'question') ,
-  		'add_new_item' => _x('Ajouter Question', 'question') ,
-  		'edit_item' => _x('Editer Question', 'question') ,
-  		'new_item' => _x('Nouveau Question', 'question') ,
-  		'view_item' => _x('Voir Question', 'question') ,
-  		'search_items' => _x('Rechercher Questions', 'question') ,
-  		'not_found' => _x('Aucun Question', 'question') ,
-  		'not_found_in_trash' => _x('Aucun Question dans la Corbeille', 'question') ,
-  		'parent_item_colon' => _x('Parent Question:', 'question') ,
-  		'menu_name' => _x('Questions', 'question') ,
-  	);
-  	$args = array(
-  		'labels' => $labels,
-  		'hierarchical' => false,
-  		'supports' => array(
-  			'title',
-  			'editor'
-  		) ,
-  		'public' => true,
-  		'show_ui' => true,
-  		'show_in_menu' => true,
-  		'menu_position' => 5,
-  		'menu_icon' => 'dashicons-format-quote',
-  		'show_in_nav_menus' => true,
-  		'publicly_queryable' => true,
-  		'exclude_from_search' => false,
-  		'has_archive' => true,
-  		'query_var' => true,
-  		'can_export' => true,
-  		'rewrite' => true,
-  		'capability_type' => 'post'
-  	);
-  	register_post_type('question', $args);
-  	}
-
+	
     //EVENEMENTS
     add_action('init', 'register_cpt_evenement');
 
