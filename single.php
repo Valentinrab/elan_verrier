@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/article.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
 
-
+  <script src="<?php bloginfo('template_directory'); ?>/js/rellax.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
@@ -55,7 +55,7 @@
                       <h2 class="title-article"><?php the_sub_field('sous_titre'); ?></h2>
                       <p class="p-article"><?php the_sub_field('texte'); ?></p>
                     </div>
-                    <div class="col-10 col-lg-4 offset-1 offset-lg-2 offset-xl-2 mt-xl-0 mt-lg-0 mt-5 set_bg" id="col-left2" style="background-image: url(<?php the_sub_field('image'); ?>);"></div>
+                    <div class="col-10 col-lg-4 offset-1 offset-lg-2 offset-xl-2 mt-xl-0 mt-lg-0 mt-5 set_bg rellax" data-rellax-speed="1"  id="col-left2" style="background-image: url(<?php the_sub_field('image'); ?>);"></div>
 
                   </div>
 
@@ -64,7 +64,7 @@
                   <div class="image_texte row p-block">
 
 
-                    <div class="col-10 col-lg-4 offset-1 offset-lg-0 offset-xl-0 mt-xl-0 mt-lg-0 mt-5 set_bg" id="col-left2" style="background-image: url(<?php the_sub_field('image'); ?>);"></div>
+                    <div class="col-10 col-lg-4 offset-1 offset-lg-0 offset-xl-0 mt-xl-0 mt-lg-0 mt-5 set_bg rellax" data-rellax-speed="1" id="col-left2" style="background-image: url(<?php the_sub_field('image'); ?>);"></div>
                     <div class="col-10 col-lg-6 offset-1 offset-lg-2 offset-xl-2" id="col-right2">
                       <h2 class="title-article"><?php the_sub_field('sous_titre'); ?></h2>
                       <p class="p-article"><?php the_sub_field('texte'); ?></p>
@@ -110,5 +110,8 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
 
 <script  src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
-
+<script>
+  // Accepts any class name
+  var rellax = new Rellax('.rellax');
+</script>
 </html>
