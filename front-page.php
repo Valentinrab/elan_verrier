@@ -31,7 +31,7 @@
 
       <main id="content_video">
         <!-- <img src="<?php bloginfo('template_directory'); ?>/images/accueil.jpg" class="video" alt="image de présentation d'Elan Verrier"> -->
-        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_1.svg" class="tache tache1" alt="tache">
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_1.svg" data-rellax-speed="-1" class="tache tache1 rellax" alt="tache">
 
         <div class="video set_bg">
           <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ChezG3QRsr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
@@ -135,16 +135,16 @@
             </a>
           </div>
         </div>
-        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_2.svg" class="tache tache2" alt="tache">
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_2.svg" data-rellax-speed="-0.7" class="tache tache2 rellax" alt="tache">
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/mains.png" class="illustration illustration1" alt="illustration">
         <div class="content_image col-12 col-lg-6 offset-lg-0">
-          <div class="image_l set_bg col-8 offset-2 col-lg-8 offset-lg-0 rellax" data-rellax-speed="2" style="background-image:url(<?php the_field('qui_sommes_nous_images_1'); ?>);"></div>
-          <div class="image_r set_bg col-8 offset-lg-4 rellax" data-rellax-speed="1" style="background-image:url(<?php the_field('qui_sommes_nous_images_2'); ?>);"></div>
+          <div class="image_l set_bg col-8 offset-2 col-lg-8 offset-lg-0 rellax img1" data-rellax-speed="1" style="background-image:url(<?php the_field('qui_sommes_nous_images_1'); ?>);"></div>
+          <div class="image_r set_bg col-8 offset-lg-4 rellax" data-rellax-speed="2" style="background-image:url(<?php the_field('qui_sommes_nous_images_2'); ?>);"></div>
         </div>
       </section>
 
       <section id="content_activites" class="mt-150px row">
-        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_3.svg" class="tache tache3" alt="tache">
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_3.svg" class="tache tache3 rellax" data-rellax-speed="-0.9" alt="tache">
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/soufflage.png" class="illustration illustration2" alt="illustration">
         <div class="content_image col-12 col-lg-6">
           <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0 rellax img3" data-rellax-speed="1" style="background-image:url(<?php the_field('activites_images'); ?>);"></div>
@@ -226,7 +226,7 @@
 
               </div>
         </section>
-        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_4.svg" class="tache tache4" alt="tache">
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_4.svg" class="tache tache4 rellax" data-rellax-speed="-2" alt="tache">
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/feu.png" class="illustration illustration3" alt="illustration">
         <div class="btn_access hey">
           <a href="<?php echo get_permalink(47); ?>" class="btn_access">
@@ -283,7 +283,7 @@
             <span class="line -bottom"></span>
           </a>
         </div>
-        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_1.svg" class="tache tache5" alt="tache">
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_1.svg" data-rellax-speed="-2" class="tache tache5 rellax" alt="tache">
       </section>
 
       <section id="content_faq" class="mt-150px">
