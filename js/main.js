@@ -62,6 +62,13 @@ $(document).ready(function() {
     distance: '50px',
     easing: 'ease'
   });
+  ScrollReveal().reveal('.bloc-ml', {
+    duration: 1000,
+    delay: 100,
+    origin: 'left',
+    distance: '20px',
+    easing: 'ease'
+  });
 
 
   ///////////////////scroll reveal///////////////////

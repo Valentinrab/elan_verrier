@@ -136,7 +136,7 @@
 .ekjs_info_text {
   max-width: 80%;
   margin-left: 25%;
-  line-height: 1.8em;
+  line-height: 25px;
   transform: translateY(68px);
 }
 

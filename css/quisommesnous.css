@@ -20,7 +20,11 @@ body {
 }
 
 p {
-  line-height: 20px;
+  line-height: 25px;
+}
+
+.button-pre-center{
+  text-align: center;
 }
 
 .set_bg {

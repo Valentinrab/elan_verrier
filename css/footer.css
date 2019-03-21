@@ -49,6 +49,11 @@
   margin: 0 10px;
   color: #f09682;
   font-size: 12px;
+  transition: .6s;
+}
+
+.ft-ctn-mention:hover{
+  color: #21253f;
 }
 
 @media screen and (max-width : 576px){

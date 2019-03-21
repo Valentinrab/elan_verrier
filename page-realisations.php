@@ -5,10 +5,11 @@
     <title>Elan Verrier - Accueil</title>
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/realisations.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/realisations.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">

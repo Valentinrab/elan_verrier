@@ -8,12 +8,11 @@
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
   overflow-X: hidden;
 }
 
 p {
-  line-height: 20px;
+  line-height: 25px;
 }
 
 .set_bg {
@@ -47,13 +46,14 @@ p {
 
 .tache4 {
   top: -5vh;
-  left: 50vw;
+  left: 78vw;
+  width: 30%;
 }
 
 .tache5 {
   top: 23vh;
   left: -15vw;
-  z-index: 1;
+  z-index: -1;
   width: 80%;
 }
 
@@ -132,7 +132,7 @@ p {
 }
 
 .bl {
-  margin-top: 35px;
+  margin-top: 45px;
   font-size: 30px
 }
 
@@ -175,10 +175,10 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.event-info{
+.event-info {
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -201,7 +201,7 @@ p {
   color: #FFF;
 }
 
-.event-categorie{
+.event-categorie {
   margin-bottom: 10px;
   text-transform: uppercase;
   color: #ffffff;
@@ -227,8 +227,6 @@ p {
   bottom: 0;
   padding: 10px;
 }
-
-
 
 /*section qui sommes nous */
 #content_about, #content_activites, #content_actu_article {
@@ -335,8 +333,13 @@ p {
   position: relative;
 }
 
+.actu_principal:hover .actu_principal_image {
+  transform: scale(1.04);
+}
+
 .actu_principal_image {
   height: 330px;
+  transition: 0.6s;
 }
 
 .actu_principal_info {
@@ -358,6 +361,10 @@ p {
 
 .actu_principal_info .actu_content_info {
   padding: 20px 0;
+}
+
+.actu_secondary:hover .actu_secondary_image {
+  transform: scale(1.04);
 }
 
 .categorie_title {
@@ -418,6 +425,7 @@ p {
 
 .actu_secondary_image {
   height: 195px;
+  transition: 0.6s;
 }
 
 .actu_secondary_info {
@@ -471,6 +479,11 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 1s;
+}
+
+.realisation_img:hover {
+  transform: scale(1.04);
 }
 
 #content_realisation_article>.realisation_img:nth-child(1) {
@@ -515,9 +528,14 @@ p {
   position: absolute;
   margin-top: 40px;
   content: "";
-  height: 5px;
+  height: 4px;
   width: 100%;
   background-color: #21253f;
+  transition: 0.6s;
+}
+
+.card-header:hover:before {
+  background-color: #f09682;
 }
 
 .btn {
@@ -528,10 +546,34 @@ p {
   color: #21253f;
   font-size: 16px;
   display: flex;
+  font-weight: bold;
+  transition: .6s;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card-header:hover .btn-link {
+  color: #f09682;
+  text-decoration: none;
+}
+
+.card-header:hover .btn-link {
+  color: #f09682;
+  text-decoration: none;
+}
+
+.card-header:hover .horizontal {
+  background-color: #f09682;
+}
+
+.card-header:hover .vertical {
+  background-color: #f09682;
 }
 
 .card-body {
-  background-color: #e8e8e8;
+  background-color: #F8F8F8;
 }
 
 .card-flex {
@@ -547,6 +589,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: .6s;
 }
 
 .vertical {
@@ -557,6 +600,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: .6s
 }
 
 .plus {

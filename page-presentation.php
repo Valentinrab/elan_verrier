@@ -85,7 +85,6 @@
 
         ?>
 
-        <a href="#" class="btn_membre offset-5">DEVENIR MEMBRE</a>
 
   </section>
 

@@ -54,6 +54,11 @@ p {
   padding: 3vw;
 }
 
+#slider_container{
+  background-color: #F8F8F8;
+}
+
+
 .ekjs_info_title.is_current {
   text-shadow: inherit;
 }
