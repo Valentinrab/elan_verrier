@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/accueil.css">
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/rellax.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
     <script>document.documentElement.className = 'js';</script>
 
@@ -132,15 +134,12 @@
               <span class="line -bottom"></span>
             </a>
           </div>
-
-
-
         </div>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_2.svg" class="tache tache2" alt="tache">
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/mains.png" class="illustration illustration1" alt="illustration">
         <div class="content_image col-12 col-lg-6 offset-lg-0">
-          <div class="image_l set_bg col-8 offset-2 col-lg-8 offset-lg-0" style="background-image:url(<?php the_field('qui_sommes_nous_images_1'); ?>);"></div>
-          <div class="image_r set_bg col-8 offset-lg-4" style="background-image:url(<?php the_field('qui_sommes_nous_images_2'); ?>);"></div>
+          <div class="image_l set_bg col-8 offset-2 col-lg-8 offset-lg-0 rellax" data-rellax-speed="2" style="background-image:url(<?php the_field('qui_sommes_nous_images_1'); ?>);"></div>
+          <div class="image_r set_bg col-8 offset-lg-4 rellax" data-rellax-speed="1" style="background-image:url(<?php the_field('qui_sommes_nous_images_2'); ?>);"></div>
         </div>
       </section>
 
@@ -148,7 +147,7 @@
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_3.svg" class="tache tache3" alt="tache">
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/soufflage.png" class="illustration illustration2" alt="illustration">
         <div class="content_image col-12 col-lg-6">
-          <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0" style="background-image:url(<?php the_field('activites_images'); ?>);"></div>
+          <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0 rellax img3" data-rellax-speed="1" style="background-image:url(<?php the_field('activites_images'); ?>);"></div>
         </div>
         <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
           <h2 class="content_title"><?php the_field('activites_titre'); ?></h2>
@@ -340,6 +339,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
-
   <script  src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
+  <script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+  </script>
 </html>

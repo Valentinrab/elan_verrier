@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/quisommesnous.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
-
+  <script src="<?php bloginfo('template_directory'); ?>/js/rellax.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -50,7 +50,7 @@
                     <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_2.svg" class="tache tache2" alt="tache">
                     <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/mains.png" class="illustration illustration1" alt="illustration">
                     <div class="content_image col-12 col-lg-6 offset-lg-0">
-                      <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0" style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
+                      <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0 rellax" data-rellax-speed="0.7"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
                     </div>
                   </section>
 
@@ -60,7 +60,7 @@
                 <section class="image_texte row">
                   <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_3.svg" class="tache tache3" alt="tache">
                   <div class="content_image col-12 col-lg-6">
-                    <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0" style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
+                    <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0 rellax" data-rellax-speed="0.7"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
                   </div>
                   <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
                     <p class="content_para"><?php the_sub_field('texte'); ?></p>
@@ -103,7 +103,9 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
-
 <script  src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
-
+<script>
+  // Accepts any class name
+  var rellax = new Rellax('.rellax');
+</script>
 </html>

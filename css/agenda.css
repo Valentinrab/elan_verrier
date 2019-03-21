@@ -160,6 +160,7 @@ p {
   height: 250px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .desc-wrap {

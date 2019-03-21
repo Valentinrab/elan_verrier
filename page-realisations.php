@@ -13,16 +13,9 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js.map"></script> -->
-
     <script src = "<?php bloginfo('template_directory'); ?>/js/masonry-docs/masonry.pkgd.js"></script>
     <script src = "<?php bloginfo('template_directory'); ?>/js/masonry.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -81,9 +74,23 @@
                   <img src="<?php the_field('realisation_image'); ?>" alt="">
                 </div>
                 <div class="modal-footer">
-                  <p class="modal-creator"><?php the_field('realisation_createur'); ?></p>
-                  <a href="<?php the_field('realisation_lien_instagram'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="instagram"></a>
-                  <a href="<?php the_field('realisations_lien_linkedin'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
+                  <?php
+                    if( have_rows('creator_information') ):
+                        while ( have_rows('creator_information') ) : the_row();
+                        ?>
+                        <div class="content_creator_information">
+                          <p class="modal-creator"><?php the_sub_field('creator_name'); ?></p>
+                          <div>
+                            <a href="<?php the_sub_field('link_linkedin'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="instagram"></a>
+                            <a href="<?php the_sub_field('link_instagram'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
+                          </div>
+
+                        </div>
+
+                  <?php
+                      endwhile;
+                      endif;
+                  ?>
                 </div>
               </div>
 
