@@ -82,12 +82,10 @@ $(document).ready(function() {
   });
   ScrollReveal().reveal('.image_l', {
     duration: 1000,
-    delay: 100,
     easing: 'ease'
   });
   ScrollReveal().reveal('.image_r', {
-    duration: 1300,
-    delay: 50,
+    duration: 1500,
     easing: 'ease'
   });
 
