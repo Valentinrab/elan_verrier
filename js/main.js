@@ -37,6 +37,14 @@ $(document).ready(function() {
     distance: '100px',
     easing: 'ease'
   });
+  ScrollReveal().reveal('.actu_reveal', {
+    duration: 1500,
+    delay: 100,
+    interval: 300,
+    origin: 'bottom',
+    distance: '100px',
+    easing: 'ease'
+  });
   ScrollReveal().reveal('.realisation_img', {
     duration: 1600,
     delay: 200
@@ -55,13 +63,16 @@ $(document).ready(function() {
     easing: 'ease'
 
   });
+
   ScrollReveal().reveal('.event-reveal', {
     duration: 1600,
     delay: 200,
+    interval: 200,
     origin: 'bottom',
     distance: '50px',
-    easing: 'ease'
+    easing: 'ease',
   });
+
   ScrollReveal().reveal('.bloc-ml', {
     duration: 1000,
     delay: 100,

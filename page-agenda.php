@@ -148,9 +148,6 @@
               }
             ?>
 
-<!--
-          </div> -->
-        <!-- </div> -->
 
       </div>
     </main>
@@ -162,18 +159,7 @@
   ?>
 
 </body>
-<script>
-  //script du tri
 
-  // init Isotope
-  var $grid = $('.wrap-group').isotope({});
-  // filter items on button click
-  $('.tri-categorie').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-  });
-
-</script>
 <script src="<?php bloginfo('template_directory'); ?>/js/menu.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/easings.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/menu3.js"></script>
