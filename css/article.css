@@ -22,6 +22,53 @@ h3 {
   padding: 0 0 0 15px;
 }
 
+.tache {
+  position: absolute;
+  z-index: -1;
+  width: 30%;
+  height: auto;
+}
+
+.tache6{
+  width: 25%;
+}
+
+.btn_lls {
+  margin: 10px 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  color: #f09682;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.btn_lls {
+  text-decoration: none;
+}
+
+.btn_lls:hover{
+  color: #f09682;
+}
+
+.btn_lls:before {
+  content: " ";
+  bottom: -3px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  transition: all 0.35s ease-in-out;
+}
+
+.btn_lls:hover:before {
+  width: 100%;
+  left: 0%;
+  background-color: #f09682;
+}
+
 .mt-200px{
   margin-top: 200px;
 }

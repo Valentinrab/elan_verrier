@@ -88,6 +88,11 @@ $(document).ready(function() {
     duration: 1500,
     easing: 'ease'
   });
+  ScrollReveal().reveal('.tache', {
+    duration: 1500,
+    delay: 100,
+    easing: 'ease'
+  });
 
 
   ///////////////////scroll reveal///////////////////

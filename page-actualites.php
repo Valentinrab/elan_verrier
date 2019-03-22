@@ -73,7 +73,7 @@
                       </div>
                       <h1 class="col-12"><?php the_title(); ?></h1>
                       <p class="actu_content_info_para"><?php echo limit_words(the_field('article_chapeau'));?></p>
-                      <div class="float-right"><a href="<?php the_permalink(); ?>" class="btn_access">LIRE LA SUITE</a></div>
+                      <div class="float-right"><a class="btn_lls" href="<?php the_permalink(); ?>">Lire la suite</a></div>
                     </div>
                   </div>
                 </article>
@@ -86,7 +86,7 @@
 
 
         </section>
-        
+
 
       </section>
 

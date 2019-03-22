@@ -11,12 +11,10 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/article.css">
 
-<<<<<<< HEAD
+
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-=======
   <script src="<?php bloginfo('template_directory'); ?>/js/rellax.min.js"></script>
->>>>>>> 4918db75e186821b823532e05915a19ebc7e3891
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>document.documentElement.className = 'js';</script>
 </head>
@@ -30,7 +28,7 @@
   <section class="global">
     <section class="container mt-200px">
       <main class="container-main">
-        <a class="btn_access" href="<?php echo get_permalink(47); ?>">RETOUR</a>
+        <a class="btn_lls" href="<?php echo get_permalink(47); ?>">RETOUR</a>
         <article class="article-verrier">
 
           <div class="row" id="row-glob">
