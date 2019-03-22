@@ -186,7 +186,7 @@ div {
 }
 .button--bubble__container {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .button--bubble__container .effect-button {
   position: absolute;

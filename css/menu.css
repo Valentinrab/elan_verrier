@@ -33,7 +33,7 @@ header{
 }
 
 .btn_member{
-  margin-left: 75%;
+  margin-left: 70%;
 	z-index: 0;
 }
 
@@ -562,17 +562,17 @@ main {
 		width: 100vw;
 		height: 100%;
 	}
-	.hamburger {
+	/* .hamburger {
 		position: fixed;
 		top: 0.5em;
 		right: 0.5em;
 		transform: scale(0.75);
-	}
+	} */
 	.content {
-		height: auto;
-		min-height: 0;
+		/* height: auto;
+		min-height: 0; */
 		/* padding-bottom: 10em; */
-		flex-direction: column;
+		/* flex-direction: column; */
 	}
 	.content--fixed {
 		position: relative;
@@ -583,18 +583,14 @@ main {
 
 }
 
-@media screen and (max-width:992px){
-  #logo{
-    margin-right: 40%;
-  }
-
+@media screen and (max-width:1200px){
 	.btn_member{
 		margin-left: 60%;
 	}
 }
 
-@media screen and (max-width:900px){
-  #logo{
+@media screen and (max-width:992px){
+	#logo{
     margin-right: 40%;
   }
 
@@ -603,7 +599,8 @@ main {
 	}
 }
 
-@media screen and (max-width:700px){
+
+@media screen and (max-width:768px){
   #logo{
     margin-right: 40%;
   }
@@ -622,6 +619,12 @@ main {
     margin-right: 10%;
   }
 
+	.btn_member{
+		margin-left: 30%;
+	}
+}
+
+@media screen and (max-width:350px){
 	.btn_member{
 		margin-left: 10%;
 	}

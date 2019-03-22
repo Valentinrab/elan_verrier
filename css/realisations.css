@@ -129,7 +129,7 @@ p {
   width: 100%;
   /* text-align: right; */
   display: inherit;
-  margin: 0;
+  margin: 5px 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -144,7 +144,7 @@ p {
 .modal-footer img {
   width: 20px;
   height: auto;
-  margin: 0 10px;
+  margin: 0 3px;
 }
 
 @media screen and (max-width : 576px) {
