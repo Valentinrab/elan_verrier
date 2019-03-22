@@ -196,7 +196,7 @@ main {
 }
 
 .global-menu__item:hover {
-	color: #000000;
+	color:#21253f;
 	transition: 0.3s ease 0;
 }
 

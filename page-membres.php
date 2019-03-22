@@ -67,8 +67,8 @@
             <p><?php the_field('paragraphe_membre'); ?></p>
           </div>
           <div class="btn_access col-4">
-            <a>
-              <span class="text">télécharger le document</span>
+            <a href="<?php the_field('formulaire'); ?>" target="_blank">
+              <span class="text">Télécharger le document</span>
               <span class="line -right"></span>
               <span class="line -top"></span>
               <span class="line -left"></span>

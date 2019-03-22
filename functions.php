@@ -10,26 +10,20 @@
 // add_action( 'init', 'enregistre_menus' );
 
 //limit words number
-// function limit_words($text) {
-//   $text = strip_shortcodes( $text );
-//   $text = apply_filters('the_content', $text);
-//   $text = str_replace(']]>', ']]>', $text);
-//   $excerpt_length = apply_filters('excerpt_length', 5);
-//   $excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
-//   return wp_trim_words( $text, $excerpt_length, $excerpt_more );
-// }
-function the_excerpt() {
 
-    /**
-     * Filters the displayed post excerpt.
-     *
-     * @since 0.71
-     *
-     * @see get_the_excerpt()
-     *
-     * @param string $post_excerpt The post excerpt.
-     */
-    echo apply_filters( 'the_excerpt', get_the_excerpt() );
+// Custom Excerpt function for Advanced Custom Fields
+function custom_field_excerpt() {
+	global $post;
+	$text = get_field('article_chapeau'); //Replace 'your_field_name'
+	if ( '' != $text ) {
+		$text = strip_shortcodes( $text );
+		$text = apply_filters('the_content', $text);
+		$text = str_replace(']]&gt;', ']]&gt;', $text);
+		$excerpt_length = 5; // 20 words
+		$excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
+		$text = wp_trim_words( $text, $excerpt_length, $excerpt_more );
+	}
+	return apply_filters('the_excerpt', $text);
 }
 
 //Membres
