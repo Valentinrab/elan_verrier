@@ -21,7 +21,7 @@ p {
   background-size: cover;
 }
 
-iframe{
+iframe {
   width: 100%;
   height: auto;
 }
@@ -62,7 +62,7 @@ iframe{
   width: 30%;
 }
 
-.tache6{
+.tache6 {
   width: 25%;
 }
 
@@ -72,7 +72,6 @@ iframe{
   z-index: -1;
   bottom: -32vh;
 } */
-
 /*illustrations*/
 .illustration {
   position: absolute;
@@ -124,7 +123,7 @@ iframe{
   text-decoration: none;
 }
 
-.btn_lls:hover{
+.btn_lls:hover {
   color: #f09682;
 }
 
@@ -181,6 +180,26 @@ iframe{
   font-size: 30px
 }
 
+.lettrine1 {
+  top: -5%;
+  left: -15%;
+}
+
+.lettrine2 {
+  top: -5%;
+  left: -15%;
+}
+
+.lettrine3 {
+  top: -5%;
+  left: 37%;
+}
+
+.lettrine4 {
+  top: -5%;
+  left: 37%;
+}
+
 /*PROCHAINEMENT*/
 .next_ev {
   background-color: #f09682;
@@ -195,6 +214,22 @@ iframe{
   display: flex;
 }
 
+.fa-sort-down {
+  color: #fff;
+  position: absolute;
+  /* transform: rotate(90deg); */
+  font-size: 1.5em;
+  top: 65%;
+  left: 115%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  transition: 1s;
+}
+
+.next_ev:hover .fa-sort-down {
+  transform: translate(-50%, -50%) rotate(0deg);
+  top: 15%;
+}
+
 .next_ev:hover {
   right: 0%;
 }
@@ -204,11 +239,13 @@ iframe{
 }
 
 .next_ev_title {
+  position: absolute;
   top: 50%;
+  left: 6%;
+  transform: translate(-50%, -50%) rotate(-90deg);
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  writing-mode: tb-rl;
   text-align: center;
 }
 
@@ -687,7 +724,6 @@ iframe{
   /* .tache6 {
     left: 60vw;
   } */
-
   .illustration3 {
     top: -15vh;
   }
@@ -719,12 +755,12 @@ iframe{
   }
 
   .tache1 {
-      top: 45vh;
-      left: -20vw;
-      width: 40%;
+    top: 45vh;
+    left: -20vw;
+    width: 40%;
   }
 
-  .img1{
+  .img1 {
     margin-top: 200px;
   }
 

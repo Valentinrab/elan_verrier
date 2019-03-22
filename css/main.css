@@ -37,3 +37,12 @@ a:hover{
 .main-title{
   color : #21253f;
 }
+
+.lettrine{
+  font-family: 'Ubuntu', sans-serif;
+  opacity: .15;
+  position: absolute;
+  font-size: 100px;
+  font-weight: bold;
+  color : #21253f;
+}

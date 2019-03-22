@@ -234,11 +234,14 @@ p {
 }
 
 .hours-event-modal{
-  font-weight: bold;
-  color: #03579c;
-  font-size: 12px;
-  margin-top: 20px;
-  line-height: 20px;
+      font-weight: bold;
+      color: #03579c;
+      font-size: 12px;
+      margin-top: 20px;
+      line-height: 20px;
+      text-align: left;
+      padding: 0px 15px;
+  
 }
 
 .desc-event-modal{
@@ -285,7 +288,7 @@ p {
 
 @media screen and (max-width : 1200px){
   .tache6{
-    
+
   }
 }
 

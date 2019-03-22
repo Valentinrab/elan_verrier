@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/accueil.css">
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
-
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -34,7 +33,7 @@
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_1.svg" data-rellax-speed="-1" class="tache tache1 rellax" alt="tache">
 
         <div class="video set_bg">
-          <iframe class="video" src="<?php the_field('video_presentation');?>?background=1&autoplay=1&loop=infinite&byline=0&title=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video" src="<?php the_field('video_presentation');?>?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="video_title">
           <h1 class="name"><?php the_field('video_titre'); ?></h1>
@@ -44,8 +43,9 @@
 
       </main>
       <div class="next_ev">
-        <p class="next_ev_title">PROCHAINEMENT</p>
-        <div class="next_ev_container">
+        <p class="next_ev_title">PROCHAINEMENT<i class="fas fa-sort-down"></i></p>
+
+        <a href="<?php echo get_permalink(44); ?>"><div class="next_ev_container">
           <!-- prochainement debut  -->
           <?php
 
@@ -115,10 +115,12 @@
           ?>
 <!-- prochainement fin -->
         </div>
+      </a>
       </div>
 
       <section id="content_about" class="mt-150px row">
         <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
+          <span class="lettrine lettrine1"><?php the_field('lettrine'); ?></span>
           <h2 data-sr="move 250px" class="content_title"><?php the_field('qui_sommes_nous_titre'); ?></h2>
           <p data-sr="move 250px" class="content_para"><?php the_field('qui_sommes_nous_paragraphe'); ?></p>
 
@@ -147,6 +149,7 @@
           <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0 rellax img3" data-rellax-speed="1" style="background-image:url(<?php the_field('activites_images'); ?>);"></div>
         </div>
         <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
+          <span class="lettrine lettrine2"><?php the_field('lettrine2'); ?></span>
           <h2 class="content_title"><?php the_field('activites_titre'); ?></h2>
           <p class="content_para"><?php the_field('activites_paragraphe'); ?></p>
           <div class="btn_access">
@@ -162,6 +165,8 @@
       </section>
 
       <section id="content_actu" class="mt-150px">
+        <span class="lettrine lettrine3"><?php the_field('lettrine3'); ?></span>
+
         <h2 id="actu_title">Les actualités</h2>
         <section id="content_actu_article" class="row">
           <?php
@@ -237,6 +242,7 @@
       </section>
 
       <section id="content_realisation" class="mt-200px">
+        <span class="lettrine lettrine4"><?php the_field('lettrine4'); ?></span>
         <h2 id="actu_title">Réalisations</h2>
 
         <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/vase.png" class="illustration illustration4" alt="illustration">
