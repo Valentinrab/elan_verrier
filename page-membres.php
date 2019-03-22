@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/membres.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
-
+  <link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/favicon-elan-verrier.png" type="image/png">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

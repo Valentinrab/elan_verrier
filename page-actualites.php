@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/actualites.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
-
+  <link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/favicon-elan-verrier.png" type="image/png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/rellax.min.js"></script>
