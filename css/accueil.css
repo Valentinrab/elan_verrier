@@ -57,11 +57,16 @@ p {
   width: 30%;
 }
 
-.tache6 {
+.tache6{
+  width: 25%;
+}
+
+/* .tache6 {
   left: 60vw;
   width: 40%;
   z-index: -1;
-}
+  bottom: -32vh;
+} */
 
 /*illustrations*/
 .illustration {
@@ -638,9 +643,9 @@ p {
     left: 60vw;
   }
 
-  .tache6 {
+  /* .tache6 {
     left: 60vw;
-  }
+  } */
 
   .illustration3 {
     top: -15vh;
@@ -683,8 +688,7 @@ p {
   }
 
   .tache6 {
-    width: 50%;
-    left: 50vw;
+    width: 25%;
   }
 
   .tache4 {

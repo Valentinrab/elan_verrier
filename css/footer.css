@@ -12,7 +12,7 @@
   bottom: 0;
   font-family: 'Montserrat', sans-serif;
   width: 100%;
-  margin : 150px 0 20px 0;
+  margin : 150px 0 0 0;
 }
 
 /* section top */
@@ -26,7 +26,10 @@
   margin : 0 10px;
 }
 
-
+.tache6{
+  right: 0;
+  bottom: 0;
+}
 
 .ft-ctn-sn{
   background-position: center;
@@ -40,6 +43,7 @@
 .container-bottom {
   display: flex;
   justify-content: center;
+  position: relative;
   margin-top : 20px;
 }
 
@@ -50,6 +54,7 @@
   color: #f09682;
   font-size: 12px;
   transition: .6s;
+  padding: 10px 0;
 }
 
 .ft-ctn-mention:hover{

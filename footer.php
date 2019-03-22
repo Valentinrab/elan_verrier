@@ -31,7 +31,9 @@
       <section class="container-bottom">
           <a href="<?php echo get_permalink(107); ?>" class="ft-ctn-mention">MENTIONS LÉGALES</a>
           <a href="<?php echo get_permalink(63); ?>" class="ft-ctn-mention">NOUS CONTACTER</a>
+          <img src="<?php bloginfo('template_directory'); ?>/images/taches/taches_6_cut.png" class="tache tache6" alt="tache">
       </section>
+
 
     </section>
 

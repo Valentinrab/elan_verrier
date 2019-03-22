@@ -39,6 +39,7 @@
 
       <div class="intro-realisation col-12">
         <p><?php the_field('introduction_realisation'); ?></p>
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_1.svg" data-rellax-speed="-1" class="tache tache1 rellax" alt="tache">
       </div>
 
       <div class="grid">

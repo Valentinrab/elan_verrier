@@ -320,7 +320,6 @@
               endif;
           ?>
 
-        <img src="<?php bloginfo('template_directory'); ?>/images/taches/taches_6_cut.png" class="tache tache6" alt="tache">
       </section>
 
     </section>

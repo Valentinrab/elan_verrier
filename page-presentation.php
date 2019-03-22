@@ -47,7 +47,7 @@
                     <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
                       <p class="content_para"><?php the_sub_field('texte'); ?></p>
                     </div>
-                    <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_2.svg" class="tache tache2" alt="tache">
+                    <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_2.svg" data-rellax-speed="-0.7" class="tache tache2 rellax" alt="tache">
                     <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/mains.png" class="illustration illustration1" alt="illustration">
                     <div class="content_image col-12 col-lg-6 offset-lg-0">
                       <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0 rellax" data-rellax-speed="0.7"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
@@ -58,7 +58,7 @@
                 elseif( get_row_layout() == 'image_texte' ): ?>
 
                 <section class="image_texte row">
-                  <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_3.svg" class="tache tache3" alt="tache">
+                  <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_3.svg" class="tache tache3 rellax" data-rellax-speed="-0.9" alt="tache">
                   <div class="content_image col-12 col-lg-6">
                     <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0 rellax" data-rellax-speed="0.7"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
                   </div>
@@ -84,7 +84,6 @@
         endif;
 
         ?>
-
 
   </section>
 

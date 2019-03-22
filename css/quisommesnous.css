@@ -23,7 +23,7 @@ p {
   line-height: 25px;
 }
 
-.button-pre-center{
+.button-pre-center {
   text-align: center;
 }
 
@@ -37,13 +37,22 @@ p {
 .tache {
   position: absolute;
   z-index: -1;
-  width: 100%;
+  width: 30%;
   height: auto;
 }
 
 .tache2 {
-  top: -7vh;
-  left: 40vw;
+  top: -15vh;
+  left: 55vw;
+}
+
+.tache3 {
+  top: 20vh;
+  left: -15vw;
+}
+
+.tache6{
+  width: 25%;
 }
 
 /*illustrations*/
@@ -65,7 +74,7 @@ p {
   font-weight: bold;
 }
 
-.texte_image, .image_texte, .texte_centre{
+.texte_image, .image_texte, .texte_centre {
   justify-content: space-between;
   position: relative;
   margin: 70px 0;

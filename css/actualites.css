@@ -1,5 +1,5 @@
-body{
-  overflow-X:hidden;
+body {
+  overflow-X: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,7 +25,7 @@ p {
   background-size: cover;
 }
 
-p{
+p {
   line-height: 20px;
 }
 
@@ -73,7 +73,7 @@ p{
   flex-wrap: wrap;
 }
 
-.title-container{
+.title-container {
   display: flex;
   justify-content: space-around;
 }
@@ -84,11 +84,11 @@ p{
   right: 0;
 }
 
-.when-container, .what-container{
+.when-container, .what-container {
   margin: 0 70px;
 }
 
-.when-container button, .what-container button{
+.when-container button, .what-container button {
   background-color: transparent;
 }
 
@@ -96,14 +96,14 @@ p{
   margin: 0 0 150px;
 }
 
-.tri-categorie{
+.tri-categorie {
   display: flex;
 }
 
-.tri-categorie button{
-  -webkit-appearance : none;
-  background :transparent;
-  border : none;
+.tri-categorie button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
   font-size: 14px;
   font-weight: bold;
   color: #f09682;
@@ -112,11 +112,11 @@ p{
   transition: .3s;
 }
 
-.tri-categorie button:hover{
+.tri-categorie button:hover {
   color: #21253F;
 }
 
-.tri-categorie button{
+.tri-categorie button {
   outline: none;
 }
 
@@ -126,49 +126,53 @@ p{
 }
 
 /*categorie color*/
-.categorie.exposition{
+.categorie.exposition {
   background-color: #f8c477;
 }
 
-.categorie.vente{
+.categorie.vente {
   background-color: #da6e91;
 }
 
-.categorie.rencontre{
+.categorie.rencontre {
   background-color: #03579c;
 }
 
-.categorie.conference{
+.categorie.conference {
   background-color: #f09682;
 }
 
-.categorie.autre{
+.categorie.autre {
   background-color: #a15d9a;
 }
 
 /*fin des couleurs*/
-#content_actu{
+#content_actu {
   position: relative;
 }
 
-#actu_title{
+#actu_title {
   text-align: center;
   color: #000;
-  font-size:25px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 45px;
 }
 
+<<<<<<< HEAD
+.actu_principal {
+=======
 .actu_reveal{
+>>>>>>> 3d73e7f809b14b680fa94b7080768c5619332ab4
   padding: 10px;
   position: relative;
 }
 
-.actu_principal_image{
+.actu_principal_image {
   height: 250px;
 }
 
-.actu_principal_info{
+.actu_principal_info {
   min-height: 155px;
   background-color: #f8f8f8;
   padding: 0;
@@ -177,7 +181,7 @@ p{
   display: flex;
 }
 
-.actu_principal_info .categorie{
+.actu_principal_info .categorie {
   width: 135px;
   /* padding: 10px; */
   text-align: center;
@@ -186,141 +190,138 @@ p{
   font-weight: bold;
 }
 
-.actu_principal_info .actu_content_info{
+.actu_principal_info .actu_content_info {
   padding: 20px 0;
 }
 
-.categorie p{
+.categorie p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%) rotate(-90deg);
+  transform: translate(-50%, -50%) rotate(-90deg);
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.actu_date{
+.actu_date {
   display: flex;
   justify-content: space-between;
   padding: 0;
 }
 
-.actu_date p{
+.actu_date p {
   font-size: 12px;
 }
 
-.actu_principal_info h1{
+.actu_principal_info h1 {
   margin: 20px 0;
   font-weight: bold;
   padding: 0;
   font-size: 14px;
 }
 
-.actu_content_info_para{
+.actu_content_info_para {
   font-size: 12px;
   margin-bottom: 20px;
 }
 
-#content_actu .actu_principal .btn_access{
+#content_actu .actu_principal .btn_access {
   margin: 0;
   position: relative;
   left: auto;
 }
 
 /*taches*/
-.tache{
+.tache {
   position: absolute;
   z-index: -1;
   width: 100%;
   height: auto;
 }
 
-.tache3{
+.tache3 {
   top: 0vh;
   left: -40vw;
 }
 
-.tache6{
-  top: 100vh;
-  left: 60vw;
-  width: 40%;
-  z-index: -1;
+.tache6 {
+  width: 25%;
 }
 
-@media screen and (max-width : 992px){
-  .tache3{
+@media screen and (max-width : 992px) {
+  .tache3 {
     width: 130%;
   }
 
-  .tache6{
+  .tache6 {
     top: 170vh;
     width: 50%;
     left: 50vw;
   }
 }
 
-@media screen and (max-width : 768px){
-  .tache3{
+@media screen and (max-width : 768px) {
+  .tache3 {
     width: 150%;
     left: -50vw;
   }
 
-  .tache6{
+  .tache6 {
     top: 270vh;
     left: 55vw;
   }
 }
 
-@media screen and (max-width : 576px){
-  .tache3{
+@media screen and (max-width : 576px) {
+  .tache3 {
     width: 170%;
     left: -60vw;
     top: -10vh;
   }
 
-  .actu_principal{
-    padding : 40px;
+  .actu_principal {
+    padding: 40px;
   }
 
-  .mt-150px{
+  .mt-150px {
     margin-top: 75px;
   }
 
-  .main-title{
+  .main-title {
     margin-bottom: 20px;
   }
 
-  .title-container{
+  .title-container {
     justify-content: center;
     flex-direction: column;
   }
 
-  .filter-container{
+  .filter-container {
     margin-left: -20px;
   }
 
-  .when-container{
+  .when-container {
     margin: 0 0px;
   }
 
-  .what-container{
+  .what-container {
     margin: 0 110px;
   }
 }
 
-@media screen and (max-width : 450px){
-  .tache6{
+@media screen and (max-width : 450px) {
+  .tache6 {
     top: 280vh;
   }
 }
 
-@media screen and (max-width : 370px){
-  .tache3{
-    display: none;
-  }
-  .tache6{
+@media screen and (max-width : 370px) {
+  .tache3 {
     display: none;
   }
 
+  .tache6 {
+    display: none;
+  }
 }

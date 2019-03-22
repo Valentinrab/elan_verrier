@@ -42,7 +42,7 @@
            	// loop through the rows of data
               while ( have_rows('membres') ) : the_row(); ?>
               <div class="wrap 1">
-                <img src="<?php bloginfo('template_directory'); ?>/images/taches/membres_1.svg" class="tache tache1" alt="tache">
+                <img src="<?php bloginfo('template_directory'); ?>/images/taches/membres_1.svg" class="tachemembre tache1" alt="tache">
                 <div class="image-membre" style="background-image:url('<?php the_sub_field('membre_image'); ?>');"></div>
                 <div class="desc-wrap">
                   <h3 class="name-bold"><?php the_sub_field('membre_nom'); ?></h3>
