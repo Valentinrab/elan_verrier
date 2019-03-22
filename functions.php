@@ -9,6 +9,16 @@
 // }
 // add_action( 'init', 'enregistre_menus' );
 
+//limit words number
+function limit_words($text) {
+  $text = strip_shortcodes( $text );
+  $text = apply_filters('article_chapeau', $text);
+  $text = str_replace(']]>', ']]>', $text);
+  $excerpt_length = apply_filters('excerpt_length', 15);
+  $excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
+  return wp_trim_words( $text, $excerpt_length, $excerpt_more );
+}
+
 //Membres
 add_action('init', 'register_cpt_membre');
 
@@ -51,7 +61,7 @@ function register_cpt_membre()
 	);
 	register_post_type('membre', $args);
 	}
-	
+
     //EVENEMENTS
     add_action('init', 'register_cpt_evenement');
 
