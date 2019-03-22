@@ -298,8 +298,8 @@
 
                 <div class="card">
                   <div class="card-header" id="headingOne">
-                    <h5 class="mb-0 card-flex" data-toggle="collapse" data-target="#collapse_<?php echo $count ?>" aria-expanded="false" aria-controls="collapseOne">
-                      <button class="btn btn-link collapsed" type="button" >
+                    <h5 class="mb-0 card-flex collapsed" data-toggle="collapse" data-target="#collapse_<?php echo $count ?>" aria-expanded="false" aria-controls="collapseOne">
+                      <button class="btn btn-link " type="button" >
                         <?php the_sub_field('faq_questions'); ?>
                         <div class="plus">
                           <div class="horizontal"></div>

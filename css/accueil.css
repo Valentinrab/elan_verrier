@@ -626,7 +626,7 @@ p {
   margin-left: 500px;
 }
 
-.card-flex .collapsed .plus {
+.card-flex.collapsed .plus {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
