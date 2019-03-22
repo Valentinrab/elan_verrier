@@ -86,7 +86,7 @@ main {
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
-	
+
 }
 
 .content {
@@ -139,7 +139,7 @@ main {
 	text-align: center;
 }
 
-.global-menu__item {
+.global-menu__wrap > .global-menu__item {
 	color: #fff;
 	/* font-family: var(--font-family-menu); */
 	font-size: 40px;
@@ -149,8 +149,8 @@ main {
 	pointer-events: none;
 	display: block;
 	margin: 0.5em 0;
-	transition: transform 0.3s, opacity 0.3s;
-	transition-timing-function: ease-in;
+	transition: transform 0.3s ease-in, opacity 0.3s ease-in, color 0.3s ease-in 0;
+
 }
 
 .global-menu__item--demo-2:nth-child(odd) {
@@ -190,7 +190,8 @@ main {
 }
 
 .global-menu__item:hover {
-	color: var(--color-menu-hover);
+	color: #000000;
+	transition: 0.3s ease 0;
 }
 
 .global-menu__item.is-opened {
