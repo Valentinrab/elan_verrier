@@ -35,8 +35,9 @@
 
         <div class="video set_bg">
           <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ChezG3QRsr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <iframe class="vimeo" src="https://player.vimeo.com/video/76979871?background=1&autoplay=1&loop=1&byline=0&title=0"
-          frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <video autoplay loop muted>
+            <source src="https://www.youtube.com/embed/ChezG3QRsr8" type="video/mp4">
+          </video>
 
         </div>
         <div class="video_title">
