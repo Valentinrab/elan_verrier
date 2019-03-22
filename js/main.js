@@ -2,7 +2,9 @@ $(document).ready(function() {
 
   ///////////////////scroll reveal///////////////////
   //
-  if (window.matchMedia("(min-width: 600px)").matches) {
+  // if (window.matchMedia("(min-width: 600px)").matches) {
+  var mq = window.matchMedia( "(min-width:740px)" );
+  if (mq.matches) {
     ScrollReveal().reveal('.content_title', {
       duration: 1500,
       delay: 100,
@@ -94,17 +96,6 @@ $(document).ready(function() {
       delay: 100,
       easing: 'ease'
     });
-} else {
-  /* L'affichage est inférieur à 600px de large */
 }
-
-
-
-  ///////////////////scroll reveal///////////////////
-
-
-
-
-
 
 })

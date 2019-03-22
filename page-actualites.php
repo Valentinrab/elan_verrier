@@ -72,7 +72,7 @@
                         <p><?php the_time('d/m/Y') ?></p>
                       </div>
                       <h1 class="col-12"><?php the_title(); ?></h1>
-                      <p class="actu_content_info_para"><?php echo limit_words(the_field('article_chapeau'));?></p>
+                      <p class="actu_content_info_para"><?php echo custom_field_excerpt('article_chapeau'); ?></p>
                       <div class="float-right"><a class="btn_lls" href="<?php the_permalink(); ?>">Lire la suite</a></div>
                     </div>
                   </div>
