@@ -28,7 +28,7 @@
   <section class="global">
     <section class="container mt-200px">
       <main class="container-main">
-        <a class="btn_access" href="<?php echo get_permalink(47); ?>">RETOUR</a>
+        <a class="btn_lls" href="<?php echo get_permalink(47); ?>">RETOUR</a>
         <article class="article-verrier">
 
           <div class="row" id="row-glob">

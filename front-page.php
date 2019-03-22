@@ -34,11 +34,7 @@
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_1.svg" data-rellax-speed="-1" class="tache tache1 rellax" alt="tache">
 
         <div class="video set_bg">
-          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ChezG3QRsr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <video autoplay loop muted>
-            <source src="https://www.youtube.com/embed/ChezG3QRsr8" type="video/mp4">
-          </video>
-
+          <iframe class="video" src="<?php the_field('video_presentation');?>?background=1&autoplay=1&loop=infinite&byline=0&title=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="video_title">
           <h1 class="name"><?php the_field('video_titre'); ?></h1>
@@ -196,7 +192,7 @@
                         <p><?php the_time('d/m/Y') ?></p>
                       </div>
                       <h1 class="col-12"><?php the_title(); ?></h1>
-                      <div class="float-right"><a href="<?php the_permalink(); ?>" class="btn_access">LIRE LA SUITE</a></div>
+                      <div class="float-right"><a class="btn_lls" href="<?php the_permalink(); ?>">Lire la suite</a></div>
                     </div>
                   </div>
                 </article>
@@ -214,7 +210,7 @@
                         <p><?php the_time('d/m/Y') ?></p>
                       </div>
                       <h1 class="col-sm-12"><?php the_title(); ?></h1>
-                      <div class="float-right"><a href="<?php the_permalink(); ?>" class="btn_access">LIRE LA SUITE</a></div>
+                      <div class="float-right"><a class="btn_lls" href="<?php the_permalink(); ?>">Lire la suite</a></div>
                     </div>
                   </div>
                 </article>
@@ -332,6 +328,7 @@
 
 
   </body>
+
   <script src="<?php bloginfo('template_directory'); ?>/js/menu.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/easings.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/menu3.js"></script>

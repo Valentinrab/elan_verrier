@@ -19,6 +19,42 @@ p {
   margin-top: 150px;
 }
 
+.btn_lls {
+  margin: 10px 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  color: #f09682;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.btn_lls {
+  text-decoration: none;
+}
+
+.btn_lls:hover{
+  color: #f09682;
+}
+
+.btn_lls:before {
+  content: " ";
+  bottom: -3px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  transition: all 0.35s ease-in-out;
+}
+
+.btn_lls:hover:before {
+  width: 100%;
+  left: 0%;
+  background-color: #f09682;
+}
+
 .set_bg {
   background-position: center;
   background-repeat: no-repeat;
@@ -120,7 +156,7 @@ p {
   outline: none;
 }
 
-.tri-categorie .active{
+.tri-categorie .active {
   font-weight: bold;
   color: #000000;
 }
@@ -159,7 +195,7 @@ p {
   margin-bottom: 45px;
 }
 
-.actu_reveal{
+.actu_reveal {
   padding: 10px;
   position: relative;
 }
