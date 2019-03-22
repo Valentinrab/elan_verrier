@@ -34,7 +34,8 @@
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_1.svg" data-rellax-speed="-1" class="tache tache1 rellax" alt="tache">
 
         <div class="video set_bg">
-          <iframe class="video" src="<?php the_field('video_presentation');?>?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div id="video"></div>
+          <!-- <iframe class="video" src="<?php the_field('video_presentation');?>?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
         <div class="video_title">
           <h1 class="name"><?php the_field('video_titre'); ?></h1>
@@ -343,7 +344,34 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
-  <script  src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/jquery.youtubebackground.js"></script>
+  <script>
+    $(document).ready(function() {
+
+          $('#video').YTPlayer({
+          fitToBackground: true,
+          videoId: '<?php the_field('video_presentation')?>'
+      });
+      $('#video').YTPlayer({
+          fitToBackground: true,
+          videoId: '<?php the_field('video_presentation')?>',
+          playerVars: {
+            modestbranding: 0,
+            autoplay: 1,
+            controls: 0,
+            showinfo: 0,
+            branding: 0,
+            rel: 0,
+            autohide: 0,
+            start: 59,
+            disablekb: 0
+          }
+      });
+
+    })
+
+  </script>
   <script>
     // Accepts any class name
     var rellax = new Rellax('.rellax');

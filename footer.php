@@ -13,9 +13,7 @@
 
 
               <a href="<?php the_sub_field('reseaux_lien', 38); ?>">
-                <div class="ft-ctn-sn" style="background-image: url(<?php the_sub_field('reseaux_icone', 38); ?>);">
-
-                </div>
+                <i class="<?php the_sub_field('reseaux_icone'); ?>"></i>
               </a>
 
 
