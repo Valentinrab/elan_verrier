@@ -153,8 +153,6 @@
         <!-- </div> -->
 
       </div>
-      <img src="<?php bloginfo('template_directory'); ?>/images/taches/accueil_3.svg" class="tache tache3" alt="tache">
-      <img src="<?php bloginfo('template_directory'); ?>/images/taches/taches_6_cut.png" class="tache tache6" alt="tache">
     </main>
   </section>
   </section>

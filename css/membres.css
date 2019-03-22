@@ -91,7 +91,7 @@ p {
   position: relative;
 }
 
-.wrap:hover .tache {
+.wrap:hover .tachemembre {
   opacity: 1;
   z-index: 0;
   transform: scale(1);
@@ -136,7 +136,7 @@ p {
 }
 
 /*taches hover*/
-.tache {
+.tachemembre {
   z-index: -1;
   position: absolute;
   width: 110%;
@@ -147,9 +147,17 @@ p {
   transition: transform 0.5s cubic-bezier(0.42, 0, 0.27, 1.43), opacity 0.8s cubic-bezier(0.42, 0, 0.55, 1.6);
 }
 
+.tache{
+  position: absolute;
+  z-index: -1;
+  width: 30%;
+  height: auto;
+}
+
 .tache1 {
   width: 115%;
   top: -3vh;
+  z-index: -1;
 }
 
 .tache2 {
@@ -160,6 +168,10 @@ p {
 .tache3 {
   width: 150%;
   left: -5vw;
+}
+
+.tache6{
+  width: 25%;
 }
 
 @media screen and (max-width: 768px) {

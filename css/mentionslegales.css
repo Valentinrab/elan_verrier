@@ -23,6 +23,16 @@ h2 {
 
 }
 
+.tache{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+.tache6 {
+  width: 25%;
+}
+
 .title-article {
   font-size: 25px;
   font-weight: bold;

@@ -27,7 +27,7 @@
   <section class="global">
     <div>
       <img id="tache1-agenda" src="<?php bloginfo('template_directory'); ?>/images/tache_5.svg" alt="tache5">
-      <img id="tache2-agenda" src="<?php bloginfo('template_directory'); ?>/images/tache_6.svg" alt="tache6">
+    
     </div>
     <section class="container">
       <main class="container-main">
