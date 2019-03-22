@@ -30,12 +30,6 @@ header{
   }
 }
 
-@media screen and (max-width:768px){
-  #logo{
-    margin-right: 30%;
-  }
-}
-
 @media screen and (max-width:576px){
   header{
     background-color: #ffffff;
