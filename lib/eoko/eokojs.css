@@ -200,9 +200,10 @@
   position: absolute;
   top: 25px;
   right: 30px;
-  font-size: 1.5em;
-  font-family: 'Cormorant', serif;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
   z-index: 3;
+  color: white;
 }
 
 .ekjs_current_num_container {
@@ -247,7 +248,7 @@
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 900px) {
   .eokojs {
     width: 100%;
     height: 100vh;

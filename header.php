@@ -13,7 +13,7 @@
 				</svg>
 
 				<span class="button--bubble__container">
-					<a href="#campaign" class="button button--bubble">
+					<a href="<?php echo get_permalink(49); ?>" class="button button--bubble">
 						Devenir membre
 					</a>
 					<span class="button--bubble__effect-container">

@@ -78,7 +78,7 @@ p {
   width: 50%;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 900px) {
   .ekjs_info_container {
     position: absolute;
     top: inherit;
@@ -87,10 +87,31 @@ p {
   .ekjs_info.is_current {
     left: 0%;
     overflow: inherit;
+    text-align: center;
   }
 
   .eokojs {
     width: 100%;
+  }
+
+  .ekjs_info_text {
+    /* margin-left: auto; */
+    text-align: left;
+    /* margin: 0 10px; */
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .eokojs {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .eokojs {
+    height: 140vh;
   }
 }
 

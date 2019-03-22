@@ -66,7 +66,7 @@
     get_header();
   ?>
 
-  <section class="global">
+  <section class="global col-10 offset-1">
     <div>
       <img id="tache1-agenda" src="<?php bloginfo('template_directory'); ?>/images/tache_5.svg" alt="tache5">
     </div>
