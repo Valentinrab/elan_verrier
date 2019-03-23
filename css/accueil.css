@@ -155,8 +155,12 @@ iframe {
 }
 
 #video{
- position: relative;
- background: transparent;
+bottom: 0;
+ left: 0;
+ margin: auto;
+ position: absolute;
+ right: 0;
+ top: 0;
 }
 
 .video{
