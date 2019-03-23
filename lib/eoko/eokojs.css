@@ -157,6 +157,16 @@
 }
 
 /*====================== END OF TEXT ANIMATION =====================  */
+.ekjs_left.is_disabled, .ekjs_right.is_disabled{
+    opacity: .2;
+    transition: all .7s;
+}
+.ekjs_arrow.is_disabled:hover:before {
+    opacity: .2;
+    cursor: default;
+    transform: translate( -50%, -50% );
+}
+
 .ekjs_arrows {
   position: absolute;
   top: 100%;
