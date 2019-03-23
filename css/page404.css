@@ -1,0 +1,114 @@
+/*Erreur 404*/
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #21253f;
+
+}
+
+.subtitle-number {
+font-family: 'Ubuntu', sans-serif;
+font-size: 100px;
+font-weight: bold;
+color: #21253f;
+letter-spacing: 2rem;
+text-align: center;
+}
+
+.lettrine {
+    font-family: 'Ubuntu', sans-serif;
+    opacity: .15;
+    position: absolute;
+    font-size: 140px;
+    font-weight: bold;
+    color: #21253f;
+}
+
+
+.lettrine1 {
+  top: 18px;
+  left: 9px;
+}
+
+.lettrine2 {
+  top: -9px;
+  left: 130px;
+}
+
+.lettrine3 {
+  top: 42px;
+  left: 246px;
+}
+
+/*Texte de l'erreur*/
+
+h1 {
+font-family: 'Ubuntu', sans-serif;
+font-size: 22px;
+color: #f09682;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+p {
+  margin-left: 16px;
+}
+
+.erreur_404 {
+  margin-top: 15em;
+}
+
+.contenu_404 {
+  margin-top: 5em;
+
+}
+
+.btn_member {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.span_bolder {
+  font-weight: bold;
+  font-size: 18px;
+}
+/*animation logo*/
+
+.animation-logo {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.animation-logo img {
+  position: absolute;
+  display: block;
+}
+
+.animation-logo .typo {
+width: 150px;
+height: auto;
+z-index: 1;
+    margin-top: 20px;
+}
+
+.animation-logo .tache-1 {
+    width: 140px;
+height: auto;
+margin-left: 71px;
+}
+
+.animation-logo .tache-2 {
+  width: 95px;
+  height: auto;
+  margin-top: 62px;
+}
+
+.animation-logo .tache-3 {
+  width: 67px;
+    height: auto;
+    margin-top: 155px;
+    margin-left: 130px;
+}
