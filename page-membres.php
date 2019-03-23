@@ -70,7 +70,7 @@
           </div>
           <div class="btn_access col-4">
             <a href="<?php the_field('formulaire'); ?>" target="_blank">
-              <span class="text">Télécharger le document</span>
+              <span class="text"><?php the_field('btn_text'); ?></span>
               <span class="line -right"></span>
               <span class="line -top"></span>
               <span class="line -left"></span>
@@ -99,5 +99,6 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
 
 <script  src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
+
 
 </html>

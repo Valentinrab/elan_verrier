@@ -14,7 +14,7 @@ p {
 
 .lettrine1 {
   left: -30px;
-  
+
 }
 
 .container {
@@ -99,7 +99,6 @@ p {
 
 .wrap:hover .tachemembre {
   opacity: 1;
-  z-index: 0;
   transform: scale(1);
   transition: transform 0.5s cubic-bezier(0.42, 0, 0.27, 1.43), opacity 0.8s cubic-bezier(0.42, 0, 0.55, 1.6);
 }

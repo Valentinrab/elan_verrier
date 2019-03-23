@@ -93,6 +93,8 @@
                       endwhile;
                       endif;
                   ?>
+                  <p class="prev">AVANT</p>
+                  <p class="next">APRES</p>
                 </div>
               </div>
 
@@ -136,5 +138,5 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
 
   <script  src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
-
+  
 </html>
