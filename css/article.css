@@ -29,7 +29,7 @@ h3 {
   height: auto;
 }
 
-.tache6{
+.tache6 {
   width: 25%;
 }
 
@@ -49,7 +49,7 @@ h3 {
   text-decoration: none;
 }
 
-.btn_lls:hover{
+.btn_lls:hover {
   color: #f09682;
 }
 
@@ -69,11 +69,11 @@ h3 {
   background-color: #f09682;
 }
 
-.mt-200px{
+.mt-200px {
   margin-top: 200px;
 }
 
-.set_bg{
+.set_bg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,8 +84,7 @@ h3 {
   font-size: 16px;
   margin-bottom: 20px;
 } */
-
-.btn_access{
+.btn_access {
   color: #f09682;
   text-decoration: none;
   font-size: 12px;
@@ -95,16 +94,16 @@ h3 {
   margin-top: -60px;
 }
 
-.btn_access:before{
-  position : absolute;
-  margin-top : 20px;
-  content :"";
-  height : 5px;
-  width : 100%;
+.btn_access:before {
+  position: absolute;
+  margin-top: 20px;
+  content: "";
+  height: 5px;
+  width: 100%;
   background-color: #f09682;
 }
 
-.article-verrier{
+.article-verrier {
   margin-top: 20px;
 }
 
@@ -121,6 +120,20 @@ h3 {
 
 .p-block {
   margin: 65px 0 0 0;
+}
+
+.illustration {
+  position: absolute;
+  z-index: 0;
+  width: 300px;
+  height: auto;
+}
+
+.illustration3 {
+  top: 40vh;
+  left: 40vw;
+  z-index: -1;
+  width: 40%;
 }
 
 blockquote {
@@ -215,18 +228,16 @@ cite {
     margin-top: 20px;
   }
 } */
-
 @media screen and (max-width: 992px) {
-  .image_texte{
+  .image_texte {
     flex-direction: column-reverse;
   }
 
-  .main-title{
+  .main-title {
     text-align: center;
   }
 
-  .intro-article{
+  .intro-article {
     padding: 0;
   }
-
 }

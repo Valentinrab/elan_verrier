@@ -44,6 +44,7 @@
               <p class="p-atelier"><?php the_field('contact_mail'); ?></p>
               <h2 class="title-agenda title-agenda-2"><?php the_field('contact_titre_adresse'); ?></h2>
               <p class="p-atelier"><?php the_field('contact_adresse'); ?></p>
+
             </div>
           </div>
           <div class="col-12 col-lg-6" id="col-left" style="background-image:url(<?php bloginfo('template_directory'); ?>/images/maps.jpg)">
@@ -54,6 +55,7 @@
       </main>
     </section>
   </section>
+  <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/main-telephone.svg" class="illustration illustration3" alt="illustration">
 
   <?php
     get_footer();

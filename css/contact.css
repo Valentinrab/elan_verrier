@@ -11,7 +11,7 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-.title-agenda{
+.title-agenda {
   font-size: 25px;
   font-weight: bold;
   margin: 0 0 45px 0;
@@ -19,9 +19,24 @@ p {
 
 .lettrine1 {
   left: -40px;
+  top: -20px;
 }
 
-.title-agenda-2{
+.illustration {
+  position: absolute;
+  z-index: 0;
+  width: 300px;
+  height: auto;
+}
+
+.illustration3 {
+  top: 75vh;
+  left: 88vw;
+  z-index: 0;
+  width: 15%;
+}
+
+.title-agenda-2 {
   margin: 65px 0 45px 0;
 }
 
@@ -85,25 +100,20 @@ p {
   width: 120%;
 }
 
-.imgatelier{
+.imgatelier {
   height: 100%;
-
 }
 
-#row-glob{
+#row-glob {
   width: auto;
-
 }
 
-
-
-
-#col-left{
+#col-left {
   padding-left: 0px !important;
   padding-right: 0px !important;
-  text-align:center;
-	height:432px;
-	overflow:hidden;
+  text-align: center;
+  height: 432px;
+  overflow: hidden;
   display: block;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -111,7 +121,7 @@ p {
   background-position: center;
 }
 
-#col-right{
+#col-right {
   background-color: #F8F8F8;
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -120,7 +130,7 @@ p {
   height: 432px;
 }
 
-.row{
+.row {
   margin-left: 0px !important;
   margin-right: 0px !important;
 }

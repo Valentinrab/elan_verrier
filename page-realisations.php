@@ -39,6 +39,8 @@
       </div>
 
       <div class="intro-realisation col-12">
+        <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/main-decoupe.svg" class="illustration illustration3" alt="illustration">
+
         <p><?php the_field('introduction_realisation'); ?></p>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_1.svg" data-rellax-speed="-1" class="tache tache1 rellax" alt="tache">
       </div>
@@ -62,6 +64,7 @@
               <img src="<?php the_field('realisation_image'); ?>" class="img-fluid"/>
 
           </div>
+
           <!-- Modal -->
           <div class="modal fade" id="myModal_<?php echo $count ?>" role="dialog">
             <div class="modal-dialog">

@@ -34,6 +34,8 @@
     <main class="container-main">
       <div class="title-container">
         <h1 class="main-title"><span class="lettrine lettrine1">A</span>L'agenda</h1>
+        <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/main-question.svg" class="illustration illustration3" alt="illustration">
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_3.svg" class="tache tache3" alt="tache">
 
       </div>
       <div class="container-wrap">

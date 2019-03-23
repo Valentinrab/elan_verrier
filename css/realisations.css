@@ -29,6 +29,20 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f09682;
 }
 
+.illustration {
+  position: absolute;
+  z-index: 0;
+  width: 300px;
+  height: auto;
+}
+
+.illustration3 {
+  top: -5vh;
+  left: 70vw;
+  z-index: 0;
+  width: 25%;
+}
+
 .tache {
   position: absolute;
   z-index: -1;
@@ -54,6 +68,7 @@ p {
   font-weight: bold;
   position: relative;
 }
+
 .lettrine1 {
   left: -50px;
   top: -10px;
