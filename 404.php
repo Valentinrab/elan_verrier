@@ -69,7 +69,7 @@
           <span class="lettrine lettrine3">4</span>
         </div>
         <div class="contenu_404 col-12 col-lg-8 offset-lg-2 col-sm-10 offset-sm-1">
-          <h1>Ne vous seriez pas vous perdu sur Élan Verrier ?</h1>
+          <h1>Vous vous êtes perdu sur Élan Verrier ?</h1>
           <p><span class="span_bolder">Pas de panique !</span> On va vous accompagner jusqu'à une page bien plus intéressante.</p>
 
           <div class="btn_member_404">
