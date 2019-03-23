@@ -35,7 +35,7 @@
 
     <div class="container-fluid">
       <div class="title-container">
-        <h1 class="main-title">Réalisations</h1>
+        <h1 class="main-title"><span class="lettrine lettrine1">R</span>Réalisations</h1>
       </div>
 
       <div class="intro-realisation col-12">

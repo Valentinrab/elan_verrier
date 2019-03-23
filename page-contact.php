@@ -34,7 +34,7 @@
     <section class="container">
       <main class="container-main">
         <div class="title-container">
-          <h1 class="main-title">Nous contacter</h1>
+          <h1 class="main-title"><span class="lettrine lettrine1">C</span>Nous contacter</h1>
         </div>
         <div class="row" id="row-glob">
           <div class="col-12 col-lg-6" id="col-right">

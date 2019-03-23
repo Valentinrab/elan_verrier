@@ -52,6 +52,11 @@ p {
 .main-title {
   font-size: 40px;
   font-weight: bold;
+  position: relative;
+}
+.lettrine1 {
+  left: -50px;
+  top: -10px;
 }
 
 .intro-realisation {

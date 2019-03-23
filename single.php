@@ -40,7 +40,7 @@
                   <p class="writer-article"><?php the_field('article_auteur'); ?></p>
                   <p class="date-article"><?php the_time('d/m/Y') ?></p>
                 </div>
-                <h1 class="main-title"><?php the_title(); ?></h1>
+                <h1 class="main-title"><span class="lettrine lettrine1"><?php the_field('lettrine'); ?></span><?php the_title(); ?></h1>
                 <h3 class="intro-article"><?php the_field('article_chapeau'); ?></h3>
               </div>
             </div>

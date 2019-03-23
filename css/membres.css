@@ -12,6 +12,11 @@ p {
   line-height: 25px;
 }
 
+.lettrine1 {
+  left: -30px;
+  
+}
+
 .container {
   padding: 0 10%;
 }
@@ -59,6 +64,7 @@ p {
 .main-title {
   font-size: 36px;
   font-weight: bold;
+  position: relative;
 }
 
 .btn_access {

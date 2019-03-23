@@ -166,6 +166,12 @@ cite {
   font-size: 40px;
   font-weight: bold;
   margin: 0 0 45px 0;
+  position: relative;
+}
+
+.lettrine1 {
+  left: -40px;
+  top: 10px;
 }
 
 #row-glob {

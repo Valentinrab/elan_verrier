@@ -30,7 +30,7 @@
     <section class="container">
       <main class="container-main">
         <section class="col-12">
-          <h1 class="main-title">Mentions légales</h1>
+          <h1 class="main-title"><span class="lettrine lettrine1">M</span>Mentions légales</h1>
           <?php
 								if( have_rows('mentions_legales') ):
 

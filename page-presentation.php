@@ -34,7 +34,7 @@
   ?>
 
   <section class="container mt-150px">
-    <h1 class="main-title">Qui sommes-nous ?</h1>
+    <h1 class="main-title"><span class="lettrine lettrine1">Q</span>Qui sommes-nous ?</h1>
 
         <?php
 

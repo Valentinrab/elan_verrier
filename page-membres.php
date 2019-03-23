@@ -33,7 +33,7 @@
 
   <section class="container">
     <main class="container-main">
-      <h1 class="main-title">Les membres</h1>
+      <h1 class="main-title"><span class="lettrine lettrine1">M</span>Les membres</h1>
       <div class="container-wrap">
 
         <?php

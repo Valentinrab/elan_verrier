@@ -33,7 +33,7 @@
   <section class="container">
     <main class="container-main">
       <div class="title-container">
-        <h1 class="main-title">L'agenda</h1>
+        <h1 class="main-title"><span class="lettrine lettrine1">A</span>L'agenda</h1>
 
       </div>
       <div class="container-wrap">

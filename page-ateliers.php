@@ -74,7 +74,7 @@
 
 
         <div class="title-container">
-          <h1 class="main-title">Les ateliers</h1>
+          <h1 class="main-title"><span class="lettrine lettrine1">A</span>Les ateliers</h1>
         </div>
         <div id="slider_container"></div>
 

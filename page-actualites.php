@@ -32,7 +32,8 @@
   <section class="container">
     <main class="container-main">
       <div class="title-container">
-        <h1 class="main-title">Actualités</h1>
+
+        <h1 class="main-title"><span class="lettrine lettrine1">A</span>Actualités</h1>
 
         <div class="tri-categorie">
           <button data-filter="*">Tous</button>
