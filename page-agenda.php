@@ -22,6 +22,8 @@
 
   <script>document.documentElement.className = 'js';</script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   <script>
   window.addEventListener("load", function(){
   window.cookieconsent.initialise({
@@ -193,4 +195,5 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
 
 <script  src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
+
 </html>
