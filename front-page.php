@@ -167,9 +167,9 @@
       </section>
 
       <section id="content_actu" class="mt-150px">
-        <span class="lettrine lettrine3"><?php the_field('lettrine3'); ?></span>
 
-        <h2 id="actu_title">Les actualités</h2>
+
+        <h2 id="actu_title"><span class="lettrine lettrine3"><?php the_field('lettrine3'); ?></span>Les actualités</h2>
         <section id="content_actu_article" class="row">
           <?php
           $count = 0;

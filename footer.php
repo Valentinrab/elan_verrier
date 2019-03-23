@@ -13,7 +13,7 @@
 
 
               <a href="<?php the_sub_field('reseaux_lien', 38); ?>">
-                <i class="<?php the_sub_field('reseaux_icone'); ?>"></i>
+                <i class="<?php the_sub_field('reseaux_icone', 38); ?>"></i>
               </a>
 
 

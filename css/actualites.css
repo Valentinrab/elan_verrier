@@ -222,6 +222,14 @@ p {
   font-weight: bold;
 }
 
+.actu_principal_image{
+  transition: 1s;
+}
+
+.actu_reveal:hover .actu_principal_image {
+  transform: scale(1.04);
+}
+
 .actu_principal_info .actu_content_info {
   padding: 20px 0;
 }

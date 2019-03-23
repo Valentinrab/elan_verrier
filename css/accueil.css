@@ -152,19 +152,20 @@ iframe {
   transform: translate(-50%, -50%);
   position: relative;
   overflow: hidden;
+  pointer-events: none;
 }
 
-#video{
-bottom: 0;
- left: 0;
- margin: auto;
- position: absolute;
- right: 0;
- top: 0;
+#video {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.video{
- /* position: absolute;
+.video {
+  /* position: absolute;
  top: 0;
  z-index: -1; */
 }
@@ -172,21 +173,20 @@ bottom: 0;
 /* .ytp-title{
   display: none;
 } */
-
-.fab{
+/* .fab {
   color: #21253f;
   font-size: 1.5em;
   margin: 0 15px;
   transition: .3s;
 }
 
-.fab:hover{
+.fab:hover {
   color: #f09682;
-}
+} */
 
 .ytp-title-enable-channel-logo .ytp-title {
-    min-height: 52px;
-    display: none;
+  min-height: 52px;
+  display: none;
 }
 
 .name, .bl {
@@ -210,24 +210,14 @@ bottom: 0;
   font-size: 30px
 }
 
-.lettrine1 {
-  top: -5%;
-  left: -15%;
+.lettrine1, .lettrine2 {
+  left: -55px;
+  top: -15px;
 }
 
-.lettrine2 {
-  top: -5%;
-  left: -15%;
-}
-
-.lettrine3 {
-  top: -5%;
-  left: 37%;
-}
-
-.lettrine4 {
-  top: -5%;
-  left: 37%;
+.lettrine3, .lettrine4 {
+  top: -34px;
+  left: 40%;
 }
 
 /*PROCHAINEMENT*/
@@ -263,7 +253,6 @@ bottom: 0;
 .next_ev:hover {
   right: 0%;
 }
-
 
 .next_ev_title {
   position: absolute;
