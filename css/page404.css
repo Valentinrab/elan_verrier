@@ -63,7 +63,11 @@ p {
 
 }
 
-.btn_member {
+p{
+  line-height: inherit;
+}
+
+.btn_member_404 {
   display: flex;
   justify-content: center;
   margin-top: 5em;

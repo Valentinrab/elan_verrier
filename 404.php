@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
   <link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/favicon-elan-verrier.png" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
@@ -51,19 +52,16 @@
 
         <div class="animation-logo col-12 col-lg-4 offset-lg-4 col-sm-6 offset-sm-3">
 
-          <img class="typo" src="<?php the_field('video_titre'); ?>/images/logo-anime/proposition-final-typo.svg" alt="">
+          <img class="typo" src="<?php bloginfo('template_directory'); ?>/images/logo-anime/proposition-final-typo.svg" alt="">
           <div id="scene">
-            <img class="tache-1" src="<?php the_field('video_titre'); ?>/images/logo-anime/proposition-final-tache-1.svg" alt="tache" data-depth="0.6">
-            <img class="tache-2" src="<?php the_field('video_titre'); ?>/images/logo-anime/proposition-final-tache-2.svg" alt="tache" data-depth="0.3">
-            <img class="tache-3" src="<?php the_field('video_titre'); ?>/images/logo-anime/proposition-final-tache-3.svg" alt="tache" data-depth="0.2">
+            <img class="tache-1" src="<?php bloginfo('template_directory'); ?>/images/logo-anime/proposition-final-tache-1.svg" alt="tache" data-depth="0.6">
+            <img class="tache-2" src="<?php bloginfo('template_directory'); ?>/images/logo-anime/proposition-final-tache-2.svg" alt="tache" data-depth="0.3">
+            <img class="tache-3" src="<?php bloginfo('template_directory'); ?>/images/logo-anime/proposition-final-tache-3.svg" alt="tache" data-depth="0.2">
           </div>
 
         </div>
 
-
-
         <div class="erreur_404 col-12 col-lg-4 offset-lg-4 col-sm-6 offset-sm-3">
-
           <p class="subtitle">Erreur</p>
           <p class="subtitle-number">404</p>
           <span class="lettrine lettrine1">4</span>
@@ -74,7 +72,7 @@
           <h1>Ne vous seriez pas vous perdu sur Élan Verrier ?</h1>
           <p><span class="span_bolder">Pas de panique !</span> On va vous accompagner jusqu'à une page bien plus intéressante.</p>
 
-          <div class="btn_member">
+          <div class="btn_member_404">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
               <defs>
                 <filter id="goo">
@@ -86,7 +84,7 @@
             </svg>
 
             <span class="button--bubble__container">
-              <a href="#campaign" class="button button--bubble">
+              <a href="<?php echo get_permalink(38); ?>" class="button button--bubble">
                 Retourner à l'accueil
               </a>
               <span class="button--bubble__effect-container">
@@ -114,6 +112,9 @@
   ?>
 </body>
 
+<script src="<?php bloginfo('template_directory'); ?>/js/menu.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/easings.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/menu3.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>
