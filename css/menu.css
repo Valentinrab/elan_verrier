@@ -624,7 +624,7 @@ main {
 	}
 }
 
-@media screen and (max-width:350px){
+@media screen and (max-width:450px){
 	.btn_member{
 		margin-left: 10%;
 	}

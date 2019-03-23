@@ -46,3 +46,50 @@ a:hover{
   font-weight: bold;
   color : #21253f;
 }
+
+/* navigation arows */
+.modal-navigation{
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.modal-navigation-arrow {
+  -webkit-appearance: none;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-navigation-arrow{
+  margin: 0 35vw;
+  color: #f09682;
+  font-size: 30px;
+  position: relative;
+}
+
+.modal-navigation-arrow:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 84px;
+  height: 84px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 4px solid #f09682;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.modal-navigation-arrow:hover:before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.093);
+}
