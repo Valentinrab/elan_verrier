@@ -3,7 +3,7 @@ $(document).ready(function() {
   ///////////////////scroll reveal///////////////////
   //
   // if (window.matchMedia("(min-width: 600px)").matches) {
-  var mq = window.matchMedia( "(min-width:740px)" );
+  var mq = window.matchMedia( "(min-width:880px)" );
   if (mq.matches) {
     ScrollReveal().reveal('.content_title', {
       duration: 1500,
