@@ -93,8 +93,8 @@
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="modal-navigation">
-                  <i class="prev fas fa-arrow-left"></i>
-                  <i class=" next fas fa-arrow-right"></i>
+                  <button class="modal-navigation-arrow left"><i class="fas fa-angle-left"></i></button>
+              		<button class="modal-navigation-arrow right"><i class="fas fa-angle-right"></i></button>
                 </div>
                 <div class="modal-header">
                   <h3 class="modal-title"><?php the_title() ?></h3>

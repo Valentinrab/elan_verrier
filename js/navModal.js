@@ -16,17 +16,17 @@ $("div[id^='myModal']").each(function(){
 var currentModal = $(this);
 
 //click next
-currentModal.find('.next').click(function(){
+currentModal.find('.right').click(function(){
   console.log('hey');
-currentModal.modal('hide');
-currentModal.closest("div[id^='myModal']").nextAll("div[id^='myModal']").first().modal('show');
+  currentModal.modal('hide');
+  currentModal.closest("div[id^='myModal']").nextAll("div[id^='myModal']").first().modal('show');
 });
 
 //click prev
-currentModal.find('.prev').click(function(){
+currentModal.find('.left').click(function(){
   console.log('hey');
-currentModal.modal('hide');
-currentModal.closest("div[id^='myModal']").prevAll("div[id^='myModal']").first().modal('show');
+  currentModal.modal('hide');
+  currentModal.closest("div[id^='myModal']").prevAll("div[id^='myModal']").first().modal('show');
 });
 
 });
