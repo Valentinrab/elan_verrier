@@ -189,11 +189,17 @@ iframe {
   display: none;
 }
 
-.name, .bl {
-  width: 100%;
+.video_title{
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  position: absolute;
+}
+
+.name, .bl {
+  /* width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute; */
   z-index: 3;
   color: #fff;
   font-weight: 700;
@@ -206,7 +212,7 @@ iframe {
 }
 
 .bl {
-  margin-top: 45px;
+  margin-top: 20px;
   font-size: 30px
 }
 
