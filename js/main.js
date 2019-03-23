@@ -96,6 +96,12 @@ $(document).ready(function() {
       delay: 100,
       easing: 'ease'
     });
+    ScrollReveal().reveal('.lettrine', {
+      duration: 3000,
+      delay: 500,
+      easing: 'ease'
+    });
+
 }
 
 })

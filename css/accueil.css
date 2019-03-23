@@ -165,6 +165,16 @@ iframe {
   top: 0;
 }
 
+.video-img{
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .video {
   /* position: absolute;
  top: 0;
@@ -851,6 +861,18 @@ iframe {
 }
 
 @media screen and (max-width: 768px) {
+  .video{
+    height: 60%;
+  }
+
+  #video{
+    display: none;
+  }
+
+  .video-img{
+    opacity: 1;
+  }
+
   .tache2 {
     top: 40vh;
     left: 40vw;

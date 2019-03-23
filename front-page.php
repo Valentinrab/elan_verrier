@@ -52,10 +52,11 @@
     <section class="container">
 
       <main id="content_video">
-        <!-- <img src="<?php bloginfo('template_directory'); ?>/images/accueil.jpg" class="video" alt="image de présentation d'Elan Verrier"> -->
+
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_1.svg" data-rellax-speed="-1" class="tache tache1 rellax" alt="tache">
 
         <div class="video set_bg">
+          <div class="video-img set_bg" style="background-image:url(<?php the_field('image_format_portable') ?>)"></div>
           <div id="video"></div>
           <!-- <iframe class="video" src="<?php the_field('video_presentation');?>?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
