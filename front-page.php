@@ -137,7 +137,7 @@
           </div>
         </div>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_2.svg" data-rellax-speed="-0.7" class="tache tache2 rellax" alt="tache">
-        <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/mains.png" class="illustration illustration1" alt="illustration">
+        <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/mains-team.svg" class="illustration illustration1" alt="illustration">
         <div class="content_image col-12 col-lg-6 offset-lg-0">
           <div class="image_l set_bg col-8 offset-2 col-lg-8 offset-lg-0 rellax img1" data-rellax-speed="1" style="background-image:url(<?php the_field('qui_sommes_nous_images_1'); ?>);"></div>
           <div class="image_r set_bg col-8 offset-lg-4 rellax" data-rellax-speed="2" style="background-image:url(<?php the_field('qui_sommes_nous_images_2'); ?>);"></div>
@@ -146,7 +146,7 @@
 
       <section id="content_activites" class="mt-150px row">
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_3.svg" class="tache tache3 rellax" data-rellax-speed="-0.9" alt="tache">
-        <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/soufflage.png" class="illustration illustration2" alt="illustration">
+        <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/soufflage-main.svg" class="illustration illustration2" alt="illustration">
         <div class="content_image col-12 col-lg-6">
           <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0 rellax img3" data-rellax-speed="1" style="background-image:url(<?php the_field('activites_images'); ?>);"></div>
         </div>
@@ -231,7 +231,7 @@
               </div>
         </section>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_4.svg" class="tache tache4 rellax" data-rellax-speed="-2" alt="tache">
-        <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/feu.png" class="illustration illustration3" alt="illustration">
+        <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/feu-verre.svg" class="illustration illustration3" alt="illustration">
         <div class="btn_access hey">
           <a href="<?php echo get_permalink(47); ?>" class="btn_access">
             <span class="text">VOIR TOUS LES ARTICLES</span>
@@ -247,7 +247,7 @@
         <span class="lettrine lettrine4"><?php the_field('lettrine4'); ?></span>
         <h2 id="actu_title">Réalisations</h2>
 
-        <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/vase.png" class="illustration illustration4" alt="illustration">
+        <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/main-vase.svg" class="illustration illustration4" alt="illustration">
         <section id="content_realisation_article">
           <?php
             $count = 0;

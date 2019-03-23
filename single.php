@@ -39,6 +39,8 @@
                 <div class="info-article">
                   <p class="writer-article"><?php the_field('article_auteur'); ?></p>
                   <p class="date-article"><?php the_time('d/m/Y') ?></p>
+                  <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/main-ecrit.svg" class="illustration illustration3" alt="illustration">
+
                 </div>
                 <h1 class="main-title"><span class="lettrine lettrine1"><?php the_field('lettrine'); ?></span><?php the_title(); ?></h1>
                 <h3 class="intro-article"><?php the_field('article_chapeau'); ?></h3>
@@ -73,6 +75,7 @@
                     <div class="col-10 col-lg-6 offset-1 offset-lg-2 offset-xl-2" id="col-right2">
                       <h2 class="title-article"><?php the_sub_field('sous_titre'); ?></h2>
                       <p class="p-article"><?php the_sub_field('texte'); ?></p>
+
                     </div>
 
                   </div>
