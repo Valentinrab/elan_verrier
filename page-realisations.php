@@ -22,7 +22,27 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
     <script>document.documentElement.className = 'js';</script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#ffffff"
+        },
+        "button": {
+          "background": "#f09682",
+          "text": "#ffffff"
+        }
+      },
+      "content": {
+        "message": "Nous utilisons des cookies pour nous permettre de mieux comprendre comment le site est utilisé. En continuant à utiliser ce site, vous acceptez cette politique.",
+        "dismiss": "J'accepte",
+        "link": "En savoir plus",
+        "href": "<?php echo get_permalink(107); ?>"
+      }
+    })});
+    </script>
 
   </head>
   <body>
@@ -141,5 +161,5 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
 
   <script  src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
-  
+
 </html>

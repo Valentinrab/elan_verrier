@@ -20,11 +20,27 @@
   <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 
   <script>document.documentElement.className = 'js';</script>
-
-
-
-
-
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#ffffff"
+      },
+      "button": {
+        "background": "#f09682",
+        "text": "#ffffff"
+      }
+    },
+    "content": {
+      "message": "Nous utilisons des cookies pour nous permettre de mieux comprendre comment le site est utilisé. En continuant à utiliser ce site, vous acceptez cette politique.",
+      "dismiss": "J'accepte",
+      "link": "En savoir plus",
+      "href": "<?php echo get_permalink(107); ?>"
+    }
+  })});
+  </script>
 </head>
 
 <body>
@@ -50,7 +66,7 @@
                       <p class="content_para"><?php the_sub_field('texte'); ?></p>
                     </div>
                     <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_2.svg" data-rellax-speed="-0.7" class="tache tache2 rellax" alt="tache">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/mains.png" class="illustration illustration1" alt="illustration">
+                    <img src="<?php bloginfo('template_directory'); ?>/images/illustrations/mains-team.svg" class="illustration illustration1" alt="illustration">
                     <div class="content_image col-12 col-lg-6 offset-lg-0">
                       <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0 rellax" data-rellax-speed="0.7"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
                     </div>
