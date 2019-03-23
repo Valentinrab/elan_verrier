@@ -21,6 +21,7 @@
     <script src = "<?php bloginfo('template_directory'); ?>/js/masonry.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
+    <script src = "<?php bloginfo('template_directory'); ?>/js/navModal.js"></script>
     <script>document.documentElement.className = 'js';</script>
 
 
@@ -66,17 +67,23 @@
           </div>
 
           <!-- Modal -->
-          <div class="modal fade" id="myModal_<?php echo $count ?>" role="dialog">
+          <div class="modal fade" id="myModal_<?php echo $count ?>" role="dialog" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
 
               <!-- Modal content-->
               <div class="modal-content">
+                <div class="modal-navigation">
+                  <i class="prev fas fa-arrow-left"></i>
+                  <i class=" next fas fa-arrow-right"></i>
+                </div>
                 <div class="modal-header">
                   <h3 class="modal-title"><?php the_title() ?></h3>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body set_bg">
+
                   <img src="<?php the_field('realisation_image'); ?>" alt="">
+
                 </div>
                 <div class="modal-footer">
                   <?php
@@ -96,8 +103,7 @@
                       endwhile;
                       endif;
                   ?>
-                  <p class="prev">AVANT</p>
-                  <p class="next">APRES</p>
+
                 </div>
               </div>
 
@@ -141,5 +147,5 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
 
   <script  src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
-  
+
 </html>
