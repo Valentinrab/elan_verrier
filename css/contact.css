@@ -34,10 +34,10 @@ body {
 }
 
 .illustration3 {
-  top: 75vh;
-  left: 82vw;
-  z-index: 0;
-  width: 15%;
+  top: 70vh;
+  left: 70vw;
+  z-index: 1;
+  width: 20%;
 }
 
 .title-agenda-2 {
@@ -129,4 +129,32 @@ body {
 .row {
   margin-left: 0px !important;
   margin-right: 0px !important;
+}
+
+@media screen and (max-width : 1024px){
+  .illustration3 {
+    top: 95vh;
+    left: 80vw;
+    width: 15%;
+  }
+}
+
+@media screen and (max-width : 990px){
+  .illustration3 {
+    top: 165vh;
+    left: 70vw;
+  }
+}
+
+@media screen and (max-width : 576px){
+  .illustration3 {
+    top: 170vh;
+    left: 75vw;
+  }
+}
+
+@media screen and (max-width : 425px){
+  .illustration3 {
+    top: 180vh;
+  }
 }

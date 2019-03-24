@@ -177,25 +177,6 @@ iframe {
   top: 0;
 }
 
-.video {
-  /* position: absolute;
- top: 0;
- z-index: -1; */
-}
-
-/* .ytp-title{
-  display: none;
-} */
-/* .fab {
-  color: #21253f;
-  font-size: 1.5em;
-  margin: 0 15px;
-  transition: .3s;
-}
-
-.fab:hover {
-  color: #f09682;
-} */
 .ytp-title-enable-channel-logo .ytp-title {
   min-height: 52px;
   display: none;
@@ -741,12 +722,9 @@ iframe {
     left: 60vw;
   }
 
-  /* .tache6 {
-    left: 60vw;
-  } */
-  .illustration3 {
+  /* .illustration3 {
     top: -15vh;
-  }
+  } */
 
   .illustration1 {
     left: 60vw;
@@ -799,9 +777,9 @@ iframe {
     left: 35vw;
   }
 
-  .illustration3 {
+  /* .illustration3 {
     top: 5vh;
-  }
+  } */
 
   .illustration4 {
     width: 20%;
@@ -855,10 +833,6 @@ iframe {
     margin-top: 0;
   }
 
-  .tache4 {
-    /* top: 0vh; */
-  }
-
   .tache3 {
     top: 30vh;
     left: -10vw;
@@ -870,6 +844,23 @@ iframe {
 }
 
 @media screen and (max-width: 768px) {
+  .actu_principal:hover .actu_principal_image {
+    transform: scale(1);
+  }
+
+  .actu_secondary:hover .actu_secondary_image {
+    transform: scale(1);
+  }
+
+  .realisation_img:hover {
+    transform: scale(1);
+  }
+
+  #content_actu .btn_access, #content_realisation .btn_access, .hey {
+    left: 0;
+    transform: translateX(0);
+  }
+
   .video {
     height: 60%;
   }
@@ -888,38 +879,14 @@ iframe {
     width: 70%;
   }
 
-  .illustration1 {
-    top: 30vh;
-    left: 40vw;
-  }
-
-  .tache4 {
-    /* top: 0vh;
-    width: 70%; */
+  .illustration{
+    display: none;
   }
 
   .tache3 {
     top: 40vh;
     left: -10vw;
     width: 70%;
-  }
-
-  .tache6 {
-    /* top: 15vh; */
-  }
-
-  .illustration2 {
-    top: 28vh;
-  }
-
-  .illustration3 {
-    width: 40%;
-    left: 60vw;
-  }
-
-  .illustration4 {
-    top: 10vh;
-    left: 45vw;
   }
 
   .tache5 {
@@ -967,7 +934,7 @@ iframe {
 }
 
 @media screen and (max-width: 576px) {
-  .illustration7{
+  .illustration{
     display: none;
   }
 
@@ -975,32 +942,13 @@ iframe {
     margin-top: 100px;
   }
 
-  .illustration {
-    width: 45%;
-  }
-
-  .illustration1 {
-    top: 30vh;
-    left: 55vw;
-  }
-
   .tache2 {
     top: 37vh;
     left: 50vw;
   }
 
-  .illustration2 {
-    top: 43vh;
-    left: 40vw;
-  }
-
   .tache3 {
     left: -20vw;
-  }
-
-  .illustration4 {
-    /* top: 5vh;
-    left: 60vw; */
   }
 
   .tache5 {
@@ -1056,6 +1004,8 @@ iframe {
   .next_ev {
     display: none;
   }
-}
 
-/* prochainement */
+  #content_about{
+    margin-top: 0;
+  }
+}
