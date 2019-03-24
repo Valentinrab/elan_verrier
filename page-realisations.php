@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/realisations.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/loader.css">
     <link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/favicon-elan-verrier.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -20,6 +21,8 @@
     <script src = "<?php bloginfo('template_directory'); ?>/js/masonry.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/loader.js"></script>
+
     <script src = "<?php bloginfo('template_directory'); ?>/js/navModal.js"></script>
     <script>document.documentElement.className = 'js';</script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
