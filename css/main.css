@@ -93,3 +93,19 @@ a:hover{
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.093);
 }
+
+@media screen and (max-width : 768px) {
+  .modal-navigation-arrow{
+    margin: 0 37vw;
+    background-color: white;
+    padding: 10px;
+  }
+  .modal-navigation-arrow:before {
+    content: initial;
+  }
+}
+
+@media screen and (max-width : 576px) {
+
+
+}

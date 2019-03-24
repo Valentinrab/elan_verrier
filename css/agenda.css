@@ -311,24 +311,15 @@ p {
   width: 30%;
 }
 
-@media screen and (max-width : 1200px) {
-  .tache6 {}
-}
-
 @media screen and (max-width : 992px) {
   .tache3 {
     width: 40%;
   }
 
-
-
 @media screen and (max-width : 768px) {
   .tache3 {
     width: 50%;
-
   }
-
-
 }
 
 @media screen and (max-width : 576px) {
@@ -340,8 +331,6 @@ p {
     width: 50%;
 
   }
-
-
 
   .title-container {
     justify-content: left;
@@ -359,12 +348,11 @@ p {
   .what-container {
     margin: 0 110px;
   }
-}
-
-@media screen and (max-width : 450px) {
-
-}
-
-@media screen and (max-width : 370px) {
-
+  /*pop up*/
+  .modal-dialog {
+    max-width: 380px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+  }
 }
