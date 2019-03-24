@@ -95,6 +95,7 @@ a:hover{
 }
 
 @media screen and (max-width : 768px) {
+
   .modal-navigation-arrow{
     margin: 0 37vw;
     background-color: white;
@@ -103,9 +104,4 @@ a:hover{
   .modal-navigation-arrow:before {
     content: initial;
   }
-}
-
-@media screen and (max-width : 576px) {
-
-
 }

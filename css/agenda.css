@@ -349,10 +349,12 @@ p {
     margin: 0 110px;
   }
   /*pop up*/
+  .modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .modal-dialog {
     max-width: 380px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
   }
 }
