@@ -3,34 +3,10 @@
   height: 100vh;
   position: fixed;
   z-index: 200;
-  /* background-color: #fff; */
   top: 0;
 }
 
-/*animation du loader logo*/
-.animation-logo .tache-1 {
-  width: 140px;
-  height: auto;
-  margin-left: 71px;
-  -webkit-animation: display 2s infinite;
-}
-
-.animation-logo .tache-2 {
-  width: 95px;
-  height: auto;
-  margin-top: 62px;
-  -webkit-animation: display 4s infinite;
-}
-
-.animation-logo .tache-3 {
-  width: 67px;
-    height: auto;
-    margin-top: 155px;
-    margin-left: 130px;
-    -webkit-animation: display 1s infinite;
-}
-
-.loader svg{
+.loader #content_svg{
   width: 200px;
   top: 50%;
   left: 50%;
@@ -38,18 +14,47 @@
   position: absolute;
   z-index: 204;
 }
+
+#content_svg img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#typo{
+  z-index: 205;
+  width: 150px;
+}
+
 #forme1{
+  z-index: 203;
+  margin-top: -45px;
+  margin-left: 45px;
+  z-index: 200;
+  width: 140px;
   opacity: 0;
   -webkit-animation: display .8s linear .5s infinite alternate;
 }
+
 #forme2{
+  z-index: 204;
+  margin-left: -50px;
+  width: 95px;
+  margin-top: 30px;
   opacity: 0;
   -webkit-animation: display .8s linear .7s infinite alternate;
 }
+
 #forme3{
+  z-index: 204;
+  width: 67px;
+  margin-left: 65px;
+  margin-top: 65px;
   opacity: 0;
   -webkit-animation: display .8s linear .9s infinite alternate;
 }
+
 @-webkit-keyframes display {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -60,13 +65,11 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  /* z-index: 200; */
   top: 0;
 }
 
 .bg-blue{
   background-color: #21253f;
-  /* -webkit-animation: swipe 1s linear 3s; */
   z-index: 203;
 }
 

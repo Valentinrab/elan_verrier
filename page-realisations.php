@@ -55,6 +55,7 @@ window.cookieconsent.initialise({
 
     <?php
       get_header();
+      include('loader.php');
     ?>
 
     <section class="container">
