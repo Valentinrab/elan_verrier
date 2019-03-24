@@ -47,6 +47,10 @@ a:hover{
   color : #21253f;
 }
 
+.content_title, #actu_title, .main-title{
+  opacity: .8;
+}
+
 /* navigation arows */
 .modal-navigation{
   position: absolute;
@@ -57,6 +61,7 @@ a:hover{
   justify-content: space-between;
   z-index: 1;
 }
+
 
 .modal-navigation-arrow {
   -webkit-appearance: none;
