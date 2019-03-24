@@ -11,6 +11,10 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  overflow-X: hidden;
+}
+
 .title-agenda {
   font-size: 25px;
   font-weight: bold;
@@ -31,7 +35,7 @@ p {
 
 .illustration3 {
   top: 75vh;
-  left: 88vw;
+  left: 82vw;
   z-index: 0;
   width: 15%;
 }
@@ -40,9 +44,9 @@ p {
   margin: 65px 0 45px 0;
 }
 
-.global {
+/* .global {
   overflow-X: hidden;
-}
+} */
 
 .container {
   /* overflow-X: hidden; */
