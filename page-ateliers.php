@@ -15,10 +15,34 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
   <link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/favicon-elan-verrier.png" type="image/png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/loader.js"></script>
-
   <script>document.documentElement.className = 'js';</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#ffffff",
+      "text": "#000000"
+    },
+    "button": {
+      "background": "#f09682",
+      "text": "#ffffff"
+    }
+  },
+  "content": {
+    "message": "Nous utilisons des cookies pour nous permettre de mieux comprendre comment le site est utilisé. En continuant à utiliser ce site, vous acceptez cette politique.",
+    "dismiss": "J'accepte",
+    "link": "En savoir plus",
+    "href": "<?php echo get_permalink(107); ?>"
+  }
+})});
+</script>
 
 
   <?php
@@ -94,6 +118,7 @@ window.cookieconsent.initialise({
 
   <?php
     get_header();
+    include('loader.php');
   ?>
 
   <section class="global col-10 offset-1">

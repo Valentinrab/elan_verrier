@@ -137,10 +137,6 @@ p {
   margin: 0 0 150px;
 }
 
-.tri-categorie {
-  display: flex;
-}
-
 .tri-categorie button {
   -webkit-appearance: none;
   background: transparent;

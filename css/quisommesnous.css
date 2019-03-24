@@ -118,3 +118,12 @@ p {
   font-weight: bold;
   right: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .content_texte{
+    margin-bottom: 20px;
+  }
+  .image_texte{
+    flex-direction: column-reverse;
+  }
+}

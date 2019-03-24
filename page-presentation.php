@@ -68,7 +68,7 @@ window.cookieconsent.initialise({
                 if( get_row_layout() == 'texte_image' ): ?>
 
                   <section class="texte_image row">
-                    <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
+                    <div class="content_texte col-12 col-lg-5">
                       <p class="content_para"><?php the_sub_field('texte'); ?></p>
                     </div>
                     <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_2.svg" data-rellax-speed="-0.7" class="tache tache2 rellax" alt="tache">
@@ -278,14 +278,8 @@ window.cookieconsent.initialise({
                       <path class="st2" d="M537.2,235.6c0,0-57,44.4-67.4,54.8s-46.7,37-46.7,37"/>
                       </svg>
 
-
-
-
-
-
-
                     <div class="content_image col-12 col-lg-6 offset-lg-0">
-                      <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0 rellax" data-rellax-speed="0.7"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
+                      <div class="image_l set_bg col-12 offset-0 rellax" data-rellax-speed="0.7"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
                     </div>
                   </section>
 
@@ -295,9 +289,9 @@ window.cookieconsent.initialise({
                 <section class="image_texte row">
                   <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_3.svg" class="tache tache3 rellax" data-rellax-speed="-0.9" alt="tache">
                   <div class="content_image col-12 col-lg-6">
-                    <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0 rellax" data-rellax-speed="0.7"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
+                    <div class="image_l set_bg col-12 rellax" data-rellax-speed="0.7"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
                   </div>
-                  <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
+                  <div class="content_texte col-12 col-lg-5">
                     <p class="content_para"><?php the_sub_field('texte'); ?></p>
                   </div>
                 </section>
@@ -306,7 +300,7 @@ window.cookieconsent.initialise({
                 elseif( get_row_layout() == 'texte_centre' ): ?>
 
                 <section class="texte_centre row">
-                  <div class="content_texte col-8 offset-2">
+                  <div class="content_texte col-12 offset-0 col-lg-8 offset-lg-2">
                     <p class="content_para"><?php the_sub_field('texte'); ?></p>
                   </div>
                 </section>
