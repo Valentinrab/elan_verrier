@@ -128,9 +128,7 @@ window.cookieconsent.initialise({
   <path class="st0" d="M272.3,140.5c0,0-10.9,3.2-13-1.8s-2.8-32.7,1.6-37.1c0,0,2.1-2.8,3.3-1.7s5.5,12.5,6,19.7
   	S272.3,140.5,272.3,140.5z"/>
   </svg>
-
-
-
+  
   <?php
     get_footer();
   ?>
@@ -146,7 +144,6 @@ window.cookieconsent.initialise({
 
 <script  src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
-
   <script>
     new Vivus('main-telephone', {duration: 200});
   </script>

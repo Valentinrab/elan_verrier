@@ -131,7 +131,6 @@ p {
 
 .lettrine1 {
   left: -40px;
-
 }
 
 .wrap-line {
@@ -297,6 +296,19 @@ p {
   width: 20%;
 }
 
+.illustration {
+  position: absolute;
+  z-index: 0;
+  width: 300px;
+  height: auto;
+}
+
+.illustration1 {
+  top: 36vh;
+  left: 80vw;
+  width: 100px;
+}
+
 @media screen and (max-width : 992px) {
   .tache3 {
     width: 130%;
@@ -306,6 +318,12 @@ p {
     /* top: 170vh;
     width: 20%;
     left: 50vw; */
+  }
+
+  .illustration1 {
+    top: 80vh;
+    left: 70vw;
+    width: 80px;
   }
 }
 
@@ -318,6 +336,11 @@ p {
   .tache6 {
     /* top: 270vh;
     left: 55vw; */
+  }
+  .illustration1 {
+    top: 150vh;
+    left: 70vw;
+    width: 60px;
   }
 }
 
@@ -355,6 +378,9 @@ p {
 
   .what-container {
     margin: 0 110px;
+  }
+  .illustration1 {
+    display: none;
   }
 }
 
