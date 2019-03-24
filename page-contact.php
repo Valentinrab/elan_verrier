@@ -147,6 +147,7 @@ window.cookieconsent.initialise({
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
 
   <script>
-    new Vivus('main-telephone', {duration: 300});
+    new Vivus('main-telephone', {duration: 200});
   </script>
+
 </html>
