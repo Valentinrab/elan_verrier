@@ -861,7 +861,6 @@
 
   </body>
 
-
   <script src="<?php bloginfo('template_directory'); ?>/js/menu.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/easings.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/menu3.js"></script>
@@ -871,7 +870,6 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/jquery.youtubebackground.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
   <script>
     $(document).ready(function() {
 
@@ -895,12 +893,14 @@
           }
       });
 
-
-
     })
 
   </script>
-
+  <script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
   <script>
     new Vivus('mains-team', {duration: 200});
     new Vivus('main-soufflage', {duration: 200});
@@ -908,9 +908,4 @@
     new Vivus('main-vase', {duration: 200});
     new Vivus('main-question', {duration: 200});
   </script>
-  <script>
-    // Accepts any class name
-    var rellax = new Rellax('.rellax');
-  </script>
-
 </html>

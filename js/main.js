@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  
   ///////////////////scroll reveal///////////////////
   //
   // if (window.matchMedia("(min-width: 600px)").matches) {
