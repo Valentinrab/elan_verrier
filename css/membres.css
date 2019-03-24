@@ -14,11 +14,23 @@ p {
 
 .lettrine1 {
   left: -30px;
-
 }
 
 .container {
   padding: 0 10%;
+}
+
+.illustration {
+  position: absolute;
+  z-index: 0;
+  width: 300px;
+  height: auto;
+}
+
+.illustration1 {
+  top: 40vh;
+  left: 50vw;
+  width: 30%;
 }
 
 .container-main {
@@ -152,7 +164,7 @@ p {
   transition: transform 0.5s cubic-bezier(0.42, 0, 0.27, 1.43), opacity 0.8s cubic-bezier(0.42, 0, 0.55, 1.6);
 }
 
-.tache{
+.tache {
   position: absolute;
   z-index: -1;
   width: 30%;
@@ -175,7 +187,7 @@ p {
   left: -5vw;
 }
 
-.tache6{
+.tache6 {
   width: 25%;
 }
 
@@ -202,5 +214,9 @@ p {
   .desc-wrap {
     opacity: 1;
     margin-top: 20px;
+  }
+
+  .illustration1 {
+    display: none;
   }
 }
