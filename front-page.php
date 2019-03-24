@@ -51,7 +51,10 @@
   </head>
   <body>
 
-    <?php get_header(); ?>
+    <?php
+      get_header();
+      include('loader.php');
+    ?>
 
     <div class="loader">
       <?xml version="1.0" encoding="utf-8"?>

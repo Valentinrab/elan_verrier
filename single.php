@@ -50,6 +50,7 @@ window.cookieconsent.initialise({
 <body>
   <?php
     get_header();
+    include('loader.php');
   ?>
 
 
