@@ -294,7 +294,7 @@ p {
 }
 
 .tache6 {
-  width: 25%;
+  width: 20%;
 }
 
 @media screen and (max-width : 992px) {
@@ -303,9 +303,9 @@ p {
   }
 
   .tache6 {
-    top: 170vh;
-    width: 50%;
-    left: 50vw;
+    /* top: 170vh;
+    width: 20%;
+    left: 50vw; */
   }
 }
 
@@ -316,8 +316,8 @@ p {
   }
 
   .tache6 {
-    top: 270vh;
-    left: 55vw;
+    /* top: 270vh;
+    left: 55vw; */
   }
 }
 
@@ -360,7 +360,7 @@ p {
 
 @media screen and (max-width : 450px) {
   .tache6 {
-    top: 280vh;
+    /* top: 280vh; */
   }
 }
 
