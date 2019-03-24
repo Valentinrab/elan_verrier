@@ -175,6 +175,9 @@ p {
   .modal-navigation {
     top: 50%;
   }
+  .grid-item:hover {
+    transform: scale(1);
+  }
 }
 @media screen and (max-width : 576px) {
   .btn_access {

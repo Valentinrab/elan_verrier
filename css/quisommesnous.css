@@ -42,13 +42,13 @@ p {
 .tache {
   position: absolute;
   z-index: -1;
-  width: 30%;
+  /* width: 30%; */
   height: auto;
 }
 
 .tache2 {
   top: -15vh;
-  left: 55vw;
+  left: 70vw;
 }
 
 .tache3 {
@@ -121,23 +121,24 @@ p {
 
 @media screen and (max-width: 960px) {
   .illustration1 {
-    top: 0vh;
-    left: 70vw:
+    top: 20vh;
+    left: 65vw;
+    width: 150px;
   }
   .tache2 {
-    top: 0vh;
-    left: 70vw;
+    top: 20vh;
+    left: 65vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .illustration1 {
-    top: 15vh;
-    left: 75vw;
+    top: 20vh;
+    left: 80vw;
   }
   .tache2 {
-    top: 15vh;
-    left: 75vw;
+    top: 20vh;
+    left: 80vw;
   }
   .content_texte{
     margin-bottom: 20px;
@@ -149,21 +150,11 @@ p {
 
 @media screen and (max-width: 576px) {
   .illustration1 {
-    top: 30vh;
-    left: 70vw;
-    width: 200px;
+    top: 25vh;
+    left: 75vw;
   }
   .tache2 {
     top: 30vh;
-    left: 70vw;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .illustration1 {
-    top: 65vh;
-  }
-  .tache2 {
-    top: 65vh;
+    left: 80vw;
   }
 }

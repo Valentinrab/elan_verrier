@@ -310,12 +310,6 @@ p {
     width: 130%;
   }
 
-  .tache6 {
-    /* top: 170vh;
-    width: 20%;
-    left: 50vw; */
-  }
-
   .illustration1 {
     top: 80vh;
     left: 70vw;
@@ -329,13 +323,13 @@ p {
     left: -50vw;
   }
 
-  .tache6 {
-    /* top: 270vh;
-    left: 55vw; */
+  .actu_reveal:hover .actu_principal_image {
+    transform: scale(1);
   }
+
   .illustration1 {
-    top: 150vh;
-    left: 70vw;
+    top: 30vh;
+    left: 89vw;
     width: 60px;
   }
 }
@@ -375,14 +369,11 @@ p {
   .what-container {
     margin: 0 110px;
   }
-  .illustration1 {
-    display: none;
-  }
 }
 
-@media screen and (max-width : 450px) {
-  .tache6 {
-    /* top: 280vh; */
+@media screen and (max-width : 425px) {
+  .illustration1{
+    left: 85vw;
   }
 }
 
