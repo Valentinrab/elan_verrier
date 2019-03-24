@@ -23,10 +23,10 @@ p {
 }
 
 .illustration3 {
-  top: 24vh;
-  left: 70vw;
+  top: 27vh;
+  left: 65vw;
   z-index: 0;
-  width: 10%;
+  width: 20%;
 }
 
 .lettrine1 {
@@ -302,7 +302,7 @@ p {
 }
 
 .tache6 {
-  width: 25%;
+  width: 20%;
 }
 
 .tache4 {
@@ -320,15 +320,25 @@ p {
     width: 40%;
   }
 
-
+  .illustration3 {
+    top: 32vh;
+    left: 65vw;
+    z-index: 0;
+    width: 21%;
+  }
+}
 
 @media screen and (max-width : 768px) {
   .tache3 {
     width: 50%;
-
   }
 
-
+  .illustration3 {
+    top: 32vh;
+    left: 60vw;
+    z-index: 0;
+    width: 33%;
+  }
 }
 
 @media screen and (max-width : 576px) {
@@ -338,10 +348,7 @@ p {
 
   .tache3 {
     width: 50%;
-
   }
-
-
 
   .title-container {
     justify-content: left;
@@ -359,12 +366,12 @@ p {
   .what-container {
     margin: 0 110px;
   }
+
+  .illustration3 {
+    display: none;
+  }
 }
 
-@media screen and (max-width : 450px) {
+@media screen and (max-width : 450px) {}
 
-}
-
-@media screen and (max-width : 370px) {
-
-}
+@media screen and (max-width : 370px) {}
