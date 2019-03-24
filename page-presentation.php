@@ -339,6 +339,9 @@ window.cookieconsent.initialise({
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
 
   <script>
+  var mq = window.matchMedia( "(min-width:768px)" );
+  if (mq.matches) {
     new Vivus('mains-team', {duration: 300});
+  }
   </script>
 </html>

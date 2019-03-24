@@ -332,7 +332,10 @@ window.cookieconsent.initialise({
 <script  src="<?php bloginfo('template_directory'); ?>/js/devenirmembre.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
 <script>
+var mq = window.matchMedia( "(min-width:768px)" );
+if (mq.matches) {
   new Vivus('mains-team', {duration: 200});
+}
 </script>
 
 </html>
