@@ -171,7 +171,11 @@ p {
   height: auto;
   margin: 0 3px;
 }
-
+@media screen and (max-width : 768px){
+  .modal-navigation {
+    top: 50%;
+  }
+}
 @media screen and (max-width : 576px) {
   .btn_access {
     margin-left: 16px;
@@ -184,5 +188,21 @@ p {
   .title-container {
     justify-content: center;
     flex-direction: column;
+  }
+
+  .modal-body img {
+    max-width: 375px;
+  }
+}
+
+@media screen and (max-width : 380px) {
+  .modal-body img {
+    max-width: 310px;
+  }
+}
+
+@media screen and (max-width : 325px) {
+  .modal-body img {
+    max-width: 280px;
   }
 }

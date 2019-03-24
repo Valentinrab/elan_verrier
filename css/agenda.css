@@ -366,12 +366,5 @@ p {
   .illustration3 {
     display: none;
   }
-}
 
-@media screen and (max-width : 450px) {}
-
-@media screen and (max-width : 370px) {
-  .modal-dialog {
-    max-width: 380px;
-  }
 }

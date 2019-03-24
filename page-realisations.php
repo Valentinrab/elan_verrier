@@ -151,7 +151,7 @@ window.cookieconsent.initialise({
                 </div>
                 <div class="modal-body set_bg">
 
-                  <img src="<?php the_field('realisation_image'); ?>" alt="">
+                  <img class"col-12" src="<?php the_field('realisation_image'); ?>" alt="">
 
                 </div>
                 <div class="modal-footer">
