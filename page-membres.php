@@ -263,6 +263,25 @@ window.cookieconsent.initialise({
         <path class="st2" d="M537.2,235.6c0,0-57,44.4-67.4,54.8s-46.7,37-46.7,37"/>
       </svg>
       <h1 class="main-title"><span class="lettrine lettrine1">M</span>Les membres</h1>
+
+      <div class="container-form col-12">
+        <h2 class="form-title"><?php the_field('titre_paragraphe_membre'); ?></h2>
+        <div id="form-desc" class="row">
+          <div id="form-left" class="col-12">
+            <p><?php the_field('paragraphe_membre'); ?></p>
+          </div>
+          <div class="btn_access col-12">
+            <a href="<?php the_field('formulaire'); ?>" target="_blank">
+              <span class="text"><?php the_field('btn_text'); ?></span>
+              <span class="line -right"></span>
+              <span class="line -top"></span>
+              <span class="line -left"></span>
+              <span class="line -bottom"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="container-wrap">
 
         <?php
@@ -281,7 +300,7 @@ window.cookieconsent.initialise({
                 </div>
               </div>
 
-                  <!-- // code html avec pour les zones administrables -->
+
 
         <?php
             endwhile;
@@ -290,23 +309,6 @@ window.cookieconsent.initialise({
         ?>
 
 
-      </div>
-      <div class="container-form col-12">
-        <h2 class="form-title"><?php the_field('titre_paragraphe_membre'); ?></h2>
-        <div id="form-desc" class="row">
-          <div id="form-left" class="col-12 col-md-8">
-            <p><?php the_field('paragraphe_membre'); ?></p>
-          </div>
-          <div class="btn_access col-12 col-md-4">
-            <a href="<?php the_field('formulaire'); ?>" target="_blank">
-              <span class="text"><?php the_field('btn_text'); ?></span>
-              <span class="line -right"></span>
-              <span class="line -top"></span>
-              <span class="line -left"></span>
-              <span class="line -bottom"></span>
-            </a>
-          </div>
-        </div>
       </div>
 
     </main>
