@@ -85,7 +85,7 @@ window.cookieconsent.initialise({
 })});
 </script>
 </head>
-
+  <?php wp_head(); ?>
 <body>
 
   <?php
