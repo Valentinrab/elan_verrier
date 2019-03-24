@@ -294,10 +294,10 @@ window.cookieconsent.initialise({
       <div class="container-form col-12">
         <h2 class="form-title"><?php the_field('titre_paragraphe_membre'); ?></h2>
         <div id="form-desc" class="row">
-          <div id="form-left" class="col-8">
+          <div id="form-left" class="col-12 col-md-8">
             <p><?php the_field('paragraphe_membre'); ?></p>
           </div>
-          <div class="btn_access col-4">
+          <div class="btn_access col-12 col-md-4">
             <a href="<?php the_field('formulaire'); ?>" target="_blank">
               <span class="text"><?php the_field('btn_text'); ?></span>
               <span class="line -right"></span>

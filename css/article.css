@@ -233,11 +233,20 @@ cite {
     flex-direction: column-reverse;
   }
 
+  .illustration3{
+    display: none;
+  }
+
   .main-title {
     text-align: center;
   }
 
   .intro-article {
     padding: 0;
+  }
+
+  .lettrine1 {
+    left: -30px;
+    top: 10px;
   }
 }

@@ -151,7 +151,7 @@
       </div>
 
       <section id="content_about" class="mt-150px row">
-        <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
+        <div class="content_texte col-10 offset-1 col-lg-5 offset-lg-0">
           <span class="lettrine lettrine1"><?php the_field('lettrine'); ?></span>
           <h2 data-sr="move 250px" class="content_title"><?php the_field('qui_sommes_nous_titre'); ?></h2>
           <p data-sr="move 250px" class="content_para"><?php the_field('qui_sommes_nous_paragraphe'); ?></p>
@@ -377,7 +377,7 @@
 
 
         <div class="content_image col-12 col-lg-6 offset-lg-0">
-          <div class="image_l set_bg col-8 offset-2 col-lg-8 offset-lg-0 rellax img1" data-rellax-speed="1" style="background-image:url(<?php the_field('qui_sommes_nous_images_1'); ?>);"></div>
+          <div class="image_l set_bg col-10 offset-1 col-lg-8 offset-lg-0 rellax img1" data-rellax-speed="1" style="background-image:url(<?php the_field('qui_sommes_nous_images_1'); ?>);"></div>
           <div class="image_r set_bg col-8 offset-lg-4 rellax" data-rellax-speed="2" style="background-image:url(<?php the_field('qui_sommes_nous_images_2'); ?>);"></div>
         </div>
       </section>
@@ -435,9 +435,9 @@
 
 
         <div class="content_image col-12 col-lg-6">
-          <div class="image_l set_bg col-8 offset-2 col-lg-12 offset-lg-0 rellax img3" data-rellax-speed="1" style="background-image:url(<?php the_field('activites_images'); ?>);"></div>
+          <div class="image_l set_bg col-10 offset-1 col-lg-12 offset-lg-0 rellax img3" data-rellax-speed="1" style="background-image:url(<?php the_field('activites_images'); ?>);"></div>
         </div>
-        <div class="content_texte col-8 offset-2 col-lg-5 offset-lg-0">
+        <div class="content_texte col-10 offset-1 col-lg-5 offset-lg-0">
           <span class="lettrine lettrine2"><?php the_field('lettrine2'); ?></span>
           <h2 class="content_title"><?php the_field('activites_titre'); ?></h2>
           <p class="content_para"><?php the_field('activites_paragraphe'); ?></p>
@@ -473,7 +473,7 @@
   							$the_query -> the_post();
                 $count ++;
                 if ($count == 1) {?>
-                <article class="actu_principal col-8 offset-2 col-lg-6 offset-lg-0">
+                <article class="actu_principal col-10 offset-1 col-lg-6 offset-lg-0">
                   <div class="actu_principal_image set_bg" style="background-image:url(<?php the_field('article_image'); ?>)"></div>
                   <div class="actu_principal_info col-12 col-md-10 col-lg-10 col-xl-10">
                     <div class="categorie col-1 <?php the_field('categorie'); ?>">
@@ -579,7 +579,7 @@
         </div>
       </section>
 
-      <section id="content_realisation" class="mt-200px"> 
+      <section id="content_realisation" class="mt-200px">
         <span class="lettrine lettrine4"><?php the_field('lettrine4'); ?></span>
         <h2 id="actu_title">Réalisations</h2>
 
@@ -643,7 +643,7 @@
 						        <?php setup_postdata($post);
                     $count ++;
 										if ($count == 1) {?>
-                      <div class="realisation_img col-8 offset-2 col-lg-4 offset-lg-0" style="background-image:url(<?php the_field('realisation_image')?>)"></div>
+                      <div class="realisation_img col-10 offset-1 col-lg-4 offset-lg-0" style="background-image:url(<?php the_field('realisation_image')?>)"></div>
                       <div class="content_realisation_img col-lg-4">
 
                     <?php }else if($count == 2){ ?>
@@ -654,7 +654,7 @@
                     </div>
 
                     <?php }else if($count == 4){ ?>
-                    <div class="realisation_img col-8 offset-2 col-lg-4 offset-lg-0" style="background-image:url(<?php the_field('realisation_image')?>)"></div>
+                    <div class="realisation_img col-10 offset-1 col-lg-4 offset-lg-0" style="background-image:url(<?php the_field('realisation_image')?>)"></div>
 
                   <?php } ?>
 						    <?php endforeach; ?>
@@ -741,7 +741,7 @@
 
 
 
-        <div class="accordion col-8 offset-2" id="accordionExample">
+        <div class="accordion col-10 offset-1 col-md-8 offset-md-2" id="accordionExample">
           <?php
             $count = 0;
             if( have_rows('foire_aux_questions') ):

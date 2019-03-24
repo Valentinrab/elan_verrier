@@ -101,7 +101,7 @@ iframe {
   width: 7%;
   left: 77vw;
   top: 10vh;
-  z-index: -1;
+  z-index: 1;
 }
 
 /*section vidéo*/
@@ -967,6 +967,10 @@ iframe {
 }
 
 @media screen and (max-width: 576px) {
+  .illustration7{
+    display: none;
+  }
+
   .mt-150px {
     margin-top: 100px;
   }
