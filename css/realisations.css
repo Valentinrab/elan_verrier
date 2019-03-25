@@ -84,16 +84,21 @@ p {
 
 .grid {
   margin-top: 50px;
-  opacity: 0.2;
+  /* opacity: 0.2; */
   /* transition: opacity .4s ease; */
 }
+
+.grid.are-images-unloaded {
+  opacity: 0;
+}
+
 
 .container-fluid {
   padding-top: 150px;
 }
 
-.grid-item {
-  overflow: hidden;
+.grid-item img{
+  /* overflow: hidden; */
   transition: transform .5s cubic-bezier(0.42, 0, 0.27, 1.43);
 }
 
@@ -104,7 +109,7 @@ p {
   cursor: pointer;
 }
 
-.grid-item:hover {
+.grid-item img:hover {
   transform: scale(1.04);
   transition: transform .5s cubic-bezier(0.42, 0, 0.27, 1.43);
 }
@@ -177,7 +182,7 @@ p {
   .modal-navigation {
     top: 50%;
   }
-  .grid-item:hover {
+  .grid-item img:hover {
     transform: scale(1);
   }
 }

@@ -57,7 +57,7 @@ p {
   top: 0;
   height: 100%;
   left: 110%;
-  padding: 3vw;
+  padding: 3vw 0;
 }
 
 #slider_container {
