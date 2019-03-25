@@ -166,7 +166,7 @@
           </div>
         </div>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_2.svg" data-rellax-speed="-0.7" class="tache tache2 rellax" alt="tache">
-        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl1.png" date-rellax-speed="2" class="tache tache-bl bl1 rellax" alt="verre-transparent">
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl2.png" date-rellax-speed="2" class="tache tache-bl bl1 rellax" alt="verre-transparent">
 
           <svg version="1.1" id="mains-team" class="illustration illustration1" x="0px" y="0px"
                viewBox="0 0 538.7 564.8" style="enable-background:new 0 0 538.7 564.8;" xml:space="preserve">
@@ -383,7 +383,7 @@
 
       <section id="content_activites" class="mt-150px row">
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_3.svg" class="tache tache3 rellax" data-rellax-speed="-0.9" alt="tache">
-        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl2.png" date-rellax-speed="2" class="tache tache-bl bl4 rellax" alt="verre-transparent">
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl3.png" date-rellax-speed="2" class="tache tache-bl bl4 rellax" alt="verre-transparent">
         <svg version="1.1" id="main-soufflage" class="illustration illustration2" x="0px"
         	 y="0px" viewBox="0 0 1137.1 418.9" style="enable-background:new 0 0 1137.1 418.9;" xml:space="preserve">
           <style type="text/css">
@@ -458,7 +458,7 @@
         <section id="content_actu_article" class="row">
           <?php
           $count = 0;
-  				// The Query 
+  				// The Query
   				$args = array ('post_type' => 'Post',
                         'posts_per_page' => '3',
 		                     'order' => 'DESC');
@@ -516,7 +516,7 @@
               </div>
         </section>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_4.svg" class="tache tache4 rellax" data-rellax-speed="-2" alt="tache">
-        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl2.png" date-rellax-speed="2" class="tache tache-bl bl2 rellax" alt="verre-transparent">
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl1.png" date-rellax-speed="2" class="tache tache-bl bl2 rellax" alt="verre-transparent">
 
           <svg version="1.1" id="main-interview" class="illustration illustration3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
           	 y="0px" viewBox="0 0 237.7 893.8" style="enable-background:new 0 0 237.7 893.8;" xml:space="preserve">
@@ -578,7 +578,7 @@
       <section id="content_realisation" class="mt-200px">
         <span class="lettrine lettrine4"><?php the_field('lettrine4'); ?></span>
         <h2 id="actu_title">Réalisations</h2>
-        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl3.png" date-rellax-speed="2" class="tache tache-bl bl3 rellax" alt="verre-transparent">
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl4.png" date-rellax-speed="2" class="tache tache-bl bl3 rellax" alt="verre-transparent">
         <svg version="1.1" id="main-vase" class="illustration illustration4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 viewBox="0 0 412.6 647.7" style="enable-background:new 0 0 412.6 647.7;" xml:space="preserve">
           <style type="text/css">

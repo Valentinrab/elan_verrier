@@ -64,7 +64,8 @@ iframe {
 
 .tache-bl {
   z-index: 3;
-  width: 23%;
+  width: 25%;
+  opacity: .3;
   mix-blend-mode: overlay;
 }
 
@@ -995,6 +996,7 @@ iframe {
   .bl4 {
     top: 230vh;
     left: 0vw;
+    width: 30%;
   }
 
   .bl, .name {
