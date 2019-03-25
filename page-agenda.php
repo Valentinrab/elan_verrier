@@ -204,8 +204,8 @@
                   <!-- Modal content-->
                   <div class="modal-content">
                     <div class="modal-navigation">
-                      <button class="modal-navigation-arrow left"><i class="fas fa-angle-left"></i></button>
-                  		<button class="modal-navigation-arrow right"><i class="fas fa-angle-right"></i></button>
+                      <button class="modal-navigation-arrow left">PREC</button>
+                  		<button class="modal-navigation-arrow right">SUIV</button>
                     </div>
                     <div class="modal-header hello categorie <?php the_field('categorie') ?>">
                       <h3 class="modal-categorie"><?php the_field('categorie') ?></h3>
