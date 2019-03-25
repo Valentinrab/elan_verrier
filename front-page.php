@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>Elan Verrier - Accueil</title>
 
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width">
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/accueil.css">
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
+		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/loader.css">
     <link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/favicon-elan-verrier.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -24,7 +24,7 @@
     <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/loader.js"></script>
     <script>document.documentElement.className = 'js';</script>
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
     <script>
     window.addEventListener("load", function(){
@@ -65,7 +65,6 @@
         <div class="video set_bg">
           <div class="video-img set_bg" style="background-image:url(<?php the_field('image_format_portable') ?>)"></div>
           <div id="video"></div>
-          <!-- <iframe class="video" src="<?php the_field('video_presentation');?>?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
         <div class="video_title">
           <h1 class="name"><?php the_field('video_titre'); ?></h1>
@@ -167,9 +166,7 @@
           </div>
         </div>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_2.svg" data-rellax-speed="-0.7" class="tache tache2 rellax" alt="tache">
-        <?xml version="1.0" encoding="utf-8"?>
-          <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <svg version="1.1" id="mains-team" class="illustration illustration1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg version="1.1" id="mains-team" class="illustration illustration1" x="0px" y="0px"
                viewBox="0 0 538.7 564.8" style="enable-background:new 0 0 538.7 564.8;" xml:space="preserve">
             <style type="text/css">
               .st0{fill:none;stroke:#1F3D81;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
@@ -384,9 +381,7 @@
 
       <section id="content_activites" class="mt-150px row">
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_3.svg" class="tache tache3 rellax" data-rellax-speed="-0.9" alt="tache">
-        <?xml version="1.0" encoding="utf-8"?>
-        <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-        <svg version="1.1" id="main-soufflage" class="illustration illustration2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+        <svg version="1.1" id="main-soufflage" class="illustration illustration2" x="0px"
         	 y="0px" viewBox="0 0 1137.1 418.9" style="enable-background:new 0 0 1137.1 418.9;" xml:space="preserve">
           <style type="text/css">
           	.st0{fill:none;stroke:#1F3D81;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
@@ -518,10 +513,6 @@
               </div>
         </section>
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_4.svg" class="tache tache4 rellax" data-rellax-speed="-2" alt="tache">
-
-          <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <?xml version="1.0" encoding="utf-8"?>
-          <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <svg version="1.1" id="main-interview" class="illustration illustration3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
           	 y="0px" viewBox="0 0 237.7 893.8" style="enable-background:new 0 0 237.7 893.8;" xml:space="preserve">
             <style type="text/css">
@@ -582,9 +573,6 @@
       <section id="content_realisation" class="mt-200px">
         <span class="lettrine lettrine4"><?php the_field('lettrine4'); ?></span>
         <h2 id="actu_title">Réalisations</h2>
-
-        <?xml version="1.0" encoding="utf-8"?>
-        <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
         <svg version="1.1" id="main-vase" class="illustration illustration4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 viewBox="0 0 412.6 647.7" style="enable-background:new 0 0 412.6 647.7;" xml:space="preserve">
           <style type="text/css">
@@ -676,8 +664,6 @@
       </section>
 
       <section id="content_faq" class="mt-150px">
-        <?xml version="1.0" encoding="utf-8"?>
-        <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <svg version="1.1" id="main-question" class="illustration illustration7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
           	 y="0px" viewBox="0 0 247 675" style="enable-background:new 0 0 247 675;" xml:space="preserve">
           <style type="text/css">

@@ -12,6 +12,10 @@ p {
   line-height: 25px;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .lettrine1 {
   left: -30px;
 }
