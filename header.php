@@ -60,7 +60,9 @@
 						<a class="global-menu__item global-menu__item--demo-3" href="<?php echo get_permalink(44); ?>">Agenda</a>
 						<a class="global-menu__item global-menu__item--demo-3" href="<?php echo get_permalink(63); ?>">Contact</a>
 					</div>
-          <img class="tache-anim-1" src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl3.png" alt="taches blanches">
+          <img class="tache-bl-menu tache-anim-1" src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl3.png" alt="taches blanches">
+          <img class="tache-bl-menu tache-anim-2" src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl4.png" alt="taches blanches">
+          <img class="tache-bl-menu tache-anim-3" src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl2.png" alt="taches blanches">
 
 				</div>
 				<svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">

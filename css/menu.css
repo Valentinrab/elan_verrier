@@ -52,15 +52,33 @@ body {
 	--button-line: #222;
 }
 /*anim shapes transparent*/
-.tache-anim-1{
-	-webkit-animation: float 10s linear infinite alternate;
+.tache-bl-menu{
 	z-index: 100;
 	width: 100px;
 	height: auto;
 	display: none;
 	opacity: 0;
+	mix-blend-mode: overlay;
+	position: absolute;
+}
+.tache-anim-1{
+	-webkit-animation: float1 20s linear infinite alternate;
 	transition: opacity .5s cubic-bezier(0.17, 0.37, 0.39, 0.81);
-  mix-blend-mode: overlay;
+	top: 50px;
+	left: 500px;
+}
+.tache-anim-2{
+	-webkit-animation: float2 27s linear infinite alternate;
+	transition: opacity .6s cubic-bezier(0.17, 0.37, 0.39, 0.81);
+	top: 150px;
+	left: 200px;
+}
+
+.tache-anim-3{
+	-webkit-animation: float3 25s linear infinite alternate;
+	transition: opacity .4s cubic-bezier(0.17, 0.37, 0.39, 0.81);
+	top: 0px;
+	left: 150px;
 }
 
 .tache-open{
@@ -69,13 +87,26 @@ body {
 	transition: opacity .5s cubic-bezier(0.17, 0.37, 0.39, 0.81);
 }
 
-@keyframes float {
-	 from { transform: translate(0, 0px); 
+@keyframes float1 {
+	 from { transform: translate(50px, 500px);
 		 			opacity: 0.2}
     65%  { transform: translate(200px, 150px); opacity: 0.5}
-		/* 85%  { transform: translate(200px, -150px); opacity: 0.7} */
-     to   { transform: translate(0, -0px); opacity: 0.2}
+     to   { transform: translate(150px, 550px); opacity: 0.3}
  }
+
+ @keyframes float2 {
+ 	 from { transform: translate(170px, 260px);
+ 		 			opacity: 0.3}
+     65%  { transform: translate(300px, 350px); opacity: 0.8}
+       to   { transform: translate(150px, 200px); opacity: 0.3}
+   }
+
+	 @keyframes float3 {
+			from { transform: translate(0px, 120px);
+						 opacity: 0.4}
+			 65%  { transform: translate(200px, 200px); opacity: 0.7}
+				 to   { transform: translate(20px, 220px); opacity: 0.4}
+		 }
 /* Fade effect */
 a {
 	text-decoration: none;
