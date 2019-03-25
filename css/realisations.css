@@ -82,6 +82,12 @@ p {
   margin: 50px 0;
 }
 
+/*arrow*/
+.modal-navigation {
+    top: 25%;
+    left: 50%;
+}
+
 .grid {
   margin-top: 50px;
   /* opacity: 0.2; */

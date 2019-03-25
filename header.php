@@ -48,6 +48,7 @@
 					</div>
 				</div>
 
+
 				<div class="global-menu">
 					<div class="global-menu__wrap">
 						<a class="global-menu__item global-menu__item--demo-3" href="<?php echo get_permalink(38); ?>">Accueil</a>
@@ -59,6 +60,8 @@
 						<a class="global-menu__item global-menu__item--demo-3" href="<?php echo get_permalink(44); ?>">Agenda</a>
 						<a class="global-menu__item global-menu__item--demo-3" href="<?php echo get_permalink(63); ?>">Contact</a>
 					</div>
+          <img class="tache-anim-1" src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl3.png" alt="taches blanches">
+
 				</div>
 				<svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
 					<path class="shape-overlays__path"></path>

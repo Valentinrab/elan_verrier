@@ -82,6 +82,7 @@ class ShapeOverlays {
   const gNavItems = document.querySelectorAll('.global-menu__item');
   const elmOverlay = document.querySelector('.shape-overlays');
   const overlay = new ShapeOverlays(elmOverlay);
+  const shape1 = document.querySelector('.tache-anim-1');
 
   elmHamburger.addEventListener('click', () => {
     if (overlay.isAnimating) {
@@ -89,15 +90,18 @@ class ShapeOverlays {
     }
     overlay.toggle();
     if (overlay.isOpened === true) {
+      shape1.classList.add('tache-open');
       elmHamburger.classList.add('is-opened-navi');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.add('is-opened');
       }
     } else {
+      shape1.classList.remove('tache-open');
       elmHamburger.classList.remove('is-opened-navi');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.remove('is-opened');
       }
     }
+
   });
 }());

@@ -144,8 +144,8 @@ window.cookieconsent.initialise({
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="modal-navigation">
-                  <button class="modal-navigation-arrow left"><i class="fas fa-angle-left"></i></button>
-              		<button class="modal-navigation-arrow right"><i class="fas fa-angle-right"></i></button>
+                  <button class="modal-navigation-arrow left">PRÈC</button>
+              		<button class="modal-navigation-arrow right">SUIV</button>
                 </div>
                 <div class="modal-header">
                   <h3 class="modal-title"><?php the_title() ?></h3>

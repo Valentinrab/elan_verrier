@@ -1,13 +1,13 @@
 <?php
-// function enregistre_menus() {
-// register_nav_menus(
-//     array(
-//     'navigation-menu' => __( 'Menu de navigation' ),
-//     'footer-menu' => __( 'Menu pied de page' )
-//     )
-// );
-// }
-// add_action( 'init', 'enregistre_menus' );
+function enregistre_menus() {
+register_nav_menus(
+    array(
+    'navigation-menu' => __( 'Menu de navigation' ),
+    'footer-menu' => __( 'Menu pied de page' )
+    )
+);
+}
+add_action( 'init', 'enregistre_menus' );
 
 //limit words number
 function custom_field_excerpt($toCut) {

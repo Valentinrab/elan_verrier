@@ -250,7 +250,7 @@ iframe {
 /*PROCHAINEMENT*/
 .next_ev {
   background-color: #f09682;
-  z-index: 4;
+  z-index: 2;
   width: 380px;
   height: 300px;
   top: 50vh;
