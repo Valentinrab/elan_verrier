@@ -75,6 +75,7 @@ iframe {
 }
 
 .bl2 {
+  z-index: -1;
   top: -40vh;
   left: 70vw;
   width: 200px;
@@ -850,6 +851,7 @@ iframe {
   }
 
   .bl2 {
+    z-index: 1;
     top: -40vh;
     left: 60vw;
     width: 20%;
