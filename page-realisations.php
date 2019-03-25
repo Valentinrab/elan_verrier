@@ -117,7 +117,7 @@ window.cookieconsent.initialise({
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_1.svg" data-rellax-speed="-1" class="tache tache1 rellax" alt="tache">
       </div>
 
-      <div class="grid">
+      <div class="grid" id="grid">
         <div class="grid-sizer col-12 col-md-6 col-lg-4 col-xl-4"></div>
         <?php
           // The Query

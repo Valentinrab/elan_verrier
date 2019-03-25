@@ -206,7 +206,7 @@ window.cookieconsent.initialise({
   <script>
   var mq = window.matchMedia( "(min-width:768px)" );
   if (mq.matches) {
-    new Vivus('taille-machine', {duration: 200});
+    new Vivus('taille-machine', {duration: 300});
   }
   </script>
 </html>

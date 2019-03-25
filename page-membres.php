@@ -334,7 +334,7 @@ window.cookieconsent.initialise({
 <script>
 var mq = window.matchMedia( "(min-width:768px)" );
 if (mq.matches) {
-  new Vivus('mains-team', {duration: 200});
+  new Vivus('mains-team', {duration: 500});
 }
 </script>
 

@@ -64,8 +64,8 @@ window.cookieconsent.initialise({
             <div class="col-12 col-lg-8 mt-xl-0 mt-lg-0 mt-5" id="col-right">
               <div class="offset-md-1 col-md-10">
                 <div class="info-article">
-                  <p class="writer-article"><?php the_field('article_auteur'); ?></p>
-                  <p class="date-article"><?php the_time('d/m/Y') ?></p>
+                  <p class="writer-article">Par : <?php the_field('article_auteur'); ?></p>
+                  <p class="date-article">Le : <?php the_time('d/m/Y') ?></p>
                   <?xml version="1.0" encoding="utf-8"?>
                 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                 <svg version="1.1" id="main-ecrit" class="illustration illustration3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

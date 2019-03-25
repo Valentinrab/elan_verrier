@@ -84,6 +84,8 @@ p {
 
 .grid {
   margin-top: 50px;
+  opacity: 0.2;
+  /* transition: opacity .4s ease; */
 }
 
 .container-fluid {

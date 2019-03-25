@@ -163,10 +163,12 @@ cite {
 
 .date-article {
   font-size: 12px;
+  opacity: 0.8;
 }
 
 .writer-article {
   font-size: 12px;
+  opacity: 0.8;
 }
 
 .container-main {
