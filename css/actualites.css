@@ -289,7 +289,20 @@ p {
 }
 
 .tache6 {
-  width: 20%;
+  width: 200px;
+}
+
+.tache-bl {
+  z-index: 3;
+  width: 25%;
+  opacity: .3;
+  mix-blend-mode: overlay;
+}
+
+.bl1 {
+  top: 45vh;
+  left: 70vw;
+  width: 220px;
 }
 
 .illustration {
@@ -315,12 +328,24 @@ p {
     left: 70vw;
     width: 80px;
   }
+
+  .bl1 {
+    top: 94vh;
+    left: 60vw;
+    width: 220px;
+  }
 }
 
 @media screen and (max-width : 768px) {
   .tache3 {
     width: 150%;
     left: -50vw;
+  }
+
+  .bl1 {
+    top: 145vh;
+    left: 62vw;
+    width: 220px;
   }
 
   .actu_reveal:hover .actu_principal_image {
@@ -339,6 +364,10 @@ p {
     width: 170%;
     left: -60vw;
     top: -10vh;
+  }
+
+  .bl1 {
+    display: none;
   }
 
   .actu_principal {
@@ -372,7 +401,7 @@ p {
 }
 
 @media screen and (max-width : 425px) {
-  .illustration1{
+  .illustration1 {
     left: 85vw;
   }
 }

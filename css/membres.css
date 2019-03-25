@@ -188,10 +188,10 @@ body {
   width: 150%;
   left: -5vw;
 }
-
+ */
 .tache6 {
-  width: 25%;
-} */
+  width: 200px;
+}
 @media screen and (max-width: 768px) {
   #form-desc {
     flex-direction: column;

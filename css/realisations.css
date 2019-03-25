@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #21253F;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -60,7 +60,7 @@ body{
 }
 
 .tache6 {
-  width: 20%;
+  width: 200px;
 }
 
 p {
@@ -98,12 +98,11 @@ p {
   opacity: 0;
 }
 
-
 .container-fluid {
   padding-top: 150px;
 }
 
-.grid-item img{
+.grid-item img {
   /* overflow: hidden; */
   transition: transform .5s cubic-bezier(0.42, 0, 0.27, 1.43);
 }
@@ -125,7 +124,6 @@ p {
 }
 
 /*lightbox*/
-
 .modal-content {
   border-radius: 0;
   border: none;
@@ -184,17 +182,49 @@ p {
   height: auto;
   margin: 0 3px;
 }
-@media screen and (max-width : 768px){
+
+.tache-bl {
+  z-index: 3;
+  width: 25%;
+  opacity: .3;
+  mix-blend-mode: overlay;
+}
+
+.bl1 {
+  top: 15vh;
+  left: -5vw;
+  width: 220px;
+}
+
+@media screen and (max-width : 992px) {
+  .bl1 {
+    top: 20vh;
+    left: -7vw;
+  }
+}
+
+@media screen and (max-width : 768px) {
   .modal-navigation {
     top: 50%;
   }
+
+  .bl1 {
+    top: 7vh;
+    left: -7vw;
+  }
+
   .grid-item img:hover {
     transform: scale(1);
   }
 }
+
 @media screen and (max-width : 576px) {
   .btn_access {
     margin-left: 16px;
+  }
+
+  .bl1 {
+    display: none;
   }
 
   .main-title {

@@ -119,7 +119,7 @@
           c1.7-0.1,3.4,0.5,4.5,1.8l28.2,32.2C236.1,283.4,236.2,283.6,236.2,283.8z"/>
       </svg>
       <section id="content_actu" class="mt-150px">
-
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl4.png" date-rellax-speed="2" class="tache tache-bl bl1 rellax" alt="verre-transparent">
         <section id="content_actu_article" class="row">
           <?php
 

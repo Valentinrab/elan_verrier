@@ -123,6 +123,7 @@ window.cookieconsent.initialise({
 
   <section class="global col-10 offset-1">
     <div>
+      <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl2.png" date-rellax-speed="2" class="tache tache-bl bl1 rellax" alt="verre-transparent">
       <img id="tache1-agenda" src="<?php bloginfo('template_directory'); ?>/images/tache_5.svg" alt="tache5">
       <svg version="1.1" id="taille-machine" class="illustration illustration1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
       	 y="0px" viewBox="0 0 569 488.9" style="enable-background:new 0 0 569 488.9;" xml:space="preserve">
