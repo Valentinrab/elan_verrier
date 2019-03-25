@@ -114,6 +114,7 @@ window.cookieconsent.initialise({
 
 
         <p><?php the_field('introduction_realisation'); ?></p>
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl1.png" date-rellax-speed="2" class="tache tache-bl bl1 rellax" alt="verre-transparent">
         <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_1.svg" data-rellax-speed="-1" class="tache tache1 rellax" alt="tache">
       </div>
 

@@ -316,6 +316,19 @@ p {
   width: 30%;
 }
 
+.tache-bl {
+  z-index: 3;
+  width: 25%;
+  opacity: .3;
+  mix-blend-mode: overlay;
+}
+
+.bl1 {
+  top: 30vh;
+  left: 55vw;
+  width: 220px;
+}
+
 @media screen and (max-width : 992px) {
   .tache3 {
     width: 40%;
@@ -351,6 +364,10 @@ p {
     width: 50%;
   }
 
+  .bl1{
+    display: none;
+  }
+
   .title-container {
     justify-content: left;
     flex-direction: column;
@@ -367,5 +384,4 @@ p {
   .what-container {
     margin: 0 110px;
   }
-
 }

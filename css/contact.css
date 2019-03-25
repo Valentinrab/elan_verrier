@@ -82,7 +82,7 @@ body {
   top: 33vh;
   left: -10vw;
   z-index: -1;
-  width: 30%;
+  width: 20%;
 }
 
 .tache6 {
@@ -104,11 +104,12 @@ body {
   width: auto;
 }
 
-#link-map{
+#link-map {
   padding: 0;
 }
+
 #col-left {
-  padding:0;
+  padding: 0;
   text-align: center;
   height: 432px;
   overflow: hidden;
@@ -133,29 +134,56 @@ body {
   margin-right: 0px !important;
 }
 
-@media screen and (max-width : 1024px){
+.tache-bl {
+  z-index: 3;
+  width: 25%;
+  opacity: .3;
+  mix-blend-mode: overlay;
+}
+
+.bl1 {
+  top: 80vh;
+  left: 68vw;
+  width: 220px;
+}
+
+@media screen and (max-width : 1024px) {
   .illustration3 {
     top: 95vh;
     left: 80vw;
     width: 15%;
   }
-}
-
-@media screen and (max-width : 990px){
-  .illustration3 {
-    top: 165vh;
-    left: 70vw;
+  .bl1 {
+    top: 80vh;
+    left: 68vw;
+    width: 220px;
   }
 }
 
-@media screen and (max-width : 576px){
+@media screen and (max-width : 990px) {
+  .illustration3 {
+    display: none;
+  }
+
+  .bl1 {
+    top: 120vh;
+    left: 60vw;
+    width: 220px;
+}
+}
+
+@media screen and (max-width : 576px) {
   .illustration3 {
     top: 170vh;
     left: 75vw;
   }
+
+  .bl1{
+    display: none;
+  }
 }
 
-@media screen and (max-width : 425px){
+@media screen and (max-width : 425px) {
   .illustration3 {
     top: 180vh;
   }

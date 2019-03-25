@@ -63,6 +63,7 @@
     <main class="container-main">
       <div class="title-container">
         <h1 class="main-title"><span class="lettrine lettrine1">A</span>L'agenda</h1>
+        <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl4.png" date-rellax-speed="2" class="tache tache-bl bl1 rellax" alt="verre-transparent">
         <?xml version="1.0" encoding="utf-8"?>
       <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
       <svg version="1.1" id="main-ecrit" class="illustration illustration3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
