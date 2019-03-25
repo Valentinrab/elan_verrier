@@ -50,7 +50,6 @@ p {
   border: 4px solid #f09682;
   opacity: 1;
 } */
-
 .ekjs_info {
   position: absolute;
   width: 100%;
@@ -72,10 +71,12 @@ p {
 .ekjs_info_text {
   margin-left: 0%;
 }
+
 .ekjs_arrows {
   top: 95%;
   left: 70%;
 }
+
 .ekjs_arrow {
   color: var(--main-color);
   font-family: Ubuntu, sans-serif;
@@ -116,10 +117,29 @@ p {
   width: 20%;
 }
 
+.tache-bl {
+  z-index: 3;
+  width: 25%;
+  opacity: .3;
+  mix-blend-mode: overlay;
+}
+
+.bl1 {
+  top: 45vh;
+  left: -7vw;
+  width: 220px;
+}
+
 @media screen and (max-width: 900px) {
   .ekjs_info_container {
     position: absolute;
     top: inherit;
+  }
+
+  .bl1 {
+    top: 30vh;
+    left: -5vw;
+    width: 220px;
   }
 
   .ekjs_info.is_current {
@@ -130,6 +150,15 @@ p {
 
   .eokojs {
     width: 100%;
+  }
+
+  .ekjs_info {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .ekjs_arrows {
+    left: 50%;
   }
 
   .ekjs_info_text {
@@ -146,11 +175,21 @@ p {
     left: 60vw;
     width: 30%;
   }
+
+  .bl1 {
+    top: 30vh;
+    left: -10vw;
+    width: 220px;
+  }
 }
 
 @media screen and (max-width: 490px) {
   .eokojs {
     height: 120vh;
+  }
+
+  .bl1 {
+    display: none;
   }
 }
 
