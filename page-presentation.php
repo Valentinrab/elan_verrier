@@ -287,6 +287,7 @@ window.cookieconsent.initialise({
                 elseif( get_row_layout() == 'image_texte' ): ?>
 
                 <section class="image_texte row">
+                  <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl3.png" date-rellax-speed="2" class="tache tache-bl bl1 rellax" alt="verre-transparent">
                   <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_3.svg" class="tache tache3 rellax" data-rellax-speed="-0.9" alt="tache">
                   <div class="content_image col-12 col-lg-6">
                     <div class="image_l set_bg col-12 rellax" data-rellax-speed="1"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
@@ -343,6 +344,6 @@ window.cookieconsent.initialise({
   if (mq.matches) {
       new Vivus('mains-team', {duration: 500,});
     }
-  
+
   </script>
 </html>

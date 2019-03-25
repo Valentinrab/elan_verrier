@@ -12,7 +12,7 @@ p {
   line-height: 25px;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -168,15 +168,16 @@ body{
 .tache {
   position: absolute;
   z-index: -1;
-  width: 30%;
+  width: 20%;
   height: auto;
 }
 
-.tache1 {
-  width: 115%;
-  top: -3vh;
-  z-index: -1;
-}
+
+
+
+
+
+
 /*
 .tache2 {
   left: -1vw;
@@ -191,7 +192,6 @@ body{
 .tache6 {
   width: 25%;
 } */
-
 @media screen and (max-width: 768px) {
   #form-desc {
     flex-direction: column;
