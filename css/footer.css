@@ -39,10 +39,10 @@
   width: 20%;
 }
 
-.bl5 {
+/* .bl5 {
   right: 0;
-  bottom: 80vh;
-}
+  bottom: 0;
+} */
 
 .ft-ctn-sn {
   background-position: center;
@@ -83,6 +83,33 @@
 
 .fab:hover {
   color: #f09682;
+}
+
+@media screen and (max-width: 992px) {
+  /* .bl5 {
+    right: 0px;
+    bottom: 0; */
+  }
+}
+
+@media screen and (max-width: 880px) {
+  /* .bl5 {
+    right: 0px;
+    bottom: 0; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* .bl5 {
+    right: 0px;
+    bottom: 0; */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* .bl5 {
+    display: none; */
+  }
 }
 
 @media screen and (max-width : 576px) {
