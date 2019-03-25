@@ -5,6 +5,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
   color: #21253F;
+  line-height: 25px;
 }
 
 a {
@@ -13,6 +14,7 @@ a {
 
 p {
   font-family: 'Montserrat', sans-serif;
+  line-height: 25px;
 }
 
 .illustration {
@@ -159,7 +161,7 @@ p {
 
 .event-title {
   color: #FFF;
-  line-height: 25px;
+  /* line-height: 25px; */
 }
 
 .event-categorie {
@@ -197,7 +199,7 @@ p {
 }
 
 .modal-dialog {
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .modal-content {
@@ -206,7 +208,8 @@ p {
 }
 
 .modal-header {
-  /* background-color: #03579c; */
+  display: flex;
+  align-items: center;
   border-radius: 0;
   border: none;
 }
@@ -225,7 +228,7 @@ p {
 
 .img-event-modal {
   width: 100%;
-  height: 100px;
+  height: 300px;
 }
 
 .modal-body h2 {
@@ -250,6 +253,8 @@ p {
 
 .date-event-modal p {
   font-weight: bold;
+  padding: 0px 15px;
+  text-align: left;
 }
 
 .hours-event-modal {
@@ -257,7 +262,7 @@ p {
   color: #03579c;
   font-size: 12px;
   margin-top: 20px;
-  line-height: 20px;
+  /* line-height: 20px; */
   text-align: left;
   padding: 0px 15px;
 }
@@ -265,7 +270,7 @@ p {
 .desc-event-modal {
   margin: 0 30px 30px 0;
   font-size: 16px;
-  line-height: 20px;
+  /* line-height: 20px; */
 }
 
 .btn_access {

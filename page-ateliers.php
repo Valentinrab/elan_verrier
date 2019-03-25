@@ -124,8 +124,6 @@ window.cookieconsent.initialise({
   <section class="global col-10 offset-1">
     <div>
       <img id="tache1-agenda" src="<?php bloginfo('template_directory'); ?>/images/tache_5.svg" alt="tache5">
-      <?xml version="1.0" encoding="utf-8"?>
-      <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
       <svg version="1.1" id="taille-machine" class="illustration illustration1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
       	 y="0px" viewBox="0 0 569 488.9" style="enable-background:new 0 0 569 488.9;" xml:space="preserve">
         <style type="text/css">

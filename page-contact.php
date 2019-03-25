@@ -120,9 +120,8 @@ window.cookieconsent.initialise({
 
             </div>
           </div>
-          <div class="col-12 col-lg-6" id="col-left" style="background-image:url(<?php bloginfo('template_directory'); ?>/images/maps.jpg)">
+          <a id="link-map" class="col-12 col-lg-6" target="_blank" href="https://www.google.fr/maps/place/Lyc%C3%A9es+Jean+Monnet/@46.5682516,3.3556505,17z/data=!3m1!4b1!4m5!3m4!1s0x47f11c73a92d9519:0xf9fae5d7494eb2ee!8m2!3d46.5682479!4d3.3578445"><div id="col-left" style="background-image:url(<?php the_field('contact_image_map') ?>" alt='Carte de la localisation du lycée Jean Monnet'></div></a>
 
-          </div>
 
         </div>
       </main>

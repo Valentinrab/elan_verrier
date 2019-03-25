@@ -279,7 +279,7 @@ window.cookieconsent.initialise({
                       </svg>
 
                     <div class="content_image col-12 col-lg-6 offset-lg-0">
-                      <div class="image_l set_bg col-12 offset-0 rellax" data-rellax-speed="0.7"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
+                      <div class="image_l set_bg col-12 offset-0 rellax" data-rellax-speed="1"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
                     </div>
                   </section>
 
@@ -289,7 +289,7 @@ window.cookieconsent.initialise({
                 <section class="image_texte row">
                   <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache_3.svg" class="tache tache3 rellax" data-rellax-speed="-0.9" alt="tache">
                   <div class="content_image col-12 col-lg-6">
-                    <div class="image_l set_bg col-12 rellax" data-rellax-speed="0.7"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
+                    <div class="image_l set_bg col-12 rellax" data-rellax-speed="1"  style="background-image:url(<?php the_sub_field('image'); ?>);"></div>
                   </div>
                   <div class="content_texte col-12 col-lg-5">
                     <p class="content_para"><?php the_sub_field('texte'); ?></p>

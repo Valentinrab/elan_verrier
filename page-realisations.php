@@ -17,6 +17,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
     <script src = "<?php bloginfo('template_directory'); ?>/js/masonry-docs/masonry.pkgd.js"></script>
     <script src = "<?php bloginfo('template_directory'); ?>/js/masonry.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -24,6 +25,7 @@
     <script src="<?php bloginfo('template_directory'); ?>/js/loader.js"></script>
 
     <script src = "<?php bloginfo('template_directory'); ?>/js/navModal.js"></script>
+
     <script>document.documentElement.className = 'js';</script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
@@ -131,7 +133,7 @@ window.cookieconsent.initialise({
           ?>
           <div class="grid-item col-12 col-md-6 col-lg-4 col-xl-4" data-toggle="modal" data-target="#myModal_<?php echo $count ?>">
 
-              <img src="<?php the_field('realisation_image'); ?>" class="img-fluid"/>
+              <img src="<?php the_field('realisation_image'); ?>" alt="<?php the_field('image-description'); ?>" title="<?php the_title() ?>" class="img-fluid"/>
 
           </div>
 
