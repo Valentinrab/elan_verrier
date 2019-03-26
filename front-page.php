@@ -480,8 +480,8 @@
                     <!-- <span class="categorie">EXPOSITION</span> -->
                     <div class="actu_content_info col-9 offset-1">
                       <div class="actu_date col-12">
-                        <p><?php the_field('article_auteur'); ?></p>
-                        <p><?php the_time('d/m/Y') ?></p>
+                        <p class="p-actu"><?php the_field('article_auteur'); ?></p>
+                        <p class="p-actu"><?php the_time('d/m/Y') ?></p>
                       </div>
                       <h1 class="col-12"><?php the_title(); ?></h1>
                       <div class="float-right"><a class="btn_lls" href="<?php the_permalink(); ?>">Lire la suite</a></div>
@@ -498,8 +498,8 @@
                     <div class="categorie col-sm-1 <?php the_field('categorie'); ?>"><p class="categorie_title"><?php the_field('categorie'); ?></p></div>
                     <div class="actu_content_info col-sm-9 offset-md-1">
                       <div class="actu_date col-sm-12">
-                        <p><?php the_field('article_auteur'); ?></p>
-                        <p><?php the_time('d/m/Y') ?></p>
+                        <p class="p-actu"><?php the_field('article_auteur'); ?></p>
+                        <p class="p-actu"><?php the_time('d/m/Y') ?></p>
                       </div>
                       <h1 class="col-sm-12"><?php the_title(); ?></h1>
                       <div class="float-right"><a class="btn_lls" href="<?php the_permalink(); ?>">Lire la suite</a></div>

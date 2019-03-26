@@ -248,10 +248,15 @@ iframe {
   left: 40%;
 }
 
+.actu_date > p {
+  font-size: 12px;
+  opacity: .7;
+}
+
 /*PROCHAINEMENT*/
 .next_ev {
   background-color: #f09682;
-  z-index: 2;
+  z-index: 3;
   width: 380px;
   height: 300px;
   top: 50vh;
@@ -764,6 +769,7 @@ iframe {
   .illustration1 {
     left: 60vw;
   }
+
   .illustration7 {
     width: 80px;
     left: 77vw;
