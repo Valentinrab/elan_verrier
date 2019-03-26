@@ -654,6 +654,7 @@ main {
 
 
 @media screen and (max-width:768px){
+
   #logo{
     margin-right: 40%;
   }
@@ -664,6 +665,7 @@ main {
 }
 
 @media screen and (max-width:576px){
+
   header{
     background-color: #ffffff;
 		justify-content: flex-start;
@@ -675,6 +677,8 @@ main {
 	.btn_member{
 		margin-left: 30%;
 	}
+	.global-menu__wrap > .global-menu__item {
+		font-size: 30px;
 }
 
 @media screen and (max-width:450px){

@@ -92,17 +92,23 @@ class ShapeOverlays {
     }
     overlay.toggle();
     if (overlay.isOpened === true) {
-      shape1.classList.add('tache-open');
-      shape2.classList.add('tache-open');
-      shape3.classList.add('tache-open');
+      var mq = window.matchMedia( "(min-width:768px)" );
+      if (mq.matches) {
+        shape1.classList.add('tache-open');
+        shape2.classList.add('tache-open');
+        shape3.classList.add('tache-open');
+      }
       elmHamburger.classList.add('is-opened-navi');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.add('is-opened');
       }
     } else {
-      shape1.classList.remove('tache-open');
-      shape2.classList.remove('tache-open');
-      shape3.classList.remove('tache-open');
+      var mq = window.matchMedia( "(min-width:768px)" );
+      if (mq.matches) {
+        shape1.classList.remove('tache-open');
+        shape2.classList.remove('tache-open');
+        shape3.classList.remove('tache-open');
+      }
       elmHamburger.classList.remove('is-opened-navi');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.remove('is-opened');
