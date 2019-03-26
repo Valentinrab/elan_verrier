@@ -1,41 +1,10 @@
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Ubuntu', sans-serif;
-  color: #21253F;
-}
-
-a {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
-}
-
 .lettrine1 {
   left: -50px;
   top: -10px;
 }
 
-.mt-150px {
-  margin-top: 150px;
-}
-
-body {
-  overflow-X: hidden;
-}
-
-p {
-  line-height: 25px;
-}
-
 .button-pre-center {
   text-align: center;
-}
-
-.set_bg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /*taches*/
@@ -85,12 +54,6 @@ p {
 }
 
 /* TEXTE LEFT IMAGE RIGHT */
-.main-title {
-  font-size: 40px;
-  font-weight: bold;
-  position: relative;
-}
-
 .texte_image, .image_texte, .texte_centre {
   justify-content: space-between;
   position: relative;

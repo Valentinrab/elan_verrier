@@ -5,12 +5,9 @@
   <meta charset="utf-8">
   <title>Elan Verrier - Actualités</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bs-css/bootstrap-grid.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/actualites.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/loader.css">
 
   <link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/favicon-elan-verrier.png" type="image/png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -142,8 +139,8 @@
 
                     <div class="actu_content_info col-9 offset-1">
                       <div class="actu_date col-12">
-                        <p><?php the_field('article_auteur'); ?></p>
-                        <p><?php the_time('d/m/Y') ?></p>
+                        <p class="writer-article">Par : <?php the_field('article_auteur'); ?></p>
+                        <p class="date-article">Le : <?php the_time('d/m/Y') ?></p>
                       </div>
                       <h1 class="col-12"><?php echo custom_field_excerpt(the_title()); ?></h1>
                       <p class="actu_content_info_para"><?php echo custom_field_excerpt('article_chapeau'); ?></p>

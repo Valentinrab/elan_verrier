@@ -7,9 +7,6 @@
   <title>Elan Verrier - Contact</title>
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/contact.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/loader.css">
 
   <link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/favicon-elan-verrier.png" type="image/png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -65,8 +62,6 @@ window.cookieconsent.initialise({
           <h1 class="main-title"><span class="lettrine lettrine1">C</span>Nous contacter</h1>
           <img id="tache1-agenda" src="<?php bloginfo('template_directory'); ?>/images/tache_5.svg" alt="tache5">
           <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl3.png" date-rellax-speed="2" class="tache tache-bl bl1 rellax" alt="verre-transparent">
-          <?xml version="1.0" encoding="utf-8"?>
-          <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <svg version="1.1" id="main-telephone" class="illustration illustration3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
              y="0px" viewBox="0 0 469 665.1" style="enable-background:new 0 0 469 665.1;" xml:space="preserve">
             <style type="text/css">
@@ -128,8 +123,6 @@ window.cookieconsent.initialise({
       </main>
     </section>
   </section>
-
-
 
   <?php
     get_footer();

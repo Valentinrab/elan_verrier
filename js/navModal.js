@@ -1,3 +1,5 @@
+'use strict'
+
 $(document).ready(function() {
 
 $("div[id^='myModal']").each(function(){

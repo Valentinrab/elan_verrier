@@ -9,9 +9,6 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/lib/eoko/eokojs.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/ateliers.css">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/loader.css">
 
   <link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/favicon-elan-verrier.png" type="image/png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -170,17 +167,12 @@ window.cookieconsent.initialise({
         <path class="st0" d="M303,184.2c0,0,4.7,10.7,16,1.2s2.5-9.6,2.5-9.6"/>
       </svg>
 
-
-
     </div>
 
-
-        <div class="title-container">
-          <h1 class="main-title"><span class="lettrine lettrine1">A</span>Les ateliers</h1>
-        </div>
-        <div id="slider_container"></div>
-
-
+    <div class="title-container">
+      <h1 class="main-title"><span class="lettrine lettrine1">A</span>Les ateliers</h1>
+    </div>
+    <div id="slider_container"></div>
 
   </section>
 

@@ -6,13 +6,9 @@
 
     <meta name="viewport" content="width=device-width">
 
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/boutons.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/accueil.css">
-		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/menu.css" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/loader.css">
     <link rel="icon" href="<?php bloginfo('template_directory'); ?>/images/favicon-elan-verrier.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

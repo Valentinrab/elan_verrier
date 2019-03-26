@@ -1,3 +1,5 @@
+'use strict'
+
 $(document).ready(function() {
 
   ///////////////////scroll reveal///////////////////
@@ -47,10 +49,6 @@ $(document).ready(function() {
       distance: '100px',
       easing: 'ease'
     });
-    // ScrollReveal().reveal('.realisation_img', {
-    //   duration: 1600,
-    //   delay: 200
-    // });
     ScrollReveal().reveal('.card', {
       duration: 1600,
       delay: 200,
@@ -58,14 +56,6 @@ $(document).ready(function() {
       distance: '50px',
       easing: 'ease'
     });
-    // ScrollReveal().reveal('.grid-item', {
-    //
-    //   duration: 1500,
-    //   delay: 200,
-    //   easing: 'ease'
-    //
-    // });
-
     ScrollReveal().reveal('.event-reveal', {
       duration: 1600,
       delay: 200,

@@ -2,19 +2,6 @@
   --main-color: #ffffff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Ubuntu', sans-serif;
-  color: #21253F;
-}
-
-a {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
-}
-
 .lettrine1 {
   left: -30px;
   top: -25px;
@@ -218,12 +205,6 @@ p {
 
 .bl {
   margin-top: 5%;
-}
-
-.main-title {
-  font-size: 40px;
-  font-weight: bold;
-  position: relative;
 }
 
 .title-container {

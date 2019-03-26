@@ -1,4 +1,3 @@
-// external js: masonry.pkgd.js
 $(window).on("load", function (e) {
 
   var $grid = $('.grid').masonry({
@@ -18,15 +17,5 @@ $grid.imagesLoaded( function() {
   var $items = $grid.find('.grid-item');
   $grid.masonry( 'appended', $items );
 });
-
-
-  // document.getElementById('grid').style.opacity = 1;
-  // $grid.style.opacity = 1;
-  // $('.grid').imagesLoaded().progress( function() {
-  //   $('.grid').masonry('layout');
-  // });
-
-
-
 
 });
