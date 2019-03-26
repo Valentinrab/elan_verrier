@@ -2,28 +2,28 @@
 .subtitle {
   font-size: 20px;
   font-weight: bold;
-  color: #21253f;
-
+  color: var(--darkblue);
 }
 
 .subtitle-number {
-font-family: 'Ubuntu', sans-serif;
-font-size: 100px;
-font-weight: bold;
-color: #21253f;
-letter-spacing: 2rem;
-text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  color: var(--darkblue);
+  letter-spacing: 32px;
+  letter-spacing: 2rem;
+  text-align: center;
 }
 
 .lettrine {
-    font-family: 'Ubuntu', sans-serif;
-    opacity: .15;
-    position: absolute;
-    font-size: 140px;
-    font-weight: bold;
-    color: #21253f;
+  font-family: 'Ubuntu', sans-serif;
+  opacity: .15;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+  position: absolute;
+  font-size: 140px;
+  font-weight: bold;
+  color: var(--darkblue);
 }
-
 
 .lettrine1 {
   top: 18px;
@@ -45,7 +45,7 @@ text-align: center;
 h1 {
 font-family: 'Ubuntu', sans-serif;
 font-size: 22px;
-color: #f09682;
+color: var(--orange);
 font-weight: bold;
 margin-bottom: 15px;
 }
@@ -60,7 +60,6 @@ p {
 
 .contenu_404 {
   margin-top: 5em;
-
 }
 
 p{
@@ -68,8 +67,12 @@ p{
 }
 
 .btn_member_404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 5em;
 }
 
@@ -77,13 +80,17 @@ p{
   font-weight: bold;
   font-size: 18px;
 }
-/*animation logo*/
 
+/*animation logo*/
 .animation-logo {
   position: relative;
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .animation-logo img {
@@ -95,13 +102,13 @@ p{
 width: 150px;
 height: auto;
 z-index: 1;
-    margin-top: 20px;
+margin-top: 20px;
 }
 
 .animation-logo .tache-1 {
-    width: 140px;
-height: auto;
-margin-left: 71px;
+  width: 140px;
+  height: auto;
+  margin-left: 71px;
 }
 
 .animation-logo .tache-2 {

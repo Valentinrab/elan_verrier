@@ -11,7 +11,6 @@
 .tache {
   position: absolute;
   z-index: -1;
-  /* width: 30%; */
   height: auto;
 }
 
@@ -19,6 +18,7 @@
   z-index: 3;
   width: 25%;
   opacity: .3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   mix-blend-mode: overlay;
 }
 
@@ -55,10 +55,15 @@
 
 /* TEXTE LEFT IMAGE RIGHT */
 .texte_image, .image_texte, .texte_centre {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   margin: 70px 0;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
 }
 
 .content_texte, .content_image {
@@ -83,7 +88,7 @@
 }
 
 .btn_membre {
-  background-color: #f09682;
+  background-color: var(--orange);
   color: #FFFFFF;
   text-decoration: none;
   height: 100%;
@@ -117,9 +122,6 @@
     left: 65vw;
   }
 
-  top: -73vh;
-  left: 69vw;
-
   .tache2 {
     top: 20vh;
     left: 65vw;
@@ -147,7 +149,10 @@
   }
 
   .image_texte {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 

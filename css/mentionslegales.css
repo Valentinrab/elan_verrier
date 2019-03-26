@@ -6,7 +6,6 @@ h2 {
   font-size: 20px;
   line-height: 25px;
   font-weight: bold;
-
 }
 
 .lettrine1 {
@@ -46,12 +45,12 @@ h2 {
 }
 
 .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 0 0 50px 0;
-}
-
-.row {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
 }

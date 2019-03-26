@@ -8,11 +8,25 @@
 
 body {
   overflow-X: hidden;
+  --color-link: #4d4f5f;
+  --color-link-hover: #bfb5b5;
+  --path-fill-1: #21253f;
+  --path-fill-2: #f09682;
+  --path-fill-3: #da6e91;
+  --button-bg: #fff;
+  --button-line: #222;
+  --yellow: #f8c477;
+  --orange: #f09682;
+  --pink: #da6e91;
+  --purple: #a15d9a;
+  --darkblue: #21253f;
+  --lightblue : #03579c;
+  --grey: #F8F8F8;
 }
 
 h1, h2, h3, h4, h5, h6, a{
   font-family: 'Ubuntu', sans-serif;
-  color: #21253F;
+  color: var(--darkblue);
 }
 
 p {
@@ -30,7 +44,7 @@ a:hover{
 }
 
 .main-title{
-  color : #21253f;
+  color : var(--darkblue);
   font-size: 40px;
   font-weight: bold;
   position: relative;
@@ -45,14 +59,16 @@ a:hover{
 .lettrine{
   font-family: 'Ubuntu', sans-serif;
   opacity: .15;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
   position: absolute;
   font-size: 100px;
   font-weight: bold;
-  color : #21253f;
+  color : var(--darkblue);
 }
 
 .content_title, #actu_title, .main-title{
   opacity: .8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 .mt-150px {
@@ -66,11 +82,16 @@ a:hover{
 /* navigation arows */
 .modal-navigation{
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  top: 55%;
+  top: 15%;
   left: 85%;
-  transform: translate(-50%, -50%);
-  justify-content: space-between;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   z-index: 1;
 }
 
@@ -92,9 +113,4 @@ a:hover{
   font-weight: bold;
   position: relative;
   font-family: 'Ubuntu', sans-serif;
-}
-
-@media screen and (max-width : 768px) {
-
-
 }

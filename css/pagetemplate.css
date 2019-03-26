@@ -32,7 +32,7 @@
 }
 
 .content_editor blockquote{
-  color: #F09682;
+  color: var(--orange);
   font-size: 20px;
   font-weight: bold;
   font-style: italic;
@@ -44,7 +44,8 @@
 @media screen and (min-width: 600px) {
   /*2 columns*/
   .content_editor .wp-block-columns .wp-block-column{
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   margin-left: 0;
   margin-right: 0;
   }

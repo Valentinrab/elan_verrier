@@ -12,10 +12,14 @@
 }
 
 .btn_access a .text {
-  transform: translate3d(0, 0.6em, 0);
+  -webkit-transform: translate3d(0, 0.6em, 0);
+          transform: translate3d(0, 0.6em, 0);
   display: block;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
-    color: #f09682;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s, -webkit-transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+    color: var(--orange);
     text-align: center;
     text-transform: uppercase;
 }
@@ -27,96 +31,144 @@
   left: calc(0.7em * 1.2);
   right: calc(0.7em * 1.2);
   height: 3px;
-  background: #f09682;
+  background: var(--orange);
+  -webkit-transition: right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, -webkit-transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s;
+  transition: right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, -webkit-transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s;
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
-  transform-origin: left;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, -webkit-transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .btn_access .line {
   position: absolute;
-  background: #f09682;
+  background: var(--orange);
 }
 
 .btn_access .line.-right, .btn_access .line.-left {
   width: 3px;
   bottom: -3px;
   top: -3px;
-  transform: scale3d(1, 0, 1);
+  -webkit-transform: scale3d(1, 0, 1);
+          transform: scale3d(1, 0, 1);
 }
 
 .btn_access .line.-top, .btn_access .line.-bottom {
   height: 3px;
   left: -3px;
   right: -3px;
-  transform: scale3d(0, 1, 1);
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
 }
 
 .btn_access .line.-right {
   right: -3px;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transition: -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
-  transform-origin: top;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s, -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 .btn_access .line.-top {
   top: -3px;
+  -webkit-transition: -webkit-transform 0.08s linear 0.43s;
+  transition: -webkit-transform 0.08s linear 0.43s;
   transition: transform 0.08s linear 0.43s;
-  transform-origin: left;
+  transition: transform 0.08s linear 0.43s, -webkit-transform 0.08s linear 0.43s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .btn_access .line.-left {
   left: -3px;
+  -webkit-transition: -webkit-transform 0.08s linear 0.51s;
+  transition: -webkit-transform 0.08s linear 0.51s;
   transition: transform 0.08s linear 0.51s;
-  transform-origin: bottom;
+  transition: transform 0.08s linear 0.51s, -webkit-transform 0.08s linear 0.51s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .btn_access .line.-bottom {
   bottom: -3px;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transition: -webkit-transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
   transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
-  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01), -webkit-transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
 
 .btn_access a:hover .text,
 .btn_access a:active .text {
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  transition: -webkit-transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
   transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s, -webkit-transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
 
 .btn_access a:hover:after,
 .btn_access a:active:after {
-  transform: scale3d(0, 1, 1);
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
   right: -3px;
   left: -3px;
-  transform-origin: right;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s;
+  transition: right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s;
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s;
 }
 
 .btn_access a:hover .line,
 .btn_access a:active .line {
-  transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
 }
 
 .btn_access a:hover .line.-right,
 .btn_access a:active .line.-right {
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transition: -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
-  transform-origin: bottom;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s, -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .btn_access a:hover .line.-top,
 .btn_access a:active .line.-top {
+  -webkit-transition: -webkit-transform 0.08s linear 0.4s;
+  transition: -webkit-transform 0.08s linear 0.4s;
   transition: transform 0.08s linear 0.4s;
-  transform-origin: right;
+  transition: transform 0.08s linear 0.4s, -webkit-transform 0.08s linear 0.4s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
 
 .btn_access a:hover .line.-left,
 .btn_access a:active .line.-left {
+  -webkit-transition: -webkit-transform 0.08s linear 0.48s;
+  transition: -webkit-transform 0.08s linear 0.48s;
   transition: transform 0.08s linear 0.48s;
-  transform-origin: top;
+  transition: transform 0.08s linear 0.48s, -webkit-transform 0.08s linear 0.48s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 .btn_access a:hover .line.-bottom,
 .btn_access a:active .line.-bottom {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transition: -webkit-transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
   transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
-  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s, -webkit-transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 
@@ -138,7 +190,7 @@ div {
 
 .button {
   -webkit-font-smoothing: antialiased;
-/*  background-color: #f09682;*/
+/*  background-color: var(--orange);*/
   border: none;
   color: #fff;
   display: inline-block;
@@ -152,11 +204,12 @@ div {
   color: white;
   padding: 15px 15px;
   text-transform: uppercase;
+  -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
   text-align: center;
 }
 .button:hover {
-/*  background-color: #f09682;*/
+/*  background-color: var(--orange);*/
   color: #fff;
 }
 .button:active {
@@ -168,17 +221,17 @@ div {
   z-index: 2;
   color: white;
   background: none;
-  background-color: #f09682;
+  background-color: var(--orange);
 }
 .button--bubble:hover {
   background: none;
-  background-color: #f09682;
+  background-color: var(--orange);
 }
 .button--bubble:hover + .button--bubble__effect-container .circle {
-  background: #f09682;
+  background: var(--orange);
 }
 .button--bubble:hover + .button--bubble__effect-container .button {
-  background: #f09682;
+  background: var(--orange);
 }
 .button--bubble:active + .button--bubble__effect-container {
   -webkit-transform: scale(0.95);
@@ -197,7 +250,8 @@ div {
   z-index: 1;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: #f09682;
+  background: var(--orange);
+  -webkit-transition: background 0.1s ease-out;
   transition: background 0.1s ease-out;
 }
 
@@ -210,6 +264,7 @@ div {
   left: -50%;
   -webkit-filter: url("#goo");
   filter: url("#goo");
+  -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
   pointer-events: none;
 }
@@ -218,7 +273,8 @@ div {
   width: 25px;
   height: 25px;
   border-radius: 15px;
-  background: #f09682;
+  background: var(--orange);
+  -webkit-transition: background 0.1s ease-out;
   transition: background 0.1s ease-out;
 }
 .button--bubble__effect-container .circle.top-left {
@@ -253,6 +309,7 @@ div {
     -webkit-filter: hue-rotate(360deg);
     -moz-filter: hue-rotate(360deg);
     -ms-filter: hue-rotate(360deg);
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="hueRotate" color-interpolation-filters="sRGB" values="360" /></filter></svg>#filter');
     filter: hue-rotate(360deg);
   }
 }
@@ -268,6 +325,7 @@ div {
     -webkit-filter: hue-rotate(360deg);
     -moz-filter: hue-rotate(360deg);
     -ms-filter: hue-rotate(360deg);
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="hueRotate" color-interpolation-filters="sRGB" values="360" /></filter></svg>#filter');
     filter: hue-rotate(360deg);
   }
 }

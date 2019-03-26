@@ -35,22 +35,6 @@ header a{
 	z-index: 0;
 }
 
-/* Color schemes */
-body {
-	--color-text: #000;
-	--color-bg: #fff;
-	--color-link: #4d4f5f;
-	--color-link-hover: #bfb5b5;
-	--color-info: #000;
-	--color-main-bg: #fff;
-	--path-fill-1: #21253f;
-	--path-fill-2: #f09682;
-	--path-fill-3: #da6e91;
-	--color-title: #000;
-	--color-menu: #fff;
-	--button-bg: #fff;
-	--button-line: #222;
-}
 /*anim shapes transparent*/
 .tache-bl-menu{
 	z-index: 100;
@@ -101,12 +85,13 @@ body {
        to   { transform: translate(150px, 200px); opacity: 0.3}
    }
 
-	 @keyframes float3 {
-			from { transform: translate(0px, 120px);
-						 opacity: 0.4}
-			 65%  { transform: translate(200px, 200px); opacity: 0.7}
-				 to   { transform: translate(20px, 220px); opacity: 0.4}
-		 }
+ @keyframes float3 {
+		from { transform: translate(0px, 120px);
+					 opacity: 0.4}
+		 65%  { transform: translate(200px, 200px); opacity: 0.7}
+			 to   { transform: translate(20px, 220px); opacity: 0.4}
+	}
+
 /* Fade effect */
 a {
 	text-decoration: none;
@@ -153,7 +138,6 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* min-height: 100vh; */
 	margin: 0 15px;
 	pointer-events: none;
 }
@@ -200,7 +184,6 @@ main {
 
 .global-menu__wrap > .global-menu__item {
 	color: #fff;
-	/* font-family: var(--font-family-menu); */
 	font-size: 40px;
 	font-weight: 300;
 	opacity: 0;
@@ -249,7 +232,7 @@ main {
 }
 
 .global-menu__item:hover {
-	color:#21253f;
+	color:var(--darkblue);
 	transition: 0.3s ease 0;
 }
 
@@ -371,9 +354,7 @@ main {
 	width: 64px;
 	height: 64px;
 	display: block;
-	/* position: relative; */
 	cursor: pointer;
-	/* position: absolute; */
 	top: 1em;
 	right: 2.25em;
 	z-index: 110;
@@ -393,7 +374,6 @@ main {
 	top: 0;
 	left: 0;
 	pointer-events: none;
-	/* border: 4px solid var(--button-circle); */
 	border-radius: 50%;
 	-webkit-animation-duration: 1.2s;
 	animation-duration: 1.2s;
@@ -615,18 +595,7 @@ main {
 		width: 100vw;
 		height: 100%;
 	}
-	/* .hamburger {
-		position: fixed;
-		top: 0.5em;
-		right: 0.5em;
-		transform: scale(0.75);
-	} */
-	.content {
-		/* height: auto;
-		min-height: 0; */
-		/* padding-bottom: 10em; */
-		/* flex-direction: column; */
-	}
+
 	.content--fixed {
 		position: relative;
 		z-index: 0;
@@ -670,6 +639,7 @@ main {
     background-color: #ffffff;
 		justify-content: flex-start;
   }
+
   #logo{
     margin-right: 10%;
   }
@@ -677,9 +647,14 @@ main {
 	.btn_member{
 		margin-left: 30%;
 	}
+
 	.global-menu__wrap > .global-menu__item {
 		font-size: 30px;
-}
+	}
+
+	.tache-open{
+		display: none;
+	}
 
 @media screen and (max-width:450px){
 	.btn_member{

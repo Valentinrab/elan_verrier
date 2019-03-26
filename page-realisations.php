@@ -162,8 +162,8 @@ window.cookieconsent.initialise({
                         <div class="content_creator_information">
                           <p class="modal-creator"><?php the_sub_field('creator_name'); ?></p>
                           <div>
-                            <a href="<?php the_sub_field('link_linkedin'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png" alt="instagram"></a>
-                            <a href="<?php the_sub_field('link_instagram'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" alt="Linkedin"></a>
+                            <a href="<?php the_sub_field('link_linkedin'); ?>"><i class="fab fa-linkedin"></i></a>
+                            <a href="<?php the_sub_field('link_instagram'); ?>"><i class="fab fa-instagram"></i></a>
                           </div>
 
                         </div>

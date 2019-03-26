@@ -5,8 +5,7 @@
   display: inline-block;
   font-size: 12px;
   font-weight: bold;
-  /* text-transform: uppercase; */
-  color: #f09682;
+  color: var(--orange);
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -15,7 +14,7 @@
 }
 
 .btn_lls:hover {
-  color: #f09682;
+  color: var(--orange);
 }
 
 .btn_lls:before {
@@ -25,17 +24,18 @@
   width: 0;
   height: 3px;
   position: absolute;
+  -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 
 .btn_lls:hover:before {
   width: 100%;
   left: 0%;
-  background-color: #f09682;
+  background-color: var(--orange);
 }
 
 .btn_access {
-  color: #f09682;
+  color: var(--orange);
   text-decoration: none;
   font-size: 12px;
   font-weight: bold;
@@ -51,7 +51,7 @@
   content: "";
   height: 2px;
   width: 100%;
-  background-color: #f09682;
+  background-color: var(--orange);
 }
 
 .container {
@@ -66,19 +66,28 @@
 }
 
 .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .filter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  /* position: absolute; */
   right: 0;
 }
 
@@ -104,14 +113,15 @@
   border: none;
   font-size: 14px;
   font-weight: bold;
-  color: #f09682;
+  color: var(--orange);
   cursor: pointer;
   margin: 0 5px;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
 .tri-categorie button:hover {
-  color: #21253F;
+  color: var(--darkblue);
 }
 
 .tri-categorie button {
@@ -125,23 +135,23 @@
 
 /*categorie color*/
 .categorie.exposition {
-  background-color: #f8c477;
+  background-color: var(--yellow);
 }
 
 .categorie.vente {
-  background-color: #da6e91;
+  background-color: var(--pink);
 }
 
 .categorie.rencontre {
-  background-color: #03579c;
+  background-color: var(--lightblue);
 }
 
 .categorie.conference {
-  background-color: #f09682;
+  background-color: var(--orange);
 }
 
 .categorie.autre {
-  background-color: #a15d9a;
+  background-color: var(--pink);
 }
 
 /*fin des couleurs*/
@@ -168,16 +178,17 @@
 
 .actu_principal_info {
   min-height: 155px;
-  background-color: #f8f8f8;
+  background-color: var(--grey);
   padding: 0;
   margin: 0;
   margin-top: -70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .actu_principal_info .categorie {
   width: 135px;
-  /* padding: 10px; */
   text-align: center;
   position: relative;
   color: #fff;
@@ -185,11 +196,13 @@
 }
 
 .actu_principal_image {
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
 .actu_reveal:hover .actu_principal_image {
-  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .actu_principal_info .actu_content_info {
@@ -200,15 +213,20 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+          transform: translate(-50%, -50%) rotate(-90deg);
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .actu_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0;
 }
 
@@ -219,11 +237,13 @@
 .date-article {
   font-size: 12px;
   opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 .writer-article {
   font-size: 12px;
   opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 .actu_principal_info h1 {
@@ -236,8 +256,6 @@
 .actu_content_info:nth-child(2) {
   font-size: 12px;
   margin-bottom: 20px;
-  /* height: 50px;
-  color: red; */
 }
 
 #content_actu .actu_principal .btn_access {
@@ -267,6 +285,7 @@
   z-index: 3;
   width: 25%;
   opacity: .3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   mix-blend-mode: overlay;
 }
 
@@ -320,7 +339,8 @@
   }
 
   .actu_reveal:hover .actu_principal_image {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 
   .illustration1 {
@@ -354,8 +374,13 @@
   }
 
   .title-container {
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .filter-container {
