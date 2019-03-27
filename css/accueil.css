@@ -727,7 +727,7 @@ iframe {
 }
 
 .card-body {
-  background-color: var(--lightblue);
+  background-color: var(--grey);
 }
 
 .card-flex {
