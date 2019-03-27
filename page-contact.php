@@ -59,7 +59,7 @@ window.cookieconsent.initialise({
       <main class="container-main">
         <div class="title-container">
           <h1 class="main-title"><span class="lettrine lettrine1">C</span>Nous contacter</h1>
-          <img id="tache1-agenda" src="<?php bloginfo('template_directory'); ?>/images/tache_5.svg" alt="tache5">
+          <img id="tache1-agenda" src="<?php bloginfo('template_directory'); ?>/images/taches/tache_5.svg" alt="tache5">
           <img src="<?php bloginfo('template_directory'); ?>/images/taches/tache-bl3.png" date-rellax-speed="2" class="tache tache-bl bl1 rellax" alt="verre-transparent">
           <svg version="1.1" id="main-telephone" class="illustration illustration3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
              y="0px" viewBox="0 0 469 665.1" style="enable-background:new 0 0 469 665.1;" xml:space="preserve">
